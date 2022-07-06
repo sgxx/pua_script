@@ -27,7 +27,7 @@ if __name__ == '__main__':
             if line.startswith('Q') and line not in used:
                 used.add(line)
 
-                print(line.replace("Q:", "Question:").replace("\n",""))
+                print(line.replace("Q:", "Question:").replace("\n", ""))
                 answer = input("answer:")
 
                 line = lines[num + 1].replace("A:", "")
