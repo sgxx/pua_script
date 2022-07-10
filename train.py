@@ -3,6 +3,7 @@
 
 import difflib
 import random
+import time
 
 
 def string_similar(s1, s2):
@@ -11,6 +12,7 @@ def string_similar(s1, s2):
 
 if __name__ == '__main__':
     answer = ''
+    t_start = time.time()
 
     used = set([])
 
@@ -37,3 +39,5 @@ if __name__ == '__main__':
                 print(line.replace("\n", ""), final)
             else:
                 continue
+
+    print('Processing cost {} seconds'.format(round(time.time() - t_start)))
