@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     used = set([])
 
-    with open("words.txt") as f:
+    with open("words.md") as f:
         lines = f.readlines()
 
         length = len(lines)
