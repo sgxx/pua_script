@@ -14,7 +14,9 @@ if __name__ == '__main__':
         os.popen(f'kill -9 {pid}')
         time.sleep(2)
 
-    os.popen(f'cd /code/fla')
-    os.popen(f'nohup python3 app.py &')
+    output = os.popen(f'cd /code/fla', 'r')
+    val = output.read()
+
+    os.system('nohup python3 app.py &')
 
     print('over')
