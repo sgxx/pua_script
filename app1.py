@@ -10,7 +10,7 @@ used = set([])
 
 dictResult = dict()
 
-with open(r'./static/words.txt', encoding='utf-8') as f:
+with open(r'./static/words.abc', encoding='utf-8') as f:
     lines = f.readlines()
 
     length = len(lines)
