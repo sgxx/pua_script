@@ -1,12 +1,12 @@
 // ==UserScript==
-// @name         ÖªºõÔöÇ¿
-// @name:zh-CN   ÖªºõÔöÇ¿
-// @name:zh-TW   ÖªºõÔöŠ
+// @name         çŸ¥ä¹å¢å¼º
+// @name:zh-CN   çŸ¥ä¹å¢å¼º
+// @name:zh-TW   çŸ¥ä¹å¢å¼·
 // @name:en      Zhihu enhancement
 // @version      2.1.5
 // @author       X.I.U
-// @description  ÒÆ³ıµÇÂ¼µ¯´°¡¢ÆÁ±ÎÊ×Ò³ÊÓÆµ¡¢Ä¬ÈÏÊÕÆğ»Ø´ğ¡¢¿ì½İÊÕÆğ»Ø´ğ/ÆÀÂÛ£¨×ó¼üÁ½²à£©¡¢¿ì½İ»Øµ½¶¥²¿£¨ÓÒ¼üÁ½²à£©¡¢ÆÁ±ÎÓÃ»§¡¢ÆÁ±Î¹Ø¼ü´Ê¡¢ÒÆ³ı¸ßÁÁÁ´½Ó¡¢ÆÁ±ÎÑÎÑ¡ÄÚÈİ¡¢¾»»¯ËÑË÷ÈÈÃÅ¡¢¾»»¯±êÌâÏûÏ¢¡¢Õ¹¿ªÎÊÌâÃèÊö¡¢ÏÔÊ¾ÎÊÌâ×÷Õß¡¢ÖÃ¶¥ÏÔÊ¾Ê±¼ä¡¢ÍêÕûÎÊÌâÊ±¼ä¡¢Çø·ÖÎÊÌâÎÄÕÂ¡¢Ö±´ïÎÊÌâ°´Å¥¡¢Ä¬ÈÏ¸ßÇåÔ­Í¼¡¢Ä¬ÈÏÕ¾ÍâÖ±Á´
-// @description:zh-TW  ÒÆ³ıµÇä›—´°¡¢ÆÁ±ÎÊ×í“Ò•îl¡¢Ä¬ÕJÊÕÆğ»Ø´ğ¡¢¿ì½İÊÕÆğ»Ø´ğ/ÔuÕ“¡¢¿ì½İ»Øµ½í”²¿¡¢ÆÁ±ÎÓÃ‘ô¡¢ÆÁ±ÎêPæIÔ~¡¢ÒÆ³ı¸ßÁÁæœ½Ó¡¢ÆÁ±Îû}ßxƒÈÈİ¡¢œQ»¯ËÑË÷ŸáéT¡¢œQ»¯˜Ëî}ÏûÏ¢¡¢ÖÃí”ï@Ê¾•rég¡¢ÍêÕû†–î}•rég¡¢…^·Ö†–î}ÎÄÕÂ¡¢Ä¬ÕJ¸ßÇåÔ­ˆD¡¢Ä¬ÕJÕ¾ÍâÖ±æœ...
+// @description  ç§»é™¤ç™»å½•å¼¹çª—ã€å±è”½é¦–é¡µè§†é¢‘ã€é»˜è®¤æ”¶èµ·å›ç­”ã€å¿«æ·æ”¶èµ·å›ç­”/è¯„è®ºï¼ˆå·¦é”®ä¸¤ä¾§ï¼‰ã€å¿«æ·å›åˆ°é¡¶éƒ¨ï¼ˆå³é”®ä¸¤ä¾§ï¼‰ã€å±è”½ç”¨æˆ·ã€å±è”½å…³é”®è¯ã€ç§»é™¤é«˜äº®é“¾æ¥ã€å±è”½ç›é€‰å†…å®¹ã€å‡€åŒ–æœç´¢çƒ­é—¨ã€å‡€åŒ–æ ‡é¢˜æ¶ˆæ¯ã€å±•å¼€é—®é¢˜æè¿°ã€æ˜¾ç¤ºé—®é¢˜ä½œè€…ã€ç½®é¡¶æ˜¾ç¤ºæ—¶é—´ã€å®Œæ•´é—®é¢˜æ—¶é—´ã€åŒºåˆ†é—®é¢˜æ–‡ç« ã€ç›´è¾¾é—®é¢˜æŒ‰é’®ã€é»˜è®¤é«˜æ¸…åŸå›¾ã€é»˜è®¤ç«™å¤–ç›´é“¾
+// @description:zh-TW  ç§»é™¤ç™»éŒ„å½ˆçª—ã€å±è”½é¦–é è¦–é »ã€é»˜èªæ”¶èµ·å›ç­”ã€å¿«æ·æ”¶èµ·å›ç­”/è©•è«–ã€å¿«æ·å›åˆ°é ‚éƒ¨ã€å±è”½ç”¨æˆ¶ã€å±è”½é—œéµè©ã€ç§»é™¤é«˜äº®éˆæ¥ã€å±è”½é¹½é¸å…§å®¹ã€æ·¨åŒ–æœç´¢ç†±é–€ã€æ·¨åŒ–æ¨™é¡Œæ¶ˆæ¯ã€ç½®é ‚é¡¯ç¤ºæ™‚é–“ã€å®Œæ•´å•é¡Œæ™‚é–“ã€å€åˆ†å•é¡Œæ–‡ç« ã€é»˜èªé«˜æ¸…åŸåœ–ã€é»˜èªç«™å¤–ç›´éˆ...
 // @description:en  A more personalized Zhihu experience~
 // @match        *://www.zhihu.com/*
 // @match        *://zhuanlan.zhihu.com/*
@@ -29,40 +29,40 @@
 
 'use strict';
 var menu_ALL = [
-    ['menu_defaultCollapsedAnswer', 'Ä¬ÈÏÊÕÆğ»Ø´ğ', 'Ä¬ÈÏÊÕÆğ»Ø´ğ', true],
-    ['menu_collapsedAnswer', 'Ò»¼üÊÕÆğ»Ø´ğ', 'Ò»¼üÊÕÆğ»Ø´ğ', true],
-    ['menu_collapsedNowAnswer', '¿ì½İÊÕÆğ»Ø´ğ/ÆÀÂÛ (µã»÷Á½²à¿Õ°×´¦)', '¿ì½İÊÕÆğ»Ø´ğ/ÆÀÂÛ', true],
-    ['menu_backToTop', '¿ì½İ»Øµ½¶¥²¿ (ÓÒ¼üÁ½²à¿Õ°×´¦)', '¿ì½İ»Øµ½¶¥²¿', true],
-    ['menu_blockUsers', 'ÆÁ±ÎÖ¸¶¨ÓÃ»§', 'ÆÁ±ÎÖ¸¶¨ÓÃ»§', true],
-    ['menu_customBlockUsers', '×Ô¶¨ÒåÆÁ±ÎÓÃ»§', '×Ô¶¨ÒåÆÁ±ÎÓÃ»§', ['¹ÊÊÂµµ°¸¾Ö', 'ÑÎÑ¡ÍÆ¼ö', 'ÑÎÑ¡¿ÆÆÕ', 'ÑÎÑ¡³É³¤¼Æ»®', 'ÖªºõÑÎÑ¡»áÔ±', 'ÖªºõÑÎÑ¡´´×÷Õß', 'ÑÎÑ¡ĞÄÀí', 'ÑÎÑ¡½¡¿µ±ØĞŞ¿Î', 'ÑÎÑ¡ÆæÃîÎïÓï', 'ÑÎÑ¡Éú»î¹İ', 'ÑÎÑ¡Ö°³¡', 'ÑÎÑ¡ÎÄÑ§ÕçÑ¡', 'ÑÎÑ¡×÷ÕßĞ¡¹Ü¼Ò', 'ÑÎÑ¡²©Îï¹İ', 'ÑÎÑ¡µã½ğ', 'ÑÎÑ¡²âÆÀÊÒ', 'ÑÎÑ¡¿Æ¼¼Ç°ÑØ', 'ÑÎÑ¡»áÔ±¾«Æ·']],
-    ['menu_blockKeywords', 'ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê', 'ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê', true],
-    ['menu_customBlockKeywords', '×Ô¶¨ÒåÆÁ±Î¹Ø¼ü´Ê', '×Ô¶¨ÒåÆÁ±Î¹Ø¼ü´Ê', []],
-    ['menu_blockType', 'ÆÁ±ÎÖ¸¶¨Àà±ğ (ÊÓÆµ/ÎÄÕÂµÈ)', '¹´Ñ¡ = ÆÁ±Î¸ÃÀà±ğµÄĞÅÏ¢Á÷', ''],
-    ['menu_blockTypeVideo', 'ÊÓÆµ [Ê×Ò³¡¢ËÑË÷Ò³¡¢ÎÊÌâÒ³]', 'ÊÓÆµ£¨Ê×Ò³¡¢ËÑË÷Ò³¡¢ÎÊÌâÒ³£©', true],
-    ['menu_blockTypeArticle', 'ÎÄÕÂ [Ê×Ò³¡¢ËÑË÷Ò³]', 'ÎÄÕÂ£¨Ê×Ò³¡¢ËÑË÷Ò³£©', false],
-    ['menu_blockTypeTopic', '»°Ìâ [ËÑË÷Ò³]', '»°Ìâ£¨ËÑË÷Ò³£©', false],
-    ['menu_blockTypeSearch', 'ÔÓÖ¾ÎÄÕÂ¡¢Ïà¹ØËÑË÷µÈ [ËÑË÷Ò³]', 'Ïà¹ØËÑË÷¡¢ÔÓÖ¾µÈ£¨ËÑË÷Ò³£©', false],
-    ['menu_blockYanXuan', 'ÆÁ±ÎÑÎÑ¡ÄÚÈİ', 'ÆÁ±ÎÑÎÑ¡ÄÚÈİ', false],
-    ['menu_cleanSearch', '¾»»¯ËÑË÷ÈÈÃÅ (Ä¬ÈÏËÑË÷´Ê¼°ÈÈÃÅËÑË÷)', '¾»»¯ËÑË÷ÈÈÃÅ', false],
-    ['menu_cleanTitles', '¾»»¯±êÌâÏûÏ¢ (±êÌâÖĞµÄË½ĞÅ/ÏûÏ¢)', '¾»»¯±êÌâÌáĞÑ', false],
-    ['menu_questionRichTextMore', 'Õ¹¿ªÎÊÌâÃèÊö', 'Õ¹¿ªÎÊÌâÃèÊö', false],
-    ['menu_publishTop', 'ÖÃ¶¥ÏÔÊ¾Ê±¼ä', 'ÖÃ¶¥ÏÔÊ¾Ê±¼ä', true],
-    ['menu_typeTips', 'Çø·ÖÎÊÌâÎÄÕÂ', 'Çø·ÖÎÊÌâÎÄÕÂ', true],
-    ['menu_toQuestion', 'Ö±´ïÎÊÌâ°´Å¥', 'Ö±´ïÎÊÌâ°´Å¥', true]
+    ['menu_defaultCollapsedAnswer', 'é»˜è®¤æ”¶èµ·å›ç­”', 'é»˜è®¤æ”¶èµ·å›ç­”', true],
+    ['menu_collapsedAnswer', 'ä¸€é”®æ”¶èµ·å›ç­”', 'ä¸€é”®æ”¶èµ·å›ç­”', true],
+    ['menu_collapsedNowAnswer', 'å¿«æ·æ”¶èµ·å›ç­”/è¯„è®º (ç‚¹å‡»ä¸¤ä¾§ç©ºç™½å¤„)', 'å¿«æ·æ”¶èµ·å›ç­”/è¯„è®º', true],
+    ['menu_backToTop', 'å¿«æ·å›åˆ°é¡¶éƒ¨ (å³é”®ä¸¤ä¾§ç©ºç™½å¤„)', 'å¿«æ·å›åˆ°é¡¶éƒ¨', true],
+    ['menu_blockUsers', 'å±è”½æŒ‡å®šç”¨æˆ·', 'å±è”½æŒ‡å®šç”¨æˆ·', true],
+    ['menu_customBlockUsers', 'è‡ªå®šä¹‰å±è”½ç”¨æˆ·', 'è‡ªå®šä¹‰å±è”½ç”¨æˆ·', ['æ•…äº‹æ¡£æ¡ˆå±€', 'ç›é€‰æ¨è', 'ç›é€‰ç§‘æ™®', 'ç›é€‰æˆé•¿è®¡åˆ’', 'çŸ¥ä¹ç›é€‰ä¼šå‘˜', 'çŸ¥ä¹ç›é€‰åˆ›ä½œè€…', 'ç›é€‰å¿ƒç†', 'ç›é€‰å¥åº·å¿…ä¿®è¯¾', 'ç›é€‰å¥‡å¦™ç‰©è¯­', 'ç›é€‰ç”Ÿæ´»é¦†', 'ç›é€‰èŒåœº', 'ç›é€‰æ–‡å­¦ç”„é€‰', 'ç›é€‰ä½œè€…å°ç®¡å®¶', 'ç›é€‰åšç‰©é¦†', 'ç›é€‰ç‚¹é‡‘', 'ç›é€‰æµ‹è¯„å®¤', 'ç›é€‰ç§‘æŠ€å‰æ²¿', 'ç›é€‰ä¼šå‘˜ç²¾å“']],
+    ['menu_blockKeywords', 'å±è”½æŒ‡å®šå…³é”®è¯', 'å±è”½æŒ‡å®šå…³é”®è¯', true],
+    ['menu_customBlockKeywords', 'è‡ªå®šä¹‰å±è”½å…³é”®è¯', 'è‡ªå®šä¹‰å±è”½å…³é”®è¯', []],
+    ['menu_blockType', 'å±è”½æŒ‡å®šç±»åˆ« (è§†é¢‘/æ–‡ç« ç­‰)', 'å‹¾é€‰ = å±è”½è¯¥ç±»åˆ«çš„ä¿¡æ¯æµ', ''],
+    ['menu_blockTypeVideo', 'è§†é¢‘ [é¦–é¡µã€æœç´¢é¡µã€é—®é¢˜é¡µ]', 'è§†é¢‘ï¼ˆé¦–é¡µã€æœç´¢é¡µã€é—®é¢˜é¡µï¼‰', true],
+    ['menu_blockTypeArticle', 'æ–‡ç«  [é¦–é¡µã€æœç´¢é¡µ]', 'æ–‡ç« ï¼ˆé¦–é¡µã€æœç´¢é¡µï¼‰', false],
+    ['menu_blockTypeTopic', 'è¯é¢˜ [æœç´¢é¡µ]', 'è¯é¢˜ï¼ˆæœç´¢é¡µï¼‰', false],
+    ['menu_blockTypeSearch', 'æ‚å¿—æ–‡ç« ã€ç›¸å…³æœç´¢ç­‰ [æœç´¢é¡µ]', 'ç›¸å…³æœç´¢ã€æ‚å¿—ç­‰ï¼ˆæœç´¢é¡µï¼‰', false],
+    ['menu_blockYanXuan', 'å±è”½ç›é€‰å†…å®¹', 'å±è”½ç›é€‰å†…å®¹', false],
+    ['menu_cleanSearch', 'å‡€åŒ–æœç´¢çƒ­é—¨ (é»˜è®¤æœç´¢è¯åŠçƒ­é—¨æœç´¢)', 'å‡€åŒ–æœç´¢çƒ­é—¨', false],
+    ['menu_cleanTitles', 'å‡€åŒ–æ ‡é¢˜æ¶ˆæ¯ (æ ‡é¢˜ä¸­çš„ç§ä¿¡/æ¶ˆæ¯)', 'å‡€åŒ–æ ‡é¢˜æé†’', false],
+    ['menu_questionRichTextMore', 'å±•å¼€é—®é¢˜æè¿°', 'å±•å¼€é—®é¢˜æè¿°', false],
+    ['menu_publishTop', 'ç½®é¡¶æ˜¾ç¤ºæ—¶é—´', 'ç½®é¡¶æ˜¾ç¤ºæ—¶é—´', true],
+    ['menu_typeTips', 'åŒºåˆ†é—®é¢˜æ–‡ç« ', 'åŒºåˆ†é—®é¢˜æ–‡ç« ', true],
+    ['menu_toQuestion', 'ç›´è¾¾é—®é¢˜æŒ‰é’®', 'ç›´è¾¾é—®é¢˜æŒ‰é’®', true]
 ], menu_ID = [];
-for (let i=0;i<menu_ALL.length;i++){ // Èç¹û¶ÁÈ¡µ½µÄÖµÎª null ¾ÍĞ´ÈëÄ¬ÈÏÖµ
+for (let i=0;i<menu_ALL.length;i++){ // å¦‚æœè¯»å–åˆ°çš„å€¼ä¸º null å°±å†™å…¥é»˜è®¤å€¼
     if (GM_getValue(menu_ALL[i][0]) == null){GM_setValue(menu_ALL[i][0], menu_ALL[i][3])};
 }
 registerMenuCommand();
 
-// ×¢²á½Å±¾²Ëµ¥
+// æ³¨å†Œè„šæœ¬èœå•
 function registerMenuCommand() {
-    if (menu_ID.length > menu_ALL.length){ // Èç¹û²Ëµ¥IDÊı×é¶àÓÚ²Ëµ¥Êı×é£¬ËµÃ÷²»ÊÇÊ×´ÎÌí¼Ó²Ëµ¥£¬ĞèÒªĞ¶ÔØËùÓĞ½Å±¾²Ëµ¥
+    if (menu_ID.length > menu_ALL.length){ // å¦‚æœèœå•IDæ•°ç»„å¤šäºèœå•æ•°ç»„ï¼Œè¯´æ˜ä¸æ˜¯é¦–æ¬¡æ·»åŠ èœå•ï¼Œéœ€è¦å¸è½½æ‰€æœ‰è„šæœ¬èœå•
         for (let i=0;i<menu_ID.length;i++){
             GM_unregisterMenuCommand(menu_ID[i]);
         }
     }
-    for (let i=0;i<menu_ALL.length;i++){ // Ñ­»·×¢²á½Å±¾²Ëµ¥
+    for (let i=0;i<menu_ALL.length;i++){ // å¾ªç¯æ³¨å†Œè„šæœ¬èœå•
         menu_ALL[i][3] = GM_getValue(menu_ALL[i][0]);
         if (menu_ALL[i][0] === 'menu_customBlockUsers') {
             if (menu_value('menu_blockUsers')) menu_ID[i] = GM_registerMenuCommand(`#?? ${menu_ALL[i][1]}`, function(){customBlockUsers()});
@@ -74,24 +74,24 @@ function registerMenuCommand() {
             menu_ID[i] = GM_registerMenuCommand(`${menu_ALL[i][3]?'?':'?'} ${menu_ALL[i][1]}`, function(){menu_switch(`${menu_ALL[i][3]}`,`${menu_ALL[i][0]}`,`${menu_ALL[i][2]}`)});
         }
     }
-    menu_ID[menu_ID.length] = GM_registerMenuCommand('? ·´À¡ & ½¨Òé', function () {window.GM_openInTab('https://github.com/XIU2/UserScript#xiu2userscript', {active: true,insert: true,setParent: true});window.GM_openInTab('https://greasyfork.org/zh-CN/scripts/419081/feedback', {active: true,insert: true,setParent: true});});
+    menu_ID[menu_ID.length] = GM_registerMenuCommand('? åé¦ˆ & å»ºè®®', function () {window.GM_openInTab('https://github.com/XIU2/UserScript#xiu2userscript', {active: true,insert: true,setParent: true});window.GM_openInTab('https://greasyfork.org/zh-CN/scripts/419081/feedback', {active: true,insert: true,setParent: true});});
 }
 
 
-// ²Ëµ¥¿ª¹Ø
+// èœå•å¼€å…³
 function menu_switch(menu_status, Name, Tips) {
     if (menu_status == 'true'){
         GM_setValue(`${Name}`, false);
-        GM_notification({text: `ÒÑ¹Ø±Õ [${Tips}] ¹¦ÄÜ\n£¨µã»÷Ë¢ĞÂÍøÒ³ºóÉúĞ§£©`, timeout: 3500, onclick: function(){location.reload();}});
+        GM_notification({text: `å·²å…³é—­ [${Tips}] åŠŸèƒ½\nï¼ˆç‚¹å‡»åˆ·æ–°ç½‘é¡µåç”Ÿæ•ˆï¼‰`, timeout: 3500, onclick: function(){location.reload();}});
     }else{
         GM_setValue(`${Name}`, true);
-        GM_notification({text: `ÒÑ¿ªÆô [${Tips}] ¹¦ÄÜ\n£¨µã»÷Ë¢ĞÂÍøÒ³ºóÉúĞ§£©`, timeout: 3500, onclick: function(){location.reload();}});
+        GM_notification({text: `å·²å¼€å¯ [${Tips}] åŠŸèƒ½\nï¼ˆç‚¹å‡»åˆ·æ–°ç½‘é¡µåç”Ÿæ•ˆï¼‰`, timeout: 3500, onclick: function(){location.reload();}});
     }
-    registerMenuCommand(); // ÖØĞÂ×¢²á½Å±¾²Ëµ¥
+    registerMenuCommand(); // é‡æ–°æ³¨å†Œè„šæœ¬èœå•
 };
 
 
-// ·µ»Ø²Ëµ¥Öµ
+// è¿”å›èœå•å€¼
 function menu_value(menuName) {
     for (let menu of menu_ALL) {
         if (menu[0] == menuName) {
@@ -101,7 +101,7 @@ function menu_value(menuName) {
 }
 
 
-// ½Å±¾ÉèÖÃ
+// è„šæœ¬è®¾ç½®
 function menu_setting(type, title, tips, line, menu) {
     let _br = '', _html = `<style class="zhihuE_SettingStyle">.zhihuE_SettingRoot {position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%, -50%);-moz-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);-o-transform: translate(-50%, -50%);transform: translate(-50%, -50%);width: auto;min-width: 400px;max-width: 600px;height: auto;min-height: 150px;max-height: 400px;color: #535353;background-color: #fff;border-radius: 3px;}
 .zhihuE_SettingBackdrop_1 {position: fixed;top: 0;right: 0;bottom: 0;left: 0;z-index: 203;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-orient: vertical;-webkit-box-direction: normal;-ms-flex-direction: column;flex-direction: column;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;overflow-x: hidden;overflow-y: auto;-webkit-transition: opacity .3s ease-out;transition: opacity .3s ease-out;}
@@ -116,7 +116,7 @@ function menu_setting(type, title, tips, line, menu) {
 [data-theme="dark"] .zhihuE_SettingHeader {color: #d0d0d0;background-color: #2D333B;}
 [data-theme="dark"] .zhihuE_SettingMain hr {border: 0.5px solid #2d333b;}</style>
         <div class="zhihuE_SettingBackdrop_1"><div class="zhihuE_SettingBackdrop_2"></div><div class="zhihuE_SettingRoot">
-            <div class="zhihuE_SettingHeader">${title}<span class="zhihuE_SettingClose" title="µã»÷¹Ø±Õ"><svg class="Zi Zi--Close Modal-closeIcon" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M13.486 12l5.208-5.207a1.048 1.048 0 0 0-.006-1.483 1.046 1.046 0 0 0-1.482-.005L12 10.514 6.793 5.305a1.048 1.048 0 0 0-1.483.005 1.046 1.046 0 0 0-.005 1.483L10.514 12l-5.208 5.207a1.048 1.048 0 0 0 .006 1.483 1.046 1.046 0 0 0 1.482.005L12 13.486l5.207 5.208a1.048 1.048 0 0 0 1.483-.006 1.046 1.046 0 0 0 .005-1.482L13.486 12z" fill-rule="evenodd"></path></svg></span></div>
+            <div class="zhihuE_SettingHeader">${title}<span class="zhihuE_SettingClose" title="ç‚¹å‡»å…³é—­"><svg class="Zi Zi--Close Modal-closeIcon" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M13.486 12l5.208-5.207a1.048 1.048 0 0 0-.006-1.483 1.046 1.046 0 0 0-1.482-.005L12 10.514 6.793 5.305a1.048 1.048 0 0 0-1.483.005 1.046 1.046 0 0 0-.005 1.483L10.514 12l-5.208 5.207a1.048 1.048 0 0 0 .006 1.483 1.046 1.046 0 0 0 1.482.005L12 13.486l5.207 5.208a1.048 1.048 0 0 0 1.483-.006 1.046 1.046 0 0 0 .005-1.482L13.486 12z" fill-rule="evenodd"></path></svg></span></div>
             <div class="zhihuE_SettingMain"><p>${tips}</p><hr>`
     if (line) _br = '<br>'
     for (let i=0; i<menu.length; i++) {
@@ -127,13 +127,13 @@ function menu_setting(type, title, tips, line, menu) {
         }
     }
     _html += `</div></div></div>`
-    document.body.insertAdjacentHTML('beforeend', _html); // ²åÈëÍøÒ³Ä©Î²
-    setTimeout(function() { // ÑÓ³Ù 100 ºÁÃë£¬±ÜÃâÌ«¿ì
-        // ¹Ø±Õ°´Å¥ µã»÷ÊÂ¼ş
+    document.body.insertAdjacentHTML('beforeend', _html); // æ’å…¥ç½‘é¡µæœ«å°¾
+    setTimeout(function() { // å»¶è¿Ÿ 100 æ¯«ç§’ï¼Œé¿å…å¤ªå¿«
+        // å…³é—­æŒ‰é’® ç‚¹å‡»äº‹ä»¶
         document.querySelector('.zhihuE_SettingClose').onclick = function(){this.parentElement.parentElement.parentElement.remove();document.querySelector('.zhihuE_SettingStyle').remove();}
-        // µã»÷ÖÜÎ§¿Õ°×´¦ = µã»÷¹Ø±Õ°´Å¥
+        // ç‚¹å‡»å‘¨å›´ç©ºç™½å¤„ = ç‚¹å‡»å…³é—­æŒ‰é’®
         document.querySelector('.zhihuE_SettingBackdrop_2').onclick = function(event){if (event.target == this) {document.querySelector('.zhihuE_SettingClose').click();};}
-        // ¸´Ñ¡¿ò µã»÷ÊÂ¼ş
+        // å¤é€‰æ¡† ç‚¹å‡»äº‹ä»¶
         document.getElementsByName('zhihuE_Setting').forEach(function (checkBox) {
             checkBox.addEventListener('click', function(){if (this.checked) {GM_setValue(this.value, true);} else {GM_setValue(this.value, false);}});
         })
@@ -141,13 +141,13 @@ function menu_setting(type, title, tips, line, menu) {
 }
 
 
-// Ìí¼ÓÊÕÆğ»Ø´ğ¹Û²ìÆ÷
+// æ·»åŠ æ”¶èµ·å›ç­”è§‚å¯Ÿå™¨
 function getCollapsedAnswerObserver() {
     if (!window._collapsedAnswerObserver) {
         const observer = new MutationObserver(mutations => {
             for (const mutation of mutations) {
                 if (mutation.target.hasAttribute('script-collapsed')) return
-                // ¶ÌµÄ»Ø´ğ
+                // çŸ­çš„å›ç­”
                 if (mutation.target.classList.contains('RichContent')) {
                     for (const addedNode of mutation.addedNodes) {
                         if (addedNode.nodeType != Node.ELEMENT_NODE) continue
@@ -161,7 +161,7 @@ function getCollapsedAnswerObserver() {
                             return
                         }
                     }
-                // ³¤µÄ»Ø´ğ
+                // é•¿çš„å›ç­”
                 } else if (mutation.target.tagName === 'DIV' && !mutation.target.style.cssText && !mutation.target.className) {
                     if (mutation.target.parentElement.hasAttribute('script-collapsed')) return
                     //console.log('222',mutation.target, mutation.target.querySelector('.ContentItem-actions.Sticky [data-zop-retract-question]'))
@@ -196,7 +196,7 @@ function getCollapsedAnswerObserver() {
 }
 
 
-// Ä¬ÈÏÊÕÆğ»Ø´ğ
+// é»˜è®¤æ”¶èµ·å›ç­”
 function defaultCollapsedAnswer() {
     if (!menu_value('menu_defaultCollapsedAnswer')) return
     const observer = getCollapsedAnswerObserver();
@@ -206,14 +206,14 @@ function defaultCollapsedAnswer() {
 }
 
 
-// Ò»¼üÊÕÆğ»Ø´ğ£¨È«²¿£©
+// ä¸€é”®æ”¶èµ·å›ç­”ï¼ˆå…¨éƒ¨ï¼‰
 function collapsedAnswer() {
     if (!menu_value('menu_collapsedAnswer')) return
     //console.log('1111', document.querySelector('.CornerAnimayedFlex'))
     if (document.querySelector('.CornerAnimayedFlex') && !document.getElementById('collapsed-button')) {
         //console.log('2222')
         document.head.appendChild(document.createElement('style')).textContent = '.CornerButton{margin-bottom:8px !important;}.CornerButtons{bottom:45px !important;}';
-        document.querySelector('.CornerAnimayedFlex').insertAdjacentHTML('afterBegin', '<button id="collapsed-button" data-tooltip="ÊÕÆğÈ«²¿»Ø´ğ" data-tooltip-position="left" data-tooltip-will-hide-on-click="false" aria-label="ÊÕÆğÈ«²¿»Ø´ğ" type="button" class="Button CornerButton Button--plain"><svg class="ContentItem-arrowIcon is-active" aria-label="ÊÕÆğÈ«²¿»Ø´ğ" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path></svg></button>');
+        document.querySelector('.CornerAnimayedFlex').insertAdjacentHTML('afterBegin', '<button id="collapsed-button" data-tooltip="æ”¶èµ·å…¨éƒ¨å›ç­”" data-tooltip-position="left" data-tooltip-will-hide-on-click="false" aria-label="æ”¶èµ·å…¨éƒ¨å›ç­”" type="button" class="Button CornerButton Button--plain"><svg class="ContentItem-arrowIcon is-active" aria-label="æ”¶èµ·å…¨éƒ¨å›ç­”" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path></svg></button>');
         document.getElementById('collapsed-button').onclick = function () {
             if (location.pathname === '/' || location.pathname === '/hot' || location.pathname === '/follow') {
                 document.querySelectorAll('.ContentItem-rightButton').forEach(function (el) {
@@ -252,107 +252,107 @@ function collapsedAnswer() {
 }
 
 
-// ÊÕÆğµ±Ç°»Ø´ğ¡¢ÆÀÂÛ£¨¼àÌıµã»÷ÊÂ¼ş£¬µã»÷ÍøÒ³Á½²à¿Õ°×´¦£©
+// æ”¶èµ·å½“å‰å›ç­”ã€è¯„è®ºï¼ˆç›‘å¬ç‚¹å‡»äº‹ä»¶ï¼Œç‚¹å‡»ç½‘é¡µä¸¤ä¾§ç©ºç™½å¤„ï¼‰
 function collapsedNowAnswer(selectors) {
-    backToTop(selectors) // ¿ì½İ»Øµ½¶¥²¿
+    backToTop(selectors) // å¿«æ·å›åˆ°é¡¶éƒ¨
     if (!menu_value('menu_collapsedNowAnswer')) return
     document.querySelector(selectors).onclick = function(event){
         if (event.target == this) {
-            // ÏÂÃæÕâ¶ÎÖ÷ÒªÊÇ [ÊÕÆğ»Ø´ğ]£¬Ë³±ã [ÊÕÆğÆÀÂÛ]£¨Èç¹ûÕ¹¿ªÁËµÄ»°£©
+            // ä¸‹é¢è¿™æ®µä¸»è¦æ˜¯ [æ”¶èµ·å›ç­”]ï¼Œé¡ºä¾¿ [æ”¶èµ·è¯„è®º]ï¼ˆå¦‚æœå±•å¼€äº†çš„è¯ï¼‰
             let rightButton = document.querySelector('.ContentItem-actions.Sticky.RichContent-actions.is-fixed.is-bottom')
-            if (rightButton) { // Ğü¸¡ÔÚµ×²¿µÄ [ÊÕÆğ»Ø´ğ]£¨´ËÊ±ÕıÔÚä¯ÀÀ»Ø´ğÄÚÈİ [ÖĞ¼äÇøÓò]£©
-                // ¹Ì¶¨µÄ [ÊÕÆğÆÀÂÛ]£¨ÏÈ¿´¿´ÊÇ·ñÕ¹¿ªÆÀÂÛ£©
+            if (rightButton) { // æ‚¬æµ®åœ¨åº•éƒ¨çš„ [æ”¶èµ·å›ç­”]ï¼ˆæ­¤æ—¶æ­£åœ¨æµè§ˆå›ç­”å†…å®¹ [ä¸­é—´åŒºåŸŸ]ï¼‰
+                // å›ºå®šçš„ [æ”¶èµ·è¯„è®º]ï¼ˆå…ˆçœ‹çœ‹æ˜¯å¦å±•å¼€è¯„è®ºï¼‰
                 let commentCollapseButton = rightButton.querySelector('button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
                 //console.log('111')
-                if (commentCollapseButton && commentCollapseButton.textContent.indexOf('ÊÕÆğÆÀÂÛ') > -1) commentCollapseButton.click();
-                // ÔÙÈ¥ÊÕÆğ»Ø´ğ
+                if (commentCollapseButton && commentCollapseButton.textContent.indexOf('æ”¶èµ·è¯„è®º') > -1) commentCollapseButton.click();
+                // å†å»æ”¶èµ·å›ç­”
                 rightButton = rightButton.querySelector('.ContentItem-rightButton[data-zop-retract-question]')
                 //console.log('222')
                 if (rightButton) rightButton.click();
 
-            } else { // ¹Ì¶¨ÔÚ»Ø´ğµ×²¿µÄ [ÊÕÆğ»Ø´ğ]£¨´ËÊ±ÕıÔÚä¯ÀÀ»Ø´ğÄÚÈİ [Î²²¿ÇøÓò]£©
+            } else { // å›ºå®šåœ¨å›ç­”åº•éƒ¨çš„ [æ”¶èµ·å›ç­”]ï¼ˆæ­¤æ—¶æ­£åœ¨æµè§ˆå›ç­”å†…å®¹ [å°¾éƒ¨åŒºåŸŸ]ï¼‰
 
-                // Ğü¸¡µÄ [ÊÕÆğÆÀÂÛ]£¨´ËÊ±ÕıÔÚä¯ÀÀÆÀÂÛÄÚÈİ [ÖĞ¼äÇøÓò]£©
-                //if (getXpath('//button[text()="ÊÕÆğÆÀÂÛ"]',document.querySelector('.Comments-container'))) {getXpath('//button[text()="ÊÕÆğÆÀÂÛ"]',document.querySelector('.Comments-container')).click();console.log('asfaf')}
+                // æ‚¬æµ®çš„ [æ”¶èµ·è¯„è®º]ï¼ˆæ­¤æ—¶æ­£åœ¨æµè§ˆè¯„è®ºå†…å®¹ [ä¸­é—´åŒºåŸŸ]ï¼‰
+                //if (getXpath('//button[text()="æ”¶èµ·è¯„è®º"]',document.querySelector('.Comments-container'))) {getXpath('//button[text()="æ”¶èµ·è¯„è®º"]',document.querySelector('.Comments-container')).click();console.log('asfaf')}
 
                 let answerCollapseButton_ = false;
-                for (let el of document.querySelectorAll('.ContentItem-rightButton[data-zop-retract-question]')) { // ±éÀúËùÓĞ»Ø´ğµ×²¿µÄ [ÊÕÆğ] °´Å¥
-                    if (isElementInViewport(el)) { // ÅĞ¶Ï¸Ã [ÊÕÆğ] °´Å¥ÊÇ·ñÔÚ¿ÉÊÓÇøÓòÄÚ
-                        // ¹Ì¶¨µÄ [ÊÕÆğÆÀÂÛ]£¨ÏÈ¿´¿´ÊÇ·ñÕ¹¿ªÆÀÂÛ£¬¼´´æÔÚ [ÊÕÆğÆÀÂÛ] °´Å¥£©
+                for (let el of document.querySelectorAll('.ContentItem-rightButton[data-zop-retract-question]')) { // éå†æ‰€æœ‰å›ç­”åº•éƒ¨çš„ [æ”¶èµ·] æŒ‰é’®
+                    if (isElementInViewport(el)) { // åˆ¤æ–­è¯¥ [æ”¶èµ·] æŒ‰é’®æ˜¯å¦åœ¨å¯è§†åŒºåŸŸå†…
+                        // å›ºå®šçš„ [æ”¶èµ·è¯„è®º]ï¼ˆå…ˆçœ‹çœ‹æ˜¯å¦å±•å¼€è¯„è®ºï¼Œå³å­˜åœ¨ [æ”¶èµ·è¯„è®º] æŒ‰é’®ï¼‰
                         let commentCollapseButton = el.parentNode.querySelector('button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
-                        // Èç¹ûÕ¹¿ªÁËÆÀÂÛ£¬¾ÍÊÕÆğÆÀÂÛ
+                        // å¦‚æœå±•å¼€äº†è¯„è®ºï¼Œå°±æ”¶èµ·è¯„è®º
                         //console.log('333')
-                        //if (commentCollapseButton && commentCollapseButton.textContent.indexOf('ÊÕÆğÆÀÂÛ') > -1) commentCollapseButton.click();
-                        if (commentCollapseButton && commentCollapseButton.textContent.indexOf('ÊÕÆğÆÀÂÛ') > -1) {
+                        //if (commentCollapseButton && commentCollapseButton.textContent.indexOf('æ”¶èµ·è¯„è®º') > -1) commentCollapseButton.click();
+                        if (commentCollapseButton && commentCollapseButton.textContent.indexOf('æ”¶èµ·è¯„è®º') > -1) {
                             commentCollapseButton.click();
                             if (!isElementInViewport(commentCollapseButton)) scrollTo(0,el.offsetTop+50)
                         }
                         //console.log('444')
-                        el.click() // ÔÙÈ¥ÊÕÆğ»Ø´ğ
-                        answerCollapseButton_ = true; // Èç¹ûÕÒµ½²¢µã»÷ÊÕÆğÁË£¬¾ÍÃ»±ØÒªÖ´ĞĞÏÂÃæµÄ´úÂëÁË£¨¿ÉÊÓÇøÓòÖĞÃ»ÓĞ [ÊÕÆğ»Ø´ğ] Ê±£©
+                        el.click() // å†å»æ”¶èµ·å›ç­”
+                        answerCollapseButton_ = true; // å¦‚æœæ‰¾åˆ°å¹¶ç‚¹å‡»æ”¶èµ·äº†ï¼Œå°±æ²¡å¿…è¦æ‰§è¡Œä¸‹é¢çš„ä»£ç äº†ï¼ˆå¯è§†åŒºåŸŸä¸­æ²¡æœ‰ [æ”¶èµ·å›ç­”] æ—¶ï¼‰
                         break
                     }
                 }
-                // Õë¶ÔÍêÈ«¿´²»µ½ [ÊÕÆğ»Ø´ğ] °´Å¥Ê±£¨Èç [Í·²¿ÇøÓò]£¬ÒÔ¼°²¿·ÖÃ÷Ã÷ºÜ³¤È´²»ÏÔÊ¾Ğü¸¡ºáÌõµÄ»Ø´ğ£©
+                // é’ˆå¯¹å®Œå…¨çœ‹ä¸åˆ° [æ”¶èµ·å›ç­”] æŒ‰é’®æ—¶ï¼ˆå¦‚ [å¤´éƒ¨åŒºåŸŸ]ï¼Œä»¥åŠéƒ¨åˆ†æ˜æ˜å¾ˆé•¿å´ä¸æ˜¾ç¤ºæ‚¬æµ®æ¨ªæ¡çš„å›ç­”ï¼‰
                 if (!answerCollapseButton_) {
-                    for (let el of document.querySelectorAll('.List-item, .Card.AnswerCard, .Card.TopstoryItem')) { // ±éÀúËùÓĞ»Ø´ğÖ÷ÌåÔªËØ
-                        if (isElementInViewport_(el)) { // ÅĞ¶Ï¸Ã»Ø´ğÊÇ·ñÔÚ¿ÉÊÓÇøÓòÄÚ
-                            // ¹Ì¶¨µÄ [ÊÕÆğÆÀÂÛ]£¨ÏÈ¿´¿´ÊÇ·ñÕ¹¿ªÆÀÂÛ£¬¼´´æÔÚ [ÊÕÆğÆÀÂÛ] °´Å¥£©
+                    for (let el of document.querySelectorAll('.List-item, .Card.AnswerCard, .Card.TopstoryItem')) { // éå†æ‰€æœ‰å›ç­”ä¸»ä½“å…ƒç´ 
+                        if (isElementInViewport_(el)) { // åˆ¤æ–­è¯¥å›ç­”æ˜¯å¦åœ¨å¯è§†åŒºåŸŸå†…
+                            // å›ºå®šçš„ [æ”¶èµ·è¯„è®º]ï¼ˆå…ˆçœ‹çœ‹æ˜¯å¦å±•å¼€è¯„è®ºï¼Œå³å­˜åœ¨ [æ”¶èµ·è¯„è®º] æŒ‰é’®ï¼‰
                             let commentCollapseButton = el.querySelector('button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
-                            // Èç¹ûÕ¹¿ªÁËÆÀÂÛ£¬¾ÍÊÕÆğÆÀÂÛ
+                            // å¦‚æœå±•å¼€äº†è¯„è®ºï¼Œå°±æ”¶èµ·è¯„è®º
                             //console.log('555',commentCollapseButton)
-                            if (commentCollapseButton && commentCollapseButton.textContent.indexOf('ÊÕÆğÆÀÂÛ') > -1) {
+                            if (commentCollapseButton && commentCollapseButton.textContent.indexOf('æ”¶èµ·è¯„è®º') > -1) {
                                 commentCollapseButton.click();
                                 if (!isElementInViewport(commentCollapseButton)) scrollTo(0,el.offsetTop+50)
                             }
                             let answerCollapseButton__ = el.querySelector('.ContentItem-rightButton[data-zop-retract-question]');
                             //console.log('666')
-                            if (answerCollapseButton__) answerCollapseButton__.click() // ÔÙÈ¥ÊÕÆğ»Ø´ğ
+                            if (answerCollapseButton__) answerCollapseButton__.click() // å†å»æ”¶èµ·å›ç­”
                             break
                         }
                     }
                 }
             }
 
-            // ÏÂÃæÕâ¶ÎÖ»Õë¶Ô [ÊÕÆğÆÀÂÛ]£¨Èç¹ûÕ¹¿ªÁËµÄ»°£©
+            // ä¸‹é¢è¿™æ®µåªé’ˆå¯¹ [æ”¶èµ·è¯„è®º]ï¼ˆå¦‚æœå±•å¼€äº†çš„è¯ï¼‰
             let commentCollapseButton_ = false, commentCollapseButton__ = false;
-            // Ğü¸¡µÄ [ÊÕÆğÆÀÂÛ]£¨´ËÊ±ÕıÔÚä¯ÀÀÆÀÂÛÄÚÈİ [ÖĞ¼äÇøÓò]£©
-            let commentCollapseButton = getXpath('//button[text()="ÊÕÆğÆÀÂÛ"]',document.querySelector('.Comments-container'))
+            // æ‚¬æµ®çš„ [æ”¶èµ·è¯„è®º]ï¼ˆæ­¤æ—¶æ­£åœ¨æµè§ˆè¯„è®ºå†…å®¹ [ä¸­é—´åŒºåŸŸ]ï¼‰
+            let commentCollapseButton = getXpath('//button[text()="æ”¶èµ·è¯„è®º"]',document.querySelector('.Comments-container'))
             if (commentCollapseButton) {
                 //console.log('777', commentCollapseButton)
                 commentCollapseButton.click();
-            } else { // ¹Ì¶¨µÄ [ÊÕÆğÆÀÂÛ]£¨´ËÊ±ÕıÔÚä¯ÀÀÆÀÂÛÄÚÈİ [Í·²¿ÇøÓò]£©
+            } else { // å›ºå®šçš„ [æ”¶èµ·è¯„è®º]ï¼ˆæ­¤æ—¶æ­£åœ¨æµè§ˆè¯„è®ºå†…å®¹ [å¤´éƒ¨åŒºåŸŸ]ï¼‰
                 let commentCollapseButton_1 = document.querySelectorAll('.ContentItem-actions > button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type, .ContentItem-action > button.Button.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
                 if (commentCollapseButton_1.length > 0) {
                     for (let el of commentCollapseButton_1) {
-                        if (el.textContent.indexOf('ÊÕÆğÆÀÂÛ') > -1) {
+                        if (el.textContent.indexOf('æ”¶èµ·è¯„è®º') > -1) {
                             if (isElementInViewport(el)) {
                                 //console.log('888')
                                 el.click()
-                                commentCollapseButton_ = true // Èç¹ûÕÒµ½²¢µã»÷ÁË£¬¾ÍÃ»±ØÒªÖ´ĞĞÏÂÃæµÄ´úÂëÁË£¨¿ÉÊÓÇøÓòÖĞÃ»ÓĞ [ÊÕÆğÆÀÂÛ] Ê±£©
+                                commentCollapseButton_ = true // å¦‚æœæ‰¾åˆ°å¹¶ç‚¹å‡»äº†ï¼Œå°±æ²¡å¿…è¦æ‰§è¡Œä¸‹é¢çš„ä»£ç äº†ï¼ˆå¯è§†åŒºåŸŸä¸­æ²¡æœ‰ [æ”¶èµ·è¯„è®º] æ—¶ï¼‰
                                 break
                             }
                         }
                     }
                 }
-                if (commentCollapseButton_ == false) { // ¿ÉÊÓÇøÓòÖĞÃ»ÓĞ [ÊÕÆğÆÀÂÛ] Ê±£¨´ËÊ±ÕıÔÚä¯ÀÀÆÀÂÛÄÚÈİ [Í·²¿ÇøÓò] + [Î²²¿ÇøÓò](²»ÉÏ²»ÏÂµÄ£¬¼È¿´²»µ½¹Ì¶¨µÄ [ÊÕÆğÆÀÂÛ] ÓÖ¿´²»µ½Ğü¸¡µÄ [ÊÕÆğÆÀÂÛ])£©£¬ĞèÒªÅĞ¶Ï¿ÉÊÓÇøÓòÖĞÊÇ·ñ´æÔÚÆÀÂÛÔªËØ
+                if (commentCollapseButton_ == false) { // å¯è§†åŒºåŸŸä¸­æ²¡æœ‰ [æ”¶èµ·è¯„è®º] æ—¶ï¼ˆæ­¤æ—¶æ­£åœ¨æµè§ˆè¯„è®ºå†…å®¹ [å¤´éƒ¨åŒºåŸŸ] + [å°¾éƒ¨åŒºåŸŸ](ä¸ä¸Šä¸ä¸‹çš„ï¼Œæ—¢çœ‹ä¸åˆ°å›ºå®šçš„ [æ”¶èµ·è¯„è®º] åˆçœ‹ä¸åˆ°æ‚¬æµ®çš„ [æ”¶èµ·è¯„è®º])ï¼‰ï¼Œéœ€è¦åˆ¤æ–­å¯è§†åŒºåŸŸä¸­æ˜¯å¦å­˜åœ¨è¯„è®ºå…ƒç´ 
                     let commentCollapseButton_1 = document.querySelectorAll('.Comments-container')
                     if (commentCollapseButton_1.length > 0) {
                         for (let el of commentCollapseButton_1) {
                             if (isElementInViewport(el)) {
                                 let parentElement = findParentElement(el, 'List-item') || findParentElement(el, 'Card '),
                                     commentCollapseButton = parentElement.querySelector('.ContentItem-actions > button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
-                                if (commentCollapseButton.textContent.indexOf('ÊÕÆğÆÀÂÛ') > -1) {
+                                if (commentCollapseButton.textContent.indexOf('æ”¶èµ·è¯„è®º') > -1) {
                                     //console.log('999')
                                     commentCollapseButton.click()
                                     if (!isElementInViewport(commentCollapseButton)) {console.log(parentElement,parentElement.offsetTop,parentElement.offsetHeight);scrollTo(0,parentElement.offsetTop+parentElement.offsetHeight-50)}
-                                    commentCollapseButton__ = true // Èç¹ûÕÒµ½²¢µã»÷ÁË£¬¾ÍÃ»±ØÒªÖ´ĞĞÏÂÃæµÄ´úÂëÁË£¨¿ÉÊÓÇøÓòÖĞÃ»ÓĞ ÆÀÂÛÔªËØ Ê±£©
+                                    commentCollapseButton__ = true // å¦‚æœæ‰¾åˆ°å¹¶ç‚¹å‡»äº†ï¼Œå°±æ²¡å¿…è¦æ‰§è¡Œä¸‹é¢çš„ä»£ç äº†ï¼ˆå¯è§†åŒºåŸŸä¸­æ²¡æœ‰ è¯„è®ºå…ƒç´  æ—¶ï¼‰
                                     break
                                 }
                             }
                         }
                     }
-                    if (commentCollapseButton__ == false) { // Èç¹ûÉÏÃæµÄ¶¼Ã»ÕÒµ½£¬ÄÇÃ´¾Í³¢ÊÔÑ°ÕÒÆÀÂÛÄ©Î²µÄ [ÆÀÂÛ»Ø¸´¿ò]
+                    if (commentCollapseButton__ == false) { // å¦‚æœä¸Šé¢çš„éƒ½æ²¡æ‰¾åˆ°ï¼Œé‚£ä¹ˆå°±å°è¯•å¯»æ‰¾è¯„è®ºæœ«å°¾çš„ [è¯„è®ºå›å¤æ¡†]
                         let commentCollapseButton_2 = document.querySelectorAll('.Editable-content')
                         if (commentCollapseButton_2.length > 0) {
                             for (let el of commentCollapseButton_2) {
@@ -360,7 +360,7 @@ function collapsedNowAnswer(selectors) {
                                     let parentElement = findParentElement(el, 'List-item') || findParentElement(el, 'Card '),
                                     commentCollapseButton = parentElement.querySelector('.ContentItem-actions > button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
                                     //console.log(commentCollapseButton)
-                                    if (commentCollapseButton.textContent.indexOf('ÊÕÆğÆÀÂÛ') > -1) {
+                                    if (commentCollapseButton.textContent.indexOf('æ”¶èµ·è¯„è®º') > -1) {
                                         //console.log('101010')
                                         commentCollapseButton.click()
                                         if (!isElementInViewport(commentCollapseButton)) {console.log(parentElement,parentElement.offsetTop,parentElement.offsetHeight);scrollTo(0,parentElement.offsetTop+parentElement.offsetHeight-50)}
@@ -377,7 +377,7 @@ function collapsedNowAnswer(selectors) {
 }
 
 
-// »Øµ½¶¥²¿£¨¼àÌıµã»÷ÊÂ¼ş£¬Êó±êÓÒ¼üµã»÷ÍøÒ³Á½²à¿Õ°×´¦£©
+// å›åˆ°é¡¶éƒ¨ï¼ˆç›‘å¬ç‚¹å‡»äº‹ä»¶ï¼Œé¼ æ ‡å³é”®ç‚¹å‡»ç½‘é¡µä¸¤ä¾§ç©ºç™½å¤„ï¼‰
 function backToTop(selectors) {
     if (!menu_value('menu_backToTop')) return
     document.querySelector(selectors).oncontextmenu = function(event){
@@ -389,7 +389,7 @@ function backToTop(selectors) {
 }
 
 
-//»ñÈ¡ÔªËØÊÇ·ñÔÚ¿ÉÊÓÇøÓò£¨ÍêÈ«¿É¼û£©
+//è·å–å…ƒç´ æ˜¯å¦åœ¨å¯è§†åŒºåŸŸï¼ˆå®Œå…¨å¯è§ï¼‰
 function isElementInViewport(el) {
     let rect = el.getBoundingClientRect();
     return (
@@ -399,7 +399,7 @@ function isElementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
-//»ñÈ¡ÔªËØÊÇ·ñÔÚ¿ÉÊÓÇøÓò£¨²¿·Ö¿É¼û£©
+//è·å–å…ƒç´ æ˜¯å¦åœ¨å¯è§†åŒºåŸŸï¼ˆéƒ¨åˆ†å¯è§ï¼‰
 function isElementInViewport_(el) {
     let rect = el.getBoundingClientRect();
     return (
@@ -409,24 +409,24 @@ function isElementInViewport_(el) {
 }
 
 
-// ×Ô¶¨ÒåÆÁ±ÎÓÃ»§
+// è‡ªå®šä¹‰å±è”½ç”¨æˆ·
 function customBlockUsers() {
     let nowBlockUsers = '';
     menu_value('menu_customBlockUsers').forEach(function(item){nowBlockUsers += '|' + item})
     //console.log(nowBlockUsers.replace('|',''))
-    let newBlockUsers = prompt('±à¼­ [×Ô¶¨ÒåÆÁ±ÎÓÃ»§]\n£¨²»Í¬ÓÃ»§ÃûÖ®¼äÊ¹ÓÃ "|" ·Ö¸ô£¬ÀıÈç£ºÓÃ»§A|ÓÃ»§B|ÓÃ»§C £©', nowBlockUsers.replace('|',''));
+    let newBlockUsers = prompt('ç¼–è¾‘ [è‡ªå®šä¹‰å±è”½ç”¨æˆ·]\nï¼ˆä¸åŒç”¨æˆ·åä¹‹é—´ä½¿ç”¨ "|" åˆ†éš”ï¼Œä¾‹å¦‚ï¼šç”¨æˆ·A|ç”¨æˆ·B|ç”¨æˆ·C ï¼‰', nowBlockUsers.replace('|',''));
     if (newBlockUsers === '') {
         GM_setValue('menu_customBlockUsers', []);
-        registerMenuCommand(); // ÖØĞÂ×¢²á½Å±¾²Ëµ¥
+        registerMenuCommand(); // é‡æ–°æ³¨å†Œè„šæœ¬èœå•
     } else if (newBlockUsers != null) {
-        let newBlockUsers = '¹ÊÊÂµµ°¸¾Ö|ÑÎÑ¡ÍÆ¼ö|ÑÎÑ¡¿ÆÆÕ|ÑÎÑ¡³É³¤¼Æ»®|ÖªºõÑÎÑ¡»áÔ±|ÖªºõÑÎÑ¡´´×÷Õß|ÑÎÑ¡ĞÄÀí|ÑÎÑ¡½¡¿µ±ØĞŞ¿Î|ÑÎÑ¡ÆæÃîÎïÓï|ÑÎÑ¡Éú»î¹İ|ÑÎÑ¡Ö°³¡|ÑÎÑ¡ÎÄÑ§ÕçÑ¡|ÑÎÑ¡×÷ÕßĞ¡¹Ü¼Ò|ÑÎÑ¡²©Îï¹İ|ÑÎÑ¡µã½ğ|ÑÎÑ¡²âÆÀÊÒ|ÑÎÑ¡¿Æ¼¼Ç°ÑØ|ÑÎÑ¡»áÔ±¾«Æ·|Ïó¸ç|ÀÏÑîÊåÁÄÖ¾Ô¸Ìî±¨|»¢É½ĞĞ²»ĞĞ|¸¥À¼¿ËÑî|ÎÒ±ä³ÉÁËÒ»Ìõ¹·|Á÷ÀËµÄ¸òó¡|²Ü¶àÓã|Ô²ÅÖÖ×|ĞÄÀíÍ»ÆÆÓë³É³¤|»Âº£ÎŞÉù|°²ºÃĞÄ|pb|pansz|Íõ¿Éµ¤|Ö°³¡ÉıÇ¨Ëæ±Ê|Ö°³¡Ç±¹æÔò|Ë¯Ç°ÏûÏ¢|ºêÉ£|¹è¹ÈITÅÖ×Ó|÷ìÎ÷Î×Î×|ÎÂ¾Æ|';
+        let newBlockUsers = 'æ•…äº‹æ¡£æ¡ˆå±€|ç›é€‰æ¨è|ç›é€‰ç§‘æ™®|ç›é€‰æˆé•¿è®¡åˆ’|çŸ¥ä¹ç›é€‰ä¼šå‘˜|çŸ¥ä¹ç›é€‰åˆ›ä½œè€…|ç›é€‰å¿ƒç†|ç›é€‰å¥åº·å¿…ä¿®è¯¾|ç›é€‰å¥‡å¦™ç‰©è¯­|ç›é€‰ç”Ÿæ´»é¦†|ç›é€‰èŒåœº|ç›é€‰æ–‡å­¦ç”„é€‰|ç›é€‰ä½œè€…å°ç®¡å®¶|ç›é€‰åšç‰©é¦†|ç›é€‰ç‚¹é‡‘|ç›é€‰æµ‹è¯„å®¤|ç›é€‰ç§‘æŠ€å‰æ²¿|ç›é€‰ä¼šå‘˜ç²¾å“|è±¡å“¥|è€æ¨å”èŠå¿—æ„¿å¡«æŠ¥|è™å±±è¡Œä¸è¡Œ|å¼—å…°å…‹æ¨|æˆ‘å˜æˆäº†ä¸€æ¡ç‹—|æµæµªçš„è›¤èŸ†|æ›¹å¤šé±¼|åœ†èƒ–è‚¿|å¿ƒç†çªç ´ä¸æˆé•¿|å®¦æµ·æ— å£°|å®‰å¥½å¿ƒ|pb|pansz|ç‹å¯ä¸¹|èŒåœºå‡è¿éšç¬”|èŒåœºæ½œè§„åˆ™|ç¡å‰æ¶ˆæ¯|å®æ¡‘|ç¡…è°·ITèƒ–å­|æ»¡åˆ†æ¿€å…‰æª|';
         GM_setValue('menu_customBlockUsers', newBlockUsers.split('|'));
-        registerMenuCommand(); // ÖØĞÂ×¢²á½Å±¾²Ëµ¥
+        registerMenuCommand(); // é‡æ–°æ³¨å†Œè„šæœ¬èœå•
     }
 };
 
 
-// ÆÁ±ÎÖ¸¶¨ÓÃ»§
+// å±è”½æŒ‡å®šç”¨æˆ·
 function blockUsers(type) {
     if (!menu_value('menu_blockUsers')) return
     if (!menu_value('menu_customBlockUsers') || menu_value('menu_customBlockUsers').length < 1) return
@@ -444,20 +444,20 @@ function blockUsers(type) {
             blockUsers_('.List-item.TopicFeedItem', 'List-item TopicFeedItem');
             break;
         case 'people':
-            blockUsers_button_people(); // Ìí¼ÓÆÁ±ÎÓÃ»§°´Å¥£¨ÓÃ»§Ö÷Ò³£©
+            blockUsers_button_people(); // æ·»åŠ å±è”½ç”¨æˆ·æŒ‰é’®ï¼ˆç”¨æˆ·ä¸»é¡µï¼‰
             break;
     }
-    blockUsers_comment(); //       ÆÀÂÛÇø
-    blockUsers_button(); //        ¼ÓÈëºÚÃûµ¥°´Å¥
+    blockUsers_comment(); //       è¯„è®ºåŒº
+    blockUsers_button(); //        åŠ å…¥é»‘åå•æŒ‰é’®
 
     function blockUsers_(className1, className2) {
-        // Ç°¼¸ÌõÒòÎªÊÇÖ±½Ó¼ÓÔØµÄ£¬¶ø²»ÊÇ¶¯Ì¬²åÈëÍøÒ³µÄ£¬ËùÒÔĞèÒªµ¥¶ÀÅĞ¶Ï
+        // å‰å‡ æ¡å› ä¸ºæ˜¯ç›´æ¥åŠ è½½çš„ï¼Œè€Œä¸æ˜¯åŠ¨æ€æ’å…¥ç½‘é¡µçš„ï¼Œæ‰€ä»¥éœ€è¦å•ç‹¬åˆ¤æ–­
         function blockKeywords_now() {
             document.querySelectorAll(className1).forEach(function(item1){
-                let item = item1.querySelector('.ContentItem.AnswerItem, .ContentItem.ArticleItem'); // ÓÃ»§ÃûËùÔÚÔªËØ
+                let item = item1.querySelector('.ContentItem.AnswerItem, .ContentItem.ArticleItem'); // ç”¨æˆ·åæ‰€åœ¨å…ƒç´ 
                 if (item) {
-                    for (const keyword of menu_value('menu_customBlockUsers')) { // ±éÀúÓÃ»§ÃûºÚÃûµ¥
-                        if (keyword != '' && item.dataset.zop.indexOf('authorName":"' + keyword + '",') > -1) { // ÕÒµ½¾ÍÉ¾³ı¸ÃĞÅÏ¢Á÷
+                    for (const keyword of menu_value('menu_customBlockUsers')) { // éå†ç”¨æˆ·åé»‘åå•
+                        if (keyword != '' && item.dataset.zop.indexOf('authorName":"' + keyword + '",') > -1) { // æ‰¾åˆ°å°±åˆ é™¤è¯¥ä¿¡æ¯æµ
                             console.log(item.dataset.zop);
                             item1.hidden = true;
                             break;
@@ -469,19 +469,19 @@ function blockUsers(type) {
 
         blockKeywords_now();
         window.addEventListener('urlchange', function(){
-            setTimeout(blockKeywords_now, 1000); // ÍøÒ³ URL ±ä»¯ºóÔÙ´ÎÖ´ĞĞ
+            setTimeout(blockKeywords_now, 1000); // ç½‘é¡µ URL å˜åŒ–åå†æ¬¡æ‰§è¡Œ
         })
 
-        // Õâ¸öÊÇ¼àÌıÍøÒ³²åÈëÊÂ¼ş£¬ÓÃÀ´ÅĞ¶ÏºóĞøÍøÒ³¶¯Ì¬²åÈëµÄÔªËØ
+        // è¿™ä¸ªæ˜¯ç›‘å¬ç½‘é¡µæ’å…¥äº‹ä»¶ï¼Œç”¨æ¥åˆ¤æ–­åç»­ç½‘é¡µåŠ¨æ€æ’å…¥çš„å…ƒç´ 
         const callback = (mutationsList, observer) => {
             for (const mutation of mutationsList) {
                 for (const target of mutation.addedNodes) {
                     if (target.nodeType != 1) return
                     if (target.className === className2) {
-                        let item = target.querySelector('.ContentItem.AnswerItem, .ContentItem.ArticleItem'); // ÓÃ»§ÃûËùÔÚÔªËØ
+                        let item = target.querySelector('.ContentItem.AnswerItem, .ContentItem.ArticleItem'); // ç”¨æˆ·åæ‰€åœ¨å…ƒç´ 
                         if (item) {
-                            for (const keyword of menu_value('menu_customBlockUsers')) { // ±éÀúÓÃ»§ÃûºÚÃûµ¥
-                                if (keyword != '' && item.dataset.zop.indexOf('authorName":"' + keyword + '",') > -1) { // ÕÒµ½¾ÍÉ¾³ı¸ÃĞÅÏ¢Á÷
+                            for (const keyword of menu_value('menu_customBlockUsers')) { // éå†ç”¨æˆ·åé»‘åå•
+                                if (keyword != '' && item.dataset.zop.indexOf('authorName":"' + keyword + '",') > -1) { // æ‰¾åˆ°å°±åˆ é™¤è¯¥ä¿¡æ¯æµ
                                     console.log(item.dataset.zop);
                                     target.hidden = true;
                                     break;
@@ -505,8 +505,8 @@ function blockUsers(type) {
                     if (target.className === 'List-item' || target.className === 'Card AnswerCard') {
                         let item1 = target.querySelector('.ContentItem.AnswerItem');
                         if (item1) {
-                            menu_value('menu_customBlockUsers').forEach(function(item2){ // ±éÀúÓÃ»§ºÚÃûµ¥
-                                if (item1.dataset.zop.indexOf('authorName":"' + item2 + '",') > -1) { // ÕÒµ½¾ÍÉ¾³ı¸Ã»Ø´ğ
+                            menu_value('menu_customBlockUsers').forEach(function(item2){ // éå†ç”¨æˆ·é»‘åå•
+                                if (item1.dataset.zop.indexOf('authorName":"' + item2 + '",') > -1) { // æ‰¾åˆ°å°±åˆ é™¤è¯¥å›ç­”
                                     console.log(item1.dataset.zop)
                                     target.hidden = true;
                                 }
@@ -524,8 +524,8 @@ function blockUsers(type) {
                     target.querySelectorAll('.List-item, .Card.AnswerCard').forEach(function(item){
                         let item1 = item.querySelector('.ContentItem.AnswerItem');
                         if (item1) {
-                            menu_value('menu_customBlockUsers').forEach(function(item2){ // ±éÀúÓÃ»§ºÚÃûµ¥
-                                if (item1.dataset.zop.indexOf('authorName":"' + item2 + '",') > -1) { // ÕÒµ½¾ÍÉ¾³ı¸Ã»Ø´ğ
+                            menu_value('menu_customBlockUsers').forEach(function(item2){ // éå†ç”¨æˆ·é»‘åå•
+                                if (item1.dataset.zop.indexOf('authorName":"' + item2 + '",') > -1) { // æ‰¾åˆ°å°±åˆ é™¤è¯¥å›ç­”
                                     console.log(item1.dataset.zop)
                                     item.hidden = true;
                                 }
@@ -536,20 +536,20 @@ function blockUsers(type) {
             }
         };
 
-        if (location.pathname.indexOf('/answer/') > -1) { // »Ø´ğÒ³£¨¾ÍÊÇÖ»ÓĞÈı¸ö»Ø´ğµÄÒ³Ãæ£©
+        if (location.pathname.indexOf('/answer/') > -1) { // å›ç­”é¡µï¼ˆå°±æ˜¯åªæœ‰ä¸‰ä¸ªå›ç­”çš„é¡µé¢ï¼‰
             const observer = new MutationObserver(blockUsers_question_answer_);
             observer.observe(document, { childList: true, subtree: true });
-        } else { // ÎÊÌâÒ³£¨¿ÉÒÔÏÔÊ¾ËùÓĞ»Ø´ğµÄÒ³Ãæ£©
+        } else { // é—®é¢˜é¡µï¼ˆå¯ä»¥æ˜¾ç¤ºæ‰€æœ‰å›ç­”çš„é¡µé¢ï¼‰
             const observer = new MutationObserver(blockUsers_question_);
             observer.observe(document, { childList: true, subtree: true });
         }
 
-        // Õë¶ÔµÄÊÇ´ò¿ªÍøÒ³ºóÖ±½Ó¼ÓÔØµÄÇ°Ãæ¼¸¸ö»Ø´ğ£¨ÉÏÃæÄÄĞ©ÊÇÕë¶Ô¶¯Ì¬¼ÓÔØµÄ»Ø´ğ£©
+        // é’ˆå¯¹çš„æ˜¯æ‰“å¼€ç½‘é¡µåç›´æ¥åŠ è½½çš„å‰é¢å‡ ä¸ªå›ç­”ï¼ˆä¸Šé¢å“ªäº›æ˜¯é’ˆå¯¹åŠ¨æ€åŠ è½½çš„å›ç­”ï¼‰
         document.querySelectorAll('.List-item, .Card.AnswerCard').forEach(function(item){
             let item1 = item.querySelector('.ContentItem.AnswerItem');
             if (item1) {
-                menu_value('menu_customBlockUsers').forEach(function(item2){ // ±éÀúÓÃ»§ºÚÃûµ¥
-                    if (item1.dataset.zop.indexOf('authorName":"' + item2 + '",') > -1) { // ÕÒµ½¾ÍÉ¾³ı¸Ã»Ø´ğ
+                menu_value('menu_customBlockUsers').forEach(function(item2){ // éå†ç”¨æˆ·é»‘åå•
+                    if (item1.dataset.zop.indexOf('authorName":"' + item2 + '",') > -1) { // æ‰¾åˆ°å°±åˆ é™¤è¯¥å›ç­”
                         console.log(item1.dataset.zop)
                         item.hidden = true;
                     }
@@ -560,12 +560,12 @@ function blockUsers(type) {
 
     function blockUsers_search() {
         function blockUsers_now() {
-            if (location.search.indexOf('type=content') === -1) return // Ä¿Ç°Ö»Ö§³ÖËÑË÷Ò³µÄ [×ÛºÏ]
+            if (location.search.indexOf('type=content') === -1) return // ç›®å‰åªæ”¯æŒæœç´¢é¡µçš„ [ç»¼åˆ]
             document.querySelectorAll('.Card.SearchResult-Card[data-za-detail-view-path-module="AnswerItem"], .Card.SearchResult-Card[data-za-detail-view-path-module="PostItem"]').forEach(function(item1){
-                let item = item1.querySelector('.RichText.ztext.CopyrightRichText-richText b'); // ÓÃ»§ÃûËùÔÚÔªËØ
+                let item = item1.querySelector('.RichText.ztext.CopyrightRichText-richText b'); // ç”¨æˆ·åæ‰€åœ¨å…ƒç´ 
                 if (item) {
-                    for (const keyword of menu_value('menu_customBlockUsers')) { // ±éÀúÓÃ»§ÃûºÚÃûµ¥
-                        if (keyword != '' && item.textContent === keyword) { // ÕÒµ½¾ÍÉ¾³ı¸ÃĞÅÏ¢Á÷
+                    for (const keyword of menu_value('menu_customBlockUsers')) { // éå†ç”¨æˆ·åé»‘åå•
+                        if (keyword != '' && item.textContent === keyword) { // æ‰¾åˆ°å°±åˆ é™¤è¯¥ä¿¡æ¯æµ
                             console.log(item.textContent);
                             item1.hidden = true;
                             break;
@@ -577,18 +577,18 @@ function blockUsers(type) {
 
         setTimeout(blockUsers_now, 2000);
         window.addEventListener('urlchange', function(){
-            setTimeout(blockUsers_now, 1000); // ÍøÒ³ URL ±ä»¯ºóÔÙ´ÎÖ´ĞĞ
+            setTimeout(blockUsers_now, 1000); // ç½‘é¡µ URL å˜åŒ–åå†æ¬¡æ‰§è¡Œ
         })
 
         const callback = (mutationsList, observer) => {
-            if (location.search.indexOf('type=content') === -1) return // Ä¿Ç°Ö»Ö§³ÖËÑË÷Ò³µÄ [×ÛºÏ]
+            if (location.search.indexOf('type=content') === -1) return // ç›®å‰åªæ”¯æŒæœç´¢é¡µçš„ [ç»¼åˆ]
             for (const mutation of mutationsList) {
                 for (const target of mutation.addedNodes) {
                     if (target.nodeType != 1) return
                     let item = target.querySelector('.Card.SearchResult-Card[data-za-detail-view-path-module="AnswerItem"] .RichText.ztext.CopyrightRichText-richText b, .Card.SearchResult-Card[data-za-detail-view-path-module="PostItem"] .RichText.ztext.CopyrightRichText-richText b');
                     if (item) {
-                        for (const keyword of menu_value('menu_customBlockUsers')) { // ±éÀúÓÃ»§ÃûºÚÃûµ¥
-                            if (keyword != '' && item.textContent === keyword) { // ÕÒµ½¾ÍÉ¾³ı¸ÃĞÅÏ¢Á÷
+                        for (const keyword of menu_value('menu_customBlockUsers')) { // éå†ç”¨æˆ·åé»‘åå•
+                            if (keyword != '' && item.textContent === keyword) { // æ‰¾åˆ°å°±åˆ é™¤è¯¥ä¿¡æ¯æµ
                                 console.log(item.textContent);
                                 target.hidden = true;
                                 break;
@@ -610,20 +610,20 @@ function blockUsers(type) {
                     let item = target.querySelector('img.Avatar[width="24"]')
                     if (item) {
                         //console.log(item)
-                        menu_value('menu_customBlockUsers').forEach(function(item1){ // ±éÀúÓÃ»§ºÚÃûµ¥
+                        menu_value('menu_customBlockUsers').forEach(function(item1){ // éå†ç”¨æˆ·é»‘åå•
                             //console.log(item.alt,item1)
-                            if (item.alt === item1) { // ÕÒµ½¾ÍÉ¾³ı¸ÃËÑË÷½á¹û
+                            if (item.alt === item1) { // æ‰¾åˆ°å°±åˆ é™¤è¯¥æœç´¢ç»“æœ
                                 item.parentElement.parentElement.style.display = "none";
                             }
                         })
 
-                        // Ìí¼ÓÆÁ±ÎÓÃ»§°´Å¥£¨µãÔŞ¡¢»Ø¸´µÈ°´Å¥ºóÃæ£©
+                        // æ·»åŠ å±è”½ç”¨æˆ·æŒ‰é’®ï¼ˆç‚¹èµã€å›å¤ç­‰æŒ‰é’®åé¢ï¼‰
                         /*if (item) {
                             let footer = findParentElement(item, 'CommentItemV2-meta', true).parentElement.querySelector('.CommentItemV2-metaSibling > .CommentItemV2-footer'),
                                 userid = item.parentElement;
                             if (userid && footer && !footer.lastElementChild.dataset.name) {
                                 userid = userid.href.split('/')[4];
-                                footer.insertAdjacentHTML('beforeend',`<button type="button" data-name="${item.alt}" data-userid="${userid}" class="Button CommentItemV2-hoverBtn Button--plain"><span style="display: inline-flex; align-items: center;">&#8203;<svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="transform: rotate(180deg); margin-right: 5px;"><path d="M18.376 5.624c-3.498-3.499-9.254-3.499-12.752 0-3.499 3.498-3.499 9.254 0 12.752 3.498 3.499 9.254 3.499 12.752 0 3.499-3.498 3.499-9.14 0-12.752zm-1.693 1.693c2.37 2.37 2.596 6.094.678 8.69l-9.367-9.48c2.708-1.919 6.32-1.58 8.69.79zm-9.48 9.48c-2.37-2.37-2.595-6.095-.676-8.69l9.48 9.48c-2.822 1.918-6.433 1.58-8.803-.79z" fill-rule="evenodd"></path></svg></span>ÆÁ±ÎÓÃ»§</button>`);
+                                footer.insertAdjacentHTML('beforeend',`<button type="button" data-name="${item.alt}" data-userid="${userid}" class="Button CommentItemV2-hoverBtn Button--plain"><span style="display: inline-flex; align-items: center;">&#8203;<svg class="Zi Zi--Like" fill="currentColor" viewBox="0 0 24 24" width="16" height="16" style="transform: rotate(180deg); margin-right: 5px;"><path d="M18.376 5.624c-3.498-3.499-9.254-3.499-12.752 0-3.499 3.498-3.499 9.254 0 12.752 3.498 3.499 9.254 3.499 12.752 0 3.499-3.498 3.499-9.14 0-12.752zm-1.693 1.693c2.37 2.37 2.596 6.094.678 8.69l-9.367-9.48c2.708-1.919 6.32-1.58 8.69.79zm-9.48 9.48c-2.37-2.37-2.595-6.095-.676-8.69l9.48 9.48c-2.822 1.918-6.433 1.58-8.803-.79z" fill-rule="evenodd"></path></svg></span>å±è”½ç”¨æˆ·</button>`);
                                 footer.lastElementChild.onclick = function(){blockUsers_button_add(this.dataset.name, this.dataset.userid, false)}
                             }
                         }*/
@@ -636,7 +636,7 @@ function blockUsers(type) {
     }
 
 
-    // Ìí¼ÓÆÁ±ÎÓÃ»§°´Å¥£¨ÓÃ»§ĞÅÏ¢Ğü¸¡¿òÖĞ£©
+    // æ·»åŠ å±è”½ç”¨æˆ·æŒ‰é’®ï¼ˆç”¨æˆ·ä¿¡æ¯æ‚¬æµ®æ¡†ä¸­ï¼‰
     function blockUsers_button() {
         const callback = (mutationsList, observer) => {
             for (const mutation of mutationsList) {
@@ -649,7 +649,7 @@ function blockUsers(type) {
                             name = item1.textContent,
                             userid = item1.href.split('/')[4];
                         if (item && !target.querySelector('button[data-name][data-userid]')) {
-                            item.insertAdjacentHTML('beforeend', `<button type="button" data-name="${name}" data-userid="${userid}" class="Button FollowButton Button--primary Button--red" style="width: 100%;margin: 7px 0 0 0;"><span style="display: inline-flex; align-items: center;">?<svg class="Zi Zi--Plus FollowButton-icon" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M18.376 5.624c-3.498-3.499-9.254-3.499-12.752 0-3.499 3.498-3.499 9.254 0 12.752 3.498 3.499 9.254 3.499 12.752 0 3.499-3.498 3.499-9.14 0-12.752zm-1.693 1.693c2.37 2.37 2.596 6.094.678 8.69l-9.367-9.48c2.708-1.919 6.32-1.58 8.69.79zm-9.48 9.48c-2.37-2.37-2.595-6.095-.676-8.69l9.48 9.48c-2.822 1.918-6.433 1.58-8.803-.79z" fill-rule="evenodd"></path></svg></span>ÆÁ±ÎÓÃ»§</button>`);
+                            item.insertAdjacentHTML('beforeend', `<button type="button" data-name="${name}" data-userid="${userid}" class="Button FollowButton Button--primary Button--red" style="width: 100%;margin: 7px 0 0 0;"><span style="display: inline-flex; align-items: center;">?<svg class="Zi Zi--Plus FollowButton-icon" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M18.376 5.624c-3.498-3.499-9.254-3.499-12.752 0-3.499 3.498-3.499 9.254 0 12.752 3.498 3.499 9.254 3.499 12.752 0 3.499-3.498 3.499-9.14 0-12.752zm-1.693 1.693c2.37 2.37 2.596 6.094.678 8.69l-9.367-9.48c2.708-1.919 6.32-1.58 8.69.79zm-9.48 9.48c-2.37-2.37-2.595-6.095-.676-8.69l9.48 9.48c-2.822 1.918-6.433 1.58-8.803-.79z" fill-rule="evenodd"></path></svg></span>å±è”½ç”¨æˆ·</button>`);
                             item.lastElementChild.onclick = function(){blockUsers_button_add(this.dataset.name, this.dataset.userid, false)}
                         }
                     }
@@ -660,88 +660,88 @@ function blockUsers(type) {
         observer.observe(document, { childList: true, subtree: true });
     }
 
-    // Ìí¼ÓÆÁ±ÎÓÃ»§°´Å¥£¨ÓÃ»§Ö÷Ò³£©
+    // æ·»åŠ å±è”½ç”¨æˆ·æŒ‰é’®ï¼ˆç”¨æˆ·ä¸»é¡µï¼‰
     function blockUsers_button_people() {
-        let item = document.querySelector('.MemberButtonGroup.ProfileButtonGroup.ProfileHeader-buttons'), // »ñÈ¡°´Å¥ÔªËØÎ»ÖÃ
-            name = document.querySelector('.ProfileHeader-name').firstChild.textContent, // »ñÈ¡ÓÃ»§Ãû
-            users = menu_value('menu_customBlockUsers'), // ¶ÁÈ¡ÆÁ±ÎÁĞ±í
+        let item = document.querySelector('.MemberButtonGroup.ProfileButtonGroup.ProfileHeader-buttons'), // è·å–æŒ‰é’®å…ƒç´ ä½ç½®
+            name = document.querySelector('.ProfileHeader-name').firstChild.textContent, // è·å–ç”¨æˆ·å
+            users = menu_value('menu_customBlockUsers'), // è¯»å–å±è”½åˆ—è¡¨
             userid = location.href.split('/')[4];
-        for (let num = 0;num<users.length;num++) { // ÅĞ¶ÏÊÇ·ñÒÑ´æÔÚ
-            if (users[num] === name) { // ÒÑ´æÔÚ
-                document.querySelectorAll('.Button.Button--primary.Button--red').forEach(function(item){item.style.display = 'none';}) // Òş²ØÖªºõ×Ô´øµÄÒÑÆÁ±Î°´Å¥
-                item.insertAdjacentHTML('beforeend', `<button type="button" data-name="${name}" data-userid="${userid}" class="Button FollowButton Button--primary Button--red" style="margin: 0 0 0 12px;"><span style="display: inline-flex; align-items: center;">?<svg class="Zi Zi--Plus FollowButton-icon" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M18.376 5.624c-3.498-3.499-9.254-3.499-12.752 0-3.499 3.498-3.499 9.254 0 12.752 3.498 3.499 9.254 3.499 12.752 0 3.499-3.498 3.499-9.14 0-12.752zm-1.693 1.693c2.37 2.37 2.596 6.094.678 8.69l-9.367-9.48c2.708-1.919 6.32-1.58 8.69.79zm-9.48 9.48c-2.37-2.37-2.595-6.095-.676-8.69l9.48 9.48c-2.822 1.918-6.433 1.58-8.803-.79z" fill-rule="evenodd"></path></svg></span>È¡ÏûÆÁ±Î</button>`);
+        for (let num = 0;num<users.length;num++) { // åˆ¤æ–­æ˜¯å¦å·²å­˜åœ¨
+            if (users[num] === name) { // å·²å­˜åœ¨
+                document.querySelectorAll('.Button.Button--primary.Button--red').forEach(function(item){item.style.display = 'none';}) // éšè—çŸ¥ä¹è‡ªå¸¦çš„å·²å±è”½æŒ‰é’®
+                item.insertAdjacentHTML('beforeend', `<button type="button" data-name="${name}" data-userid="${userid}" class="Button FollowButton Button--primary Button--red" style="margin: 0 0 0 12px;"><span style="display: inline-flex; align-items: center;">?<svg class="Zi Zi--Plus FollowButton-icon" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M18.376 5.624c-3.498-3.499-9.254-3.499-12.752 0-3.499 3.498-3.499 9.254 0 12.752 3.498 3.499 9.254 3.499 12.752 0 3.499-3.498 3.499-9.14 0-12.752zm-1.693 1.693c2.37 2.37 2.596 6.094.678 8.69l-9.367-9.48c2.708-1.919 6.32-1.58 8.69.79zm-9.48 9.48c-2.37-2.37-2.595-6.095-.676-8.69l9.48 9.48c-2.822 1.918-6.433 1.58-8.803-.79z" fill-rule="evenodd"></path></svg></span>å–æ¶ˆå±è”½</button>`);
                 item.lastElementChild.onclick = function(){blockUsers_button_del(this.dataset.name, this.dataset.userid, true)}
                 return
             }
         };
         if (item) {
-            item.insertAdjacentHTML('beforeend', `<button type="button" data-name="${name}" data-userid="${userid}" class="Button FollowButton Button--primary Button--red" style="margin: 0 0 0 12px;"><span style="display: inline-flex; align-items: center;">?<svg class="Zi Zi--Plus FollowButton-icon" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M18.376 5.624c-3.498-3.499-9.254-3.499-12.752 0-3.499 3.498-3.499 9.254 0 12.752 3.498 3.499 9.254 3.499 12.752 0 3.499-3.498 3.499-9.14 0-12.752zm-1.693 1.693c2.37 2.37 2.596 6.094.678 8.69l-9.367-9.48c2.708-1.919 6.32-1.58 8.69.79zm-9.48 9.48c-2.37-2.37-2.595-6.095-.676-8.69l9.48 9.48c-2.822 1.918-6.433 1.58-8.803-.79z" fill-rule="evenodd"></path></svg></span>ÆÁ±ÎÓÃ»§</button>`);
+            item.insertAdjacentHTML('beforeend', `<button type="button" data-name="${name}" data-userid="${userid}" class="Button FollowButton Button--primary Button--red" style="margin: 0 0 0 12px;"><span style="display: inline-flex; align-items: center;">?<svg class="Zi Zi--Plus FollowButton-icon" fill="currentColor" viewBox="0 0 24 24" width="1.2em" height="1.2em"><path d="M18.376 5.624c-3.498-3.499-9.254-3.499-12.752 0-3.499 3.498-3.499 9.254 0 12.752 3.498 3.499 9.254 3.499 12.752 0 3.499-3.498 3.499-9.14 0-12.752zm-1.693 1.693c2.37 2.37 2.596 6.094.678 8.69l-9.367-9.48c2.708-1.919 6.32-1.58 8.69.79zm-9.48 9.48c-2.37-2.37-2.595-6.095-.676-8.69l9.48 9.48c-2.822 1.918-6.433 1.58-8.803-.79z" fill-rule="evenodd"></path></svg></span>å±è”½ç”¨æˆ·</button>`);
             item.lastElementChild.onclick = function(){blockUsers_button_add(this.dataset.name, this.dataset.userid, true)}
         }
     }
 
-    // ÆÁ±ÎÓÃ»§°´Å¥°ó¶¨ÊÂ¼ş£¨Ìí¼Ó£©
+    // å±è”½ç”¨æˆ·æŒ‰é’®ç»‘å®šäº‹ä»¶ï¼ˆæ·»åŠ ï¼‰
     function blockUsers_button_add(name, userid, reload) {
         if (!name || !userid) return
-        let users = menu_value('menu_customBlockUsers'), // ¶ÁÈ¡ÆÁ±ÎÁĞ±í
+        let users = menu_value('menu_customBlockUsers'), // è¯»å–å±è”½åˆ—è¡¨
             index = users.indexOf(name);
         if (index === -1) {
-            users.push(name); // ×·¼ÓÓÃ»§Ãû
-            GM_setValue('menu_customBlockUsers', users); // Ğ´ÈëÆÁ±ÎÁĞ±í
-            // ¼ÓÈëÖªºõ×Ô´øµÄºÚÃûµ¥£¨ºÍ±¾½Å±¾»¥²¹~
+            users.push(name); // è¿½åŠ ç”¨æˆ·å
+            GM_setValue('menu_customBlockUsers', users); // å†™å…¥å±è”½åˆ—è¡¨
+            // åŠ å…¥çŸ¥ä¹è‡ªå¸¦çš„é»‘åå•ï¼ˆå’Œæœ¬è„šæœ¬äº’è¡¥~
             GM_xmlhttpRequest({url: `https://www.zhihu.com/api/v4/members/${userid}/actions/block`,method: 'POST',timeout: 2000});
-            // ÊÇ·ñË¢ĞÂ±¾Ò³
+            // æ˜¯å¦åˆ·æ–°æœ¬é¡µ
             if (reload) {
-                setTimeout(function(){location.reload()}, 200); // Ë¢ĞÂÍøÒ³£¬ÑÓ³Ù 200 ºÁÃë£¬±ÜÃâÖªºõ·´Ó¦Âı~
+                setTimeout(function(){location.reload()}, 200); // åˆ·æ–°ç½‘é¡µï¼Œå»¶è¿Ÿ 200 æ¯«ç§’ï¼Œé¿å…çŸ¥ä¹ååº”æ…¢~
             } else {
-                GM_notification({text: `¸ÃÓÃ»§ÒÑ±»ÆÁ±Î~\nË¢ĞÂÍøÒ³ºóÉúĞ§~`, timeout: 3000});
+                GM_notification({text: `è¯¥ç”¨æˆ·å·²è¢«å±è”½~\nåˆ·æ–°ç½‘é¡µåç”Ÿæ•ˆ~`, timeout: 3000});
             }
         } else {
-            GM_notification({text: `¸ÃÓÃ»§ÒÑ¾­±»ÆÁ±ÎÀ²£¬ÎŞĞèÖØ¸´ÆÁ±Î~`, timeout: 3000});
+            GM_notification({text: `è¯¥ç”¨æˆ·å·²ç»è¢«å±è”½å•¦ï¼Œæ— éœ€é‡å¤å±è”½~`, timeout: 3000});
         }
     }
 
 
-    // ÆÁ±ÎÓÃ»§°´Å¥°ó¶¨ÊÂ¼ş£¨É¾³ı£©
+    // å±è”½ç”¨æˆ·æŒ‰é’®ç»‘å®šäº‹ä»¶ï¼ˆåˆ é™¤ï¼‰
     function blockUsers_button_del(name, userid, reload) {
         if (!name || !userid) return
-        let users = menu_value('menu_customBlockUsers'), // ¶ÁÈ¡ÆÁ±ÎÁĞ±í
+        let users = menu_value('menu_customBlockUsers'), // è¯»å–å±è”½åˆ—è¡¨
             index = users.indexOf(name);
         if (index > -1) {
-            users.splice(index, 1); // ÒÆ³ıÓÃ»§Ãû
-            GM_setValue('menu_customBlockUsers', users); // Ğ´ÈëÆÁ±ÎÁĞ±í
-            // ÒÆ³ıÖªºõ×Ô´øµÄºÚÃûµ¥
+            users.splice(index, 1); // ç§»é™¤ç”¨æˆ·å
+            GM_setValue('menu_customBlockUsers', users); // å†™å…¥å±è”½åˆ—è¡¨
+            // ç§»é™¤çŸ¥ä¹è‡ªå¸¦çš„é»‘åå•
             GM_xmlhttpRequest({url: `https://www.zhihu.com/api/v4/members/${userid}/actions/block`,method: 'DELETE',timeout: 2000});
-            // ÊÇ·ñË¢ĞÂ±¾Ò³
+            // æ˜¯å¦åˆ·æ–°æœ¬é¡µ
             if (reload) {
-                setTimeout(function(){location.reload()}, 200); // Ë¢ĞÂÍøÒ³£¬ÑÓ³Ù 200 ºÁÃë£¬±ÜÃâÖªºõ·´Ó¦Âı~
+                setTimeout(function(){location.reload()}, 200); // åˆ·æ–°ç½‘é¡µï¼Œå»¶è¿Ÿ 200 æ¯«ç§’ï¼Œé¿å…çŸ¥ä¹ååº”æ…¢~
             } else {
-                GM_notification({text: `¸ÃÓÃ»§ÒÑÈ¡ÏûÆÁ±ÎÀ²~\nË¢ĞÂÍøÒ³ºóÉúĞ§~`, timeout: 3000});
+                GM_notification({text: `è¯¥ç”¨æˆ·å·²å–æ¶ˆå±è”½å•¦~\nåˆ·æ–°ç½‘é¡µåç”Ÿæ•ˆ~`, timeout: 3000});
             }
         } else {
-            GM_notification({text: `Ã»ÓĞÔÚÆÁ±ÎÁĞ±íÖĞÕÒµ½¸ÃÓÃ»§...`, timeout: 3000});
+            GM_notification({text: `æ²¡æœ‰åœ¨å±è”½åˆ—è¡¨ä¸­æ‰¾åˆ°è¯¥ç”¨æˆ·...`, timeout: 3000});
         }
     }
 }
 
 
-// ×Ô¶¨ÒåÆÁ±Î¹Ø¼ü´Ê£¨±êÌâ£©
+// è‡ªå®šä¹‰å±è”½å…³é”®è¯ï¼ˆæ ‡é¢˜ï¼‰
 function customBlockKeywords() {
     let nowBlockKeywords = '';
     menu_value('menu_customBlockKeywords').forEach(function(item){nowBlockKeywords += '|' + item})
-    let newBlockKeywords = prompt('±à¼­ [×Ô¶¨ÒåÆÁ±Î¹Ø¼ü´Ê]\n£¨²»Í¬¹Ø¼ü´ÊÖ®¼äÊ¹ÓÃ "|" ·Ö¸ô£¬ÀıÈç£º¹Ø¼ü´ÊA|¹Ø¼ü´ÊB|¹Ø¼ü´ÊC \n£¨¹Ø¼ü´Ê²»Çø·Ö´óĞ¡Ğ´£¬Ö§³Ö±íÇéÈç£º[ÎæÁ³]|[ì­ÀáĞ¦]', nowBlockKeywords.replace('|',''));
+    let newBlockKeywords = prompt('ç¼–è¾‘ [è‡ªå®šä¹‰å±è”½å…³é”®è¯]\nï¼ˆä¸åŒå…³é”®è¯ä¹‹é—´ä½¿ç”¨ "|" åˆ†éš”ï¼Œä¾‹å¦‚ï¼šå…³é”®è¯A|å…³é”®è¯B|å…³é”®è¯C \nï¼ˆå…³é”®è¯ä¸åŒºåˆ†å¤§å°å†™ï¼Œæ”¯æŒè¡¨æƒ…å¦‚ï¼š[æ‚è„¸]|[é£™æ³ªç¬‘]', nowBlockKeywords.replace('|',''));
     if (newBlockKeywords === '') {
         GM_setValue('menu_customBlockKeywords', []);
-        registerMenuCommand(); // ÖØĞÂ×¢²á½Å±¾²Ëµ¥
+        registerMenuCommand(); // é‡æ–°æ³¨å†Œè„šæœ¬èœå•
     } else if (newBlockKeywords != null) {
-        let newBlockKeywords = '¹âÈ¦|Ç××Ó¼ø¶¨|Ä¬¿Ë¶û|ËÀÍö|»ØÃñ|¼õ·Ê|¶íÂŞË¹|ÍËĞİ½ğ|õõ²õ|äßÒÇ|¹ëÃÛ|ÎÚÑ»|ÎÄ°¸|»ù½ğ|°ÂÔË|Õ½Õù|ÂÌ²è|´©Ô½|±íÇé°ü|°×¾´Í¤|HPV|°¬¶ûµÇ·¨»·|ÌÖĞ½|ÑÎÑ¡»áÔ±|Í½²½|±íÅÌ|¹ÉÔÖ|Ó¢ĞÛÁªÃË|Ö£Ë¬|¿Ú´ü¹ÖÎï|ÎäËÉ|É¨ºÚ·ç±©|Ó¤¶ù|µç¾º|éëÔá|Ğ¡Æ·|¿ìÀÖ´ó±¾Óª|ÎâĞ»Óî|ĞÇ×ù|×ÔÉ±|pua|²»ÏëÉÏ°à|Ã¨Á¸|ÀîºèÕÂ|´òÕÌ|¸ãĞ¦|¶«º½|¿Õ³Ë|ÓğÉú½áÏÒ|Õğº³|¶ñĞÄ|º£Èğ|Ô­Éñ|±ßÄÁ|Ã¤ÈË|Ô¼»á|Ğ¦°Á½­ºş|Î÷¸Û|¹·Á¸|³ÂÊÀÃÀ|¾øÍû|°ËØÔ|¿çĞÔ±ğÕß|±»Æ­|ÉúÓıÂÊ|Ê§Áµ|Ãåµé|µçÓ°|Âş»­|°®¶¹|Çé»°|Ë¢µ¥|»Æ²³|²úºó|ºÚÉç»á|×ùÉ½µñ|Ô©Í÷|»æ±¾|°×Ñò×ù|ÖÜĞÇ³Û|»Æ¼Ò¾Ô|ÑîÀö¾ê|ÕÅÒÕĞË|ÆÏÌÑ¾Æ|INTP|¹îÃØÖ®Ö÷|»Äµº|É¢»§|·şĞÌ|ÓÃ¹¤»Ä|¹«Öª|¸ßÓıÁ¼|Ê¦ÉúÁµ|²ÌĞìÀ¤|ÌÆ¹úÇ¿|ÈıÊ®¶øÒÑ|ÕÅÎ¬Îª|Ìì³Ó|±ÈÌØ±Ò|Ìù°É|ÅäÒô|·çÉ§|Â¹êÏ|Ò½ÃÀ|ÆÛ¸º|Ã¨|Áõ»ªÇ¿|»­Ê¦|¾ü»é|Ê±´úÉÙÄêÍÅ|¹í¹ÊÊÂ|À­ºÚ|Ä§ÊŞ|¼üÕş|³ÂµÀÃ÷|Ã«¹Çã¤È»|Éú¸öº¢×Ó|ÖÓÄÏÉ½|ÎÚ¾ü|½ãµÜÁµ|Ã×¹şÓÎ|ÂÀºó|¾ŞÈË|ºÎ³¬Á«|INFP|Èå¼Ò|·´ÅÉ|³èÎï|¸ÖÇÙ|ÆÛÁè|â«Ëö|ÏàÇ×|ÄÚ¾í|Á÷Ë®Ïß¹¤ÈË|ÍÈÃ«|ÌÆÉ®|ÃÀÊ³|È¥ÊÀ|¼ÒÓĞ¶ùÅ®|´ó×¨|Å®ĞÔ¹º·¿|È«Ö°ÂèÂè|¾ÙÖØ|Íõ¼Î¶û|Âî|ĞÁ°Í|Ë¹»ù|LPL|Ô­Éú¼ÒÍ¥|ËÀºó|½ğÆ¿Ã·|ÇŞÊÒ|»ìÈÕ×Ó|¾ç±¾É±|ÔçÁµ|ÃÀ¾ü|Öª·ñ|ÁõöÎ|Õù³è|½ÌÅà|¶Ù°ÍË¹|ÈÈ°Í|A¹É|AirPods|ÆîÍ¬Î°|Ô©°¸|²éÖØ|Áõ®uºê|±±µç|²©¶ûÌØ|Âí¼Îì÷|Á÷ÀËµØÇò|ºÚ°µ|ÍÀÔ×|MBTI|Íø´û|·üµØÄ§|½»ÏìÀÖ|ÔüÄĞ|×·ĞÇ|´óÃ÷Íõ³¯|ÕÅ°®Áá|´ß»é|°şÏ÷|´ø»õ|±ù¶Õ|Ë¯Ç°ÏûÏ¢|×÷ËÀ|ÕÂÔóÌì|êÓÃÁ|ÀÏÊµÈË|½¯ĞÀ|²èÒ¶|ÈëÇÖ|ÖìÒ»µ©|°§ÉË|ÀÖ¸ß|ÁÖÃî¿É|µçÌİ|ËÀĞÄ|ÇÖ»ª|°éÄï|¶·ÂŞ´óÂ½|Ğ¡Èı|¹ã¸æ|³Âµ¤Çà|²ÃÔ±|½û¶¾|ĞíáÔ|ÍâÃ²|÷È×å|996|ÁÖµ¤|ÈıÌ¥|±ÒÈ¦|±¦Âè|Ğ¡Ã×|ÊÍÓÀĞÅ|ÒÁÀû|¿Õµ÷|°×Â¹Ô­|·¿´û|¿¹Õ½|ÇÖÂÔ|cos|½ä¶Ä|·¹È¦|×ó×ÚÌÄ|ÓéÀÖÈ¦|»ªÎª|É±ÊÖ|³Ô²¥|É³µñ|»ÆÀÚ|Ä§·¨|Ë®Æ¿×ù|Ğ¡¹ÊÊÂ|ºËµ¯|É±ÈË|»¤Ê¿|»æÈ¦|ÔÂ×Ó|°´Ä¦|ÑîóÒ|Ñ§Éú»á|ĞÜ³öÃ»|½¹ÂÇ|uzi|ÔÚÒâ|ÕÅÒÕÄ±|Í¬ĞÔÁµ|Å®ÆÍ|¶şÌ¥|ÉúÓı|ËÀÊÌ|ÀºÇò|×·ÁËºÜ¶àÅ®Éú|·ğ|·¿¶«|¾üÑµ|µçÊÓ¾ç|¸èÇú|Ï¸Ë¼¼«¿Ö|½îÄ¤Ç¹|×ãÇò|ÌğÎÄ|ÀÃÎ²Â¥|·½·½|Í¬¾Ó|ÎÚ¿ËÀ¼|Ë®ä°|Æ¹ÅÒ|×ãÔ¡|Íøºì|ºìÃ×|ÍµÅÄ|ÑŞÓö|Àí²Æ|ÑÏĞÌ¿½´ò|ÕÅâùÄş|ÔñÅ¼|Å®È¨|ÓÄÃÅÂİĞı|ÄĞÅóÓÑ|Â¹¶¦¼Ç|½¢³¤|ÉùÀÖ|ĞÄ»úæ»|éÄÀÆ|µ¥Ç×|ÍõÁ¦ºê|¶¯»­|Ò×ìÈÇ§çô|°Í»ùË¹Ì¹|Éúº¢×Ó|ÉúÈÕ|´ò¼Ü|¹şÊ¿Ææ|ÁõÒà·Æ|·ÛË¿|Ã÷³¯|²ú¼Ù|²ñ¾²|ÎÀÉú¼ä|Ğ¦ËÀÈË|Ï²ÑòÑò|¹ú²ú¾ç|¸´³ğ|¶¡Õæ|³ğ¸»|¸ñ¶·|1450|×Ê±¾¼Ò|ÌÖÑá|ÉúĞ¡º¢|Å°|Àî¼Ñçù|ÁÁ½£|Ë¾»ú|°ËĞ¡Ê±¹¤×÷|ÄĞ×ã|º§ÈËÌıÎÅ|ÈÕÂş|¶¡¿¡êÍ|Ì©¹ú|»¹Öé¸ñ¸ñ|ÑİÔ±|ÍÅ³¤|µØÓü|ÕÅÉØº­|ÃÓÀÃ|ÀÇ|ÌæÉí|ÀÏÀµ|Éµ×Ó|ÉäÊÖ×ù|ĞéÄâ±Ò|ÕÅ×ÓÇ¿|×ãÁÆ|ÊÖ»ú|¸ÛÆ¬|·¿¼Û|²Æ·§|ÀëÊÀ|Ğ¡ÄÌ¹·|ËéÊ¬|EDG|ÎüÄÌ|ÎÚºÏ|Ò¦°²ÄÈ|´ŞÓÀÔª|»ÆÈØ|Ò×¾­|¶·ÆÆ²Ôñ·|cp|Õç‹Ö|»ÆÒ©Ê¦|¹È°®Áè|ÏãÑÌ|»ÊµÛ|ÏÔÊ¾Æ÷|Ê§Òµ|»¦Ö¸|ÏÉ½£|ÎÔµ×|¶ú»ú|¾üÂÃ|ÉÏµÛ|ÁúÖé|Ê¥Ä¸|Îâ¾©|³´¹É|Âò·¿|ÑÕÖµ|Ë½·¿|Ö÷²¥|¼ÒÎñ|Ä§½ä|½äÉ«|Ë«×Ó×ù|³ö¹ì|ÒßÇé|¿ìÊÖ|¸ºÕ®|Íì»Ø|ê¡Ñ§|ÅúÆÀ|ÁºÉ½|¶¯Îï±£»¤|¶ÅÀ¼ÌØ|¿¹ÃÀÔ®³¯|ÈË··×Ó|±ùÑ©ÆæÔµ|³ÂŞÈÑ¸|¹í|Ş±æ«|×ß¹â|ºÚÈË|ÂíÀö|Ã¢¹û|º®´°|Ëµ³ª|ÖìÔªè°|É¥Ê¬|µç×ÓÑÌ|ÀÛ|ÎäÁÖÍâ´«|´«Ïú|ÑøÉú|²ÊÀñ|Ã÷ÈÕ·½ÖÛ|·¿²úË°|Ãå±±|Èó|Å·ÑôÄÈÄÈ|ÑòÄÌ|¹ú½Å|Ôµ·Ö|ÄßÆ¼|ÌìĞ«×ù|ËïÎò¿Õ|ÓğÃ«Çò|ÁõºÆ´æ|Ã÷ĞÇ|×·Å®Éú|×Ê±¾ÂÛ|ÎäÆ÷|ÎŞ³Ü|ÃÏÃÀáª|°ËĞ¡Ê±Ë«Ğİ|ÂıÅÜ|¹ú×ã|½ğÅ£|ÍõË¼´Ï|³¬ÄÜÁ¦|ÖĞĞË|ÑøÀÏ|ÎâÒà·²|ºÚÍ·|ÔÂÉ©|¶Î×Ó|²Ğ¼²|´óÃ÷½Ù|¸èÊÖ|Ñî³¬Ô½|ĞŞÏÉ|ÀîÔÆÁú|¶í¾ü|º£Íõ|²¡½¿|É±ÖíÅÌ|³ÂÊÀ·å|Îü¶¾|±´¿ËººÄ·|²ú·¿|è¤Ù¤¿ã|ÍøÎÄ|ÌÉÆ½|Ğ¤Õ½|±Ê¼Ç±¾|¼äµı|ÖÜ½ÜÂ×|Çî|ÀÃÎ²|ÒßÃç|¿ªÕ½|Ö£ÔÆÁú|¼Ó°à|»éÒö|¼Ö¾²ö©|³¬ÈË|½ğ²ÓÈÙ|Ç×°®µÄ|ºÏ×â|¸Î°©|Ìğ³è|·âĞ£|Ê£Å®|×Ô±Õ|µËÂ×|Ò¹µê|INTJ|¹şÀû|³öÉú|ÕûÈİ|ËÎ¶¬Ò°|ÕÅ¹úÈÙ|³èÎÄ|¿Ö¾å|¶¶Òô|¶Ä²©|ÑîÀöÆ¼|ÀîÈü¸ß|ºÍÇ×|Ìå¼ì|Ë¬ÎÄ|¿´ÊØËù|Å·¹Ú|ĞÔ±ğ¶ÔÁ¢|°Ô×Ü|»¯×±|¶şº¢|NBA|ÑÇÂíÑ·|°©|ÄÚ¼é|Ê¨×Ó×ù|ÑÇÃÀÄáÑÇ|ÀëÖ°|ÑÖÍõ|·¿Ë¼ç÷|²Ü·áÔó|¾Å¼Û|ºìÂ¥ÃÎ|ÕÔ½ñÂó|¾Æµê|ÖÏÏ¢|º£ÔôÍõ|ÏØ³Ç|µËÎÄµÏ|ÀîÁ¬½Ü|Ê³ÌÃ|½¡Éí|Õ½´¸|Âíº½|ÀÅçğ°ñ|¶¯Âş|×·ÎÒµÄÄĞÉú|åú|ÃÉ¹Å|½ğ¾ü|ÔËÆø|µ÷Ğİ|Å®Éñ|µÍ¹È|ËÎ½­|Ì·ÇÇ|»ğÔá³¡|¿ª³ı|¹«Òæ|ÍõÖ¾ÎÄ|ÅÜ²½|Ô¼¸å|ÁéÌÃ|Ğ°Äî|È«¾ÛµÂ|¿­µÏÀ­¿Ë|Ç¨¾Í|×Ô±°|ÍâÂô|ÄÄß¸|ÊÖÇ¹|×Óµ¯|Î¬ÉúËØ|¾çÇé|Å®Åä|ÄĞÖ÷|ÂÌ¿¨|¸¨¾¯|ÉÏ¹Ù|ÓÎÏ·|´øÍŞ|Æ¨|Îèµ¸|´îÚ¨|ÔĞÆÚ|¾ü¹Ù|ÈËÃñµÄÃûÒå|ÖÓÑ¦¸ß|±ÈÌØ±Ò|ÀñÎï|Íø°É|ÊıÂë±¦±´|¶ÏÉáÀë|Æ¢Æø²»ºÃ|Ë÷Äá|ÇåÕæËÂ|º¸¹¤|º«¾ç|Ã»½ÌÑø|ÏÔ¿¨|ÌÆÉ½ÉÕ¿¾|ÀÍÎñÅÉÇ²|ÀÍ¶¯ÖÙ²Ã|ËşÀû°à|¹â¹÷|Ïã¸Û|ºã´ó|ÊÀ½ç±­|²Ü²Ù|ÆÓÊ÷|ÈÕÓï|½­¸è|Ì¨Íå|ºşÄÏÎÀÊÓ|Î¤¶«ŞÈ|²Ø×å|¶À¾Ó|ÆÕ¶ı²è|Ä¢¹½|LOL|ºÚÅÛ¾À²ì¶Ó|¸ßÏşËÉ|Ø¤°ï|½ğÓ¹|Êî¼Ù¹¤|ÂíÔÆµÄ±ÀËú|Ì¨Íå|ÒÖÓô|Ï£ÌØÀÕ|ÁÖ³å|È¹×Ó|Õ©Æ­|¹«ÎñÔ±|³¤µÃ³ó|¿Ö²À|¶»Ó¡|Nike|ÄÍ¿Ë|»¨Áø|ÒôÀÖ|Ä¦ôÉ×ù|Ã°ÏÕµº|Ğ£·ş|ÆæÒì²©Ê¿|ÀÏÓÑ¼Ç|ÖĞ¿¼|·ÀÉ¹|¾²Ïã|È«ºìæ¿|ÅÖ×Ó|»³ÔĞ|Í¼Êé¹İ|±³µ¥´Ê|¼İÕÕ|ïÚ¿Í|ŞÏŞÎ|Çà´¢|ÓàĞã»ª|°²Ì¤|ĞÂ·¬|Í·Ïñ|½á»é|Ä¸Èé|ĞÂ¸ÅÄîÓ¢Óï|ÔÖ»Ä|ÎüĞÇ´ó·¨|±±Ú¤Éñ¹¦|¿ÏµÂ»ù|ÀÏÁä»¯|ÍËĞİ|ÀÖÆ÷|ÆÓĞãÈÙ|ÒÑ»é|¿áĞÌ|Éí¸ß|µÂÉÆ|À¬»ø·ÖÀà|Í¬ÈË|±¯°§|Ö¾Ô¸¾ü|×Ó¹¬|¹ú¾ü|ÖĞ»ªÃñ¹ú|¹úÃñµ³|×ÛÒÕ|ÅÀÉ½|ÅÊÑÒ|¿ĞÀÏ|±±Ô¼|³¤²ĞÁË|ÈËÑøÓñ|»Ø±Ü|²ØÓï|½ñÂóÀÉ|Á¹°×¿ª|ÖÜ¶¬Óê|ÅíÓÚêÌ|¿¼¹«|Èö±´Äş|ÀîÊÀÃñ|ĞİÑ§|²ÊºçÁùºÅ|Éµ±Æ|¼ÍÏşá°|»¤·ô|ÎŞÁ¦|pb|ÕÕÆ­|·ÀÉ¹|Ìü¾Ö·ç|²»»éÖ÷Òå|Ğ¡Ëµ|³µÎ»|Ïû·À|¿§·È|Ë¯Ç°¹ÊÊÂ|ÔË¶¯Ô±|½ú½­|°Ë¶Î½õ|Ë¢Ëá|Õò³¤|ĞÇ°Í¿Ë|°®Çé¹«Ô¢|ÉúÍêº¢×Ó|ÃÎ»ªÂ¼|Ô¼º²¿Éº¹|°²ÀÖËÀ|Ç¹Ö§|ÒÁÀÊ|ÓÒÒí|¹ú·À²¿|Å©Òµ²¿|ÀµÄş|Ö£³É¹¦|ÍÑ¿ÚĞã|ºº¼é|¶éÌ¥|´ÌÉ±|±ùºø|¶ÙÄù´Ä¿Ë|Â¬¸ÊË¹¿Ë|¿×¼Òµê|ÄªÑÔ|Á¢ÌÕÍğ|²åÆì²ËÒµ|´ºÍí|ÄáºÕÂ³|¿µÎõ|ËÚÔ£|ÂêÑÅ|½ğÖÇĞã|´ó¹Ï|±À»µ|Éú·¢Òº|ÅÅĞ¹|ºÚÑÛÈ¦|iPhone|¹ÉÆ±|Îä½«|ÉÏÎ¾|Ï·Çú|¹àÀº¸ßÊÖ|Õ½¶·»ú|µÀÊ¿|¶íÎÚ|ÑîÃİ|ËŞÉá|RNG|ĞÂ¸è|ÆÆÊÂ¾«Ó¢|ÓÚÇ«|»ªÔ¼|ÍõÂşÄİ|ÎÀÉú½í|³¯ÏÊ|Àë»é|¾Æ×À|åÈÌ«»ù|°×æÎ|ÁÖÇàÏ¼|Ò¦Ã÷|ºşÈË|¿Æ±È|½ûÇ¹|¹ù¾¸|Âú×å|Àµ×ù|¼İĞ£|ÎÂÍø|¼Ò±©|¸ÎÓ²»¯|³ÂÏş|Ñ¦±¦îÎ|ÁÖ÷ìÓñ|Â³±õÑ·|ÑÏÒÙ¿í|ÍÊºÚËØ|ÍõÕßÈÙÒ«|ËÄÇıĞÖµÜ|²ú¿Æ|»ğÓ°|Ó×Ê¦|ÇÇµ¤|ÎÚ·½|ºÕ¶ûËÉ|º«Óï|±¯¹Û|ÕÅ½Ü|ÁÖ¿¡½Ü|ÔüÅ®|Ì«Ô­|ĞßÀ¢|ÒüÌì³ğ|Ï²¾çÖ®Íõ|ºÎÒÔóÏóïÄ¬|ºÎÒÔè¡|ÌıÁ¦|ÂÜÀò|ÀÏÄê³Õ´ô|Ê§½û|¼ÖÆ½°¼|¼ÖÇ³Ç³|·ëÌÆ|ÌÀÎ¨|ÄĞÀº|°¢¸»|´÷óÒ|ÂíÎ´¶¼|ÕÅÈôêÀ|¹ùµÂ¸Ù|±à¾ç|ºìÎÀ±ø|ÄĞÍÅ|·ÖÃä|ÑîÓñ»·|Ê¥¶·Ê¿|Íõ·Æ|ÌÇÄò²¡|les|MIUI|ÍÈ³¤|°ÂÄá¶û|¶­Ã÷Öé|Ì¹¿Ë|DOTA|õÌÈ­µÀ|×¨Éı±¾|¿¼ÑĞ|×İ»ğ|¿Â½à|¶©»é|¹ÉÊĞ|½áÊ¯|»ÙÈı¹Û|Ê¿±øÍ»»÷|·ë¹®|ÔÀÔÆÅô|ĞìÒÕÑó|ÒÍ×å|µÂÔÆÉç|ÕÔÀöÓ±|±¾Ùâ|¹ıÊÀ|³ÂåûÏ£|ËïÑî|ÕÔÂ¶Ë¼|Â³Ô¥|ÌÆÈÊ½Ü|ÊØÍûÏÈ·æ|DM|ÒõÑôÊ¦|ÄæË®º®|ÆÚ»õ|ºó»Ú|»ª³¿Óî|ºúÎı½ø|»¶ÀÖËÌ|·®Ê¤ÃÀ|Å®È­|»ô×ğ|Å®Æµ|¸´¶Á|ÄÑ¹ı|Àî×ÚÈÊ|½¯½éÊ¯|Ô¬±ùåû|ÆæİâËµ|Â¯Ê¯´«Ëµ|ÑîÑó|Ì·Â@Í¬|ŞÉÃÎÑş|ºÎéà¾ı|ÁéÒì|à½à½|ºÎêÁ|Áº³¯Î°|ÁõµÂ»ª|ÕÅ°ØÖ¥|´óÕÅÎ°|½ğ¾¸|ğÜ×Ó|¸µÊ×¶û|ãë´¨|Íâ°ü|Áõ±¸|Öî¸ğÁÁ|·®Õñ¶«|ÂíËÕ|ÀîĞ¡è´|ºú¸è|Soul|Ì«¼à|';
+        let newBlockKeywords = 'å…‰åœˆ|äº²å­é‰´å®š|é»˜å…‹å°”|æ­»äº¡|å›æ°‘|å‡è‚¥|ä¿„ç½—æ–¯|é€€ä¼‘é‡‘|è²‚è‰|æº¥ä»ª|é—ºèœœ|ä¹Œé¸¦|åŸºé‡‘|å¥¥è¿|æˆ˜äº‰|ç»¿èŒ¶|ç©¿è¶Š|è¡¨æƒ…åŒ…|ç™½æ•¬äº­|HPV|è‰¾å°”ç™»æ³•ç¯|è®¨è–ª|ç›é€‰ä¼šå‘˜|å¾’æ­¥|è¡¨ç›˜|è‚¡ç¾|è‹±é›„è”ç›Ÿ|éƒ‘çˆ½|å£è¢‹æ€ªç‰©|æ­¦æ¾|æ‰«é»‘é£æš´|å©´å„¿|ç”µç«|æ®¡è‘¬|å°å“|å¿«ä¹å¤§æœ¬è¥|å´è°¢å®‡|æ˜Ÿåº§|è‡ªæ€|pua|ä¸æƒ³ä¸Šç­|çŒ«ç²®|æé¸¿ç« |æ‰“ä»—|æç¬‘|ä¸œèˆª|ç©ºä¹˜|ç¾½ç”Ÿç»“å¼¦|éœ‡æ’¼|æ¶å¿ƒ|æµ·ç‘|åŸç¥|è¾¹ç‰§|ç›²äºº|çº¦ä¼š|ç¬‘å‚²æ±Ÿæ¹–|è¥¿æ¸¯|ç‹—ç²®|é™ˆä¸–ç¾|ç»æœ›|å…«å¦|è·¨æ€§åˆ«è€…|è¢«éª—|ç”Ÿè‚²ç‡|å¤±æ‹|ç¼…ç”¸|ç”µå½±|æ¼«ç”»|çˆ±è±†|æƒ…è¯|åˆ·å•|é»„æ¸¤|äº§å|é»‘ç¤¾ä¼š|åº§å±±é›•|å†¤æ‰|ç»˜æœ¬|ç™½ç¾Šåº§|å‘¨æ˜Ÿé©°|é»„å®¶é©¹|æ¨ä¸½å¨Ÿ|å¼ è‰ºå…´|è‘¡è„é…’|INTP|è¯¡ç§˜ä¹‹ä¸»|è’å²›|æ•£æˆ·|æœåˆ‘|ç”¨å·¥è’|å…¬çŸ¥|é«˜è‚²è‰¯|å¸ˆç”Ÿæ‹|è”¡å¾å¤|å”å›½å¼º|ä¸‰åè€Œå·²|å¼ ç»´ä¸º|å¤©ç§¤|æ¯”ç‰¹å¸|è´´å§|é…éŸ³|é£éªš|é¹¿æ™—|åŒ»ç¾|æ¬ºè´Ÿ|çŒ«|åˆ˜åå¼º|ç”»å¸ˆ|å†›å©š|æ—¶ä»£å°‘å¹´å›¢|é¬¼æ•…äº‹|æ‹‰é»‘|é­”å…½|é”®æ”¿|é™ˆé“æ˜|æ¯›éª¨æ‚šç„¶|ç”Ÿä¸ªå­©å­|é’Ÿå—å±±|ä¹Œå†›|å§å¼Ÿæ‹|ç±³å“ˆæ¸¸|å•å|å·¨äºº|ä½•è¶…è²|INFP|å„’å®¶|åæ´¾|å® ç‰©|é’¢ç´|æ¬ºå‡Œ|çŒ¥ç|ç›¸äº²|å†…å·|æµæ°´çº¿å·¥äºº|è…¿æ¯›|å”åƒ§|ç¾é£Ÿ|å»ä¸–|å®¶æœ‰å„¿å¥³|å¤§ä¸“|å¥³æ€§è´­æˆ¿|å…¨èŒå¦ˆå¦ˆ|ä¸¾é‡|ç‹å˜‰å°”|éª‚|è¾›å·´|æ–¯åŸº|LPL|åŸç”Ÿå®¶åº­|æ­»å|é‡‘ç“¶æ¢…|å¯å®¤|æ··æ—¥å­|å‰§æœ¬æ€|æ—©æ‹|ç¾å†›|çŸ¥å¦|åˆ˜é‘«|äº‰å® |æ•™åŸ¹|é¡¿å·´æ–¯|çƒ­å·´|Aè‚¡|AirPods|ç¥åŒä¼Ÿ|å†¤æ¡ˆ|æŸ¥é‡|åˆ˜ç•Šå®|åŒ—ç”µ|åšå°”ç‰¹|é©¬å˜‰ç¥º|æµæµªåœ°çƒ|é»‘æš—|å± å®°|MBTI|ç½‘è´·|ä¼åœ°é­”|äº¤å“ä¹|æ¸£ç”·|è¿½æ˜Ÿ|å¤§æ˜ç‹æœ|å¼ çˆ±ç²|å‚¬å©š|å‰¥å‰Š|å¸¦è´§|å†°å¢©|ç¡å‰æ¶ˆæ¯|ä½œæ­»|ç« æ³½å¤©|æš§æ˜§|è€å®äºº|è’‹æ¬£|èŒ¶å¶|å…¥ä¾µ|æœ±ä¸€æ—¦|å“€ä¼¤|ä¹é«˜|æ—å¦™å¯|ç”µæ¢¯|æ­»å¿ƒ|ä¾µå|ä¼´å¨˜|æ–—ç½—å¤§é™†|å°ä¸‰|å¹¿å‘Š|é™ˆä¸¹é’|è£å‘˜|ç¦æ¯’|è®¸åµ©|å¤–è²Œ|é­…æ—|996|æ—ä¸¹|ä¸‰èƒ|å¸åœˆ|å®å¦ˆ|å°ç±³|é‡Šæ°¸ä¿¡|ä¼Šåˆ©|ç©ºè°ƒ|ç™½é¹¿åŸ|æˆ¿è´·|æŠ—æˆ˜|ä¾µç•¥|cos|æˆ’èµŒ|é¥­åœˆ|å·¦å®—æ£ |å¨±ä¹åœˆ|åä¸º|æ€æ‰‹|åƒæ’­|æ²™é›•|é»„ç£Š|é­”æ³•|æ°´ç“¶åº§|å°æ•…äº‹|æ ¸å¼¹|æ€äºº|æŠ¤å£«|ç»˜åœˆ|æœˆå­|æŒ‰æ‘©|æ¨ç¬ |å­¦ç”Ÿä¼š|ç†Šå‡ºæ²¡|ç„¦è™‘|uzi|åœ¨æ„|å¼ è‰ºè°‹|åŒæ€§æ‹|å¥³ä»†|äºŒèƒ|ç”Ÿè‚²|æ­»ä¾|ç¯®çƒ|è¿½äº†å¾ˆå¤šå¥³ç”Ÿ|ä½›|æˆ¿ä¸œ|å†›è®­|ç”µè§†å‰§|æ­Œæ›²|ç»†æ€ææ|ç­‹è†œæª|è¶³çƒ|ç”œæ–‡|çƒ‚å°¾æ¥¼|æ–¹æ–¹|åŒå±…|ä¹Œå…‹å…°|æ°´æµ’|ä¹’ä¹“|è¶³æµ´|ç½‘çº¢|çº¢ç±³|å·æ‹|è‰³é‡|ç†è´¢|ä¸¥åˆ‘æ‹·æ‰“|å¼ æ€¡å®|æ‹©å¶|å¥³æƒ|å¹½é—¨èºæ—‹|ç”·æœ‹å‹|é¹¿é¼è®°|èˆ°é•¿|å£°ä¹|å¿ƒæœºå©Š|æ§Ÿæ¦”|å•äº²|ç‹åŠ›å®|åŠ¨ç”»|æ˜“çƒŠåƒçº|å·´åŸºæ–¯å¦|ç”Ÿå­©å­|ç”Ÿæ—¥|æ‰“æ¶|å“ˆå£«å¥‡|åˆ˜äº¦è²|ç²‰ä¸|æ˜æœ|äº§å‡|æŸ´é™|å«ç”Ÿé—´|ç¬‘æ­»äºº|å–œç¾Šç¾Š|å›½äº§å‰§|å¤ä»‡|ä¸çœŸ|ä»‡å¯Œ|æ ¼æ–—|1450|èµ„æœ¬å®¶|è®¨åŒ|ç”Ÿå°å­©|è™|æä½³ç¦|äº®å‰‘|å¸æœº|å…«å°æ—¶å·¥ä½œ|ç”·è¶³|éª‡äººå¬é—»|æ—¥æ¼«|ä¸ä¿Šæ™–|æ³°å›½|è¿˜ç æ ¼æ ¼|æ¼”å‘˜|å›¢é•¿|åœ°ç‹±|å¼ éŸ¶æ¶µ|ç³œçƒ‚|ç‹¼|æ›¿èº«|è€èµ–|å‚»å­|å°„æ‰‹åº§|è™šæ‹Ÿå¸|å¼ å­å¼º|è¶³ç–—|æ‰‹æœº|æ¸¯ç‰‡|æˆ¿ä»·|è´¢é˜€|ç¦»ä¸–|å°å¥¶ç‹—|ç¢å°¸|EDG|å¸å¥¶|ä¹Œåˆ|å§šå®‰å¨œ|å´”æ°¸å…ƒ|é»„è“‰|æ˜“ç»|æ–—ç ´è‹ç©¹|cp|ç”„å¬›|é»„è¯å¸ˆ|è°·çˆ±å‡Œ|é¦™çƒŸ|çš‡å¸|æ˜¾ç¤ºå™¨|å¤±ä¸š|æ²ªæŒ‡|ä»™å‰‘|å§åº•|è€³æœº|å†›æ—…|ä¸Šå¸|é¾™ç |åœ£æ¯|å´äº¬|ç‚’è‚¡|ä¹°æˆ¿|é¢œå€¼|ç§æˆ¿|ä¸»æ’­|å®¶åŠ¡|é­”æˆ’|æˆ’è‰²|åŒå­åº§|å‡ºè½¨|ç–«æƒ…|å¿«æ‰‹|è´Ÿå€º|æŒ½å›|è¾å­¦|æ‰¹è¯„|æ¢å±±|åŠ¨ç‰©ä¿æŠ¤|æœå…°ç‰¹|æŠ—ç¾æ´æœ|äººè´©å­|å†°é›ªå¥‡ç¼˜|é™ˆå¥•è¿…|é¬¼|è–‡å¨…|èµ°å…‰|é»‘äºº|é©¬ä¸½|èŠ’æœ|å¯’çª—|è¯´å”±|æœ±å…ƒç’‹|ä¸§å°¸|ç”µå­çƒŸ|ç´¯|æ­¦æ—å¤–ä¼ |ä¼ é”€|å…»ç”Ÿ|å½©ç¤¼|æ˜æ—¥æ–¹èˆŸ|æˆ¿äº§ç¨|ç¼…åŒ—|æ¶¦|æ¬§é˜³å¨œå¨œ|ç¾Šå¥¶|å›½è„š|ç¼˜åˆ†|å€ªè|å¤©èåº§|å­™æ‚Ÿç©º|ç¾½æ¯›çƒ|åˆ˜æµ©å­˜|æ˜æ˜Ÿ|è¿½å¥³ç”Ÿ|èµ„æœ¬è®º|æ­¦å™¨|æ— è€»|å­Ÿç¾å²|å…«å°æ—¶åŒä¼‘|æ…¢è·‘|å›½è¶³|é‡‘ç‰›|ç‹æ€èª|è¶…èƒ½åŠ›|ä¸­å…´|å…»è€|å´äº¦å‡¡|é»‘å¤´|æœˆå«‚|æ®µå­|æ®‹ç–¾|å¤§æ˜åŠ«|æ­Œæ‰‹|æ¨è¶…è¶Š|ä¿®ä»™|æäº‘é¾™|ä¿„å†›|æµ·ç‹|ç—…å¨‡|æ€çŒªç›˜|é™ˆä¸–å³°|å¸æ¯’|è´å…‹æ±‰å§†|äº§æˆ¿|ç‘œä¼½è£¤|ç½‘æ–‡|èººå¹³|è‚–æˆ˜|ç¬”è®°æœ¬|é—´è°|å‘¨æ°ä¼¦|ç©·|çƒ‚å°¾|ç–«è‹—|å¼€æˆ˜|éƒ‘äº‘é¾™|åŠ ç­|å©šå§»|è´¾é™é›¯|è¶…äºº|é‡‘ç¿è£|äº²çˆ±çš„|åˆç§Ÿ|è‚ç™Œ|ç”œå® |å°æ ¡|å‰©å¥³|è‡ªé—­|é‚“ä¼¦|å¤œåº—|INTJ|å“ˆåˆ©|å‡ºç”Ÿ|æ•´å®¹|å®‹å†¬é‡|å¼ å›½è£|å® æ–‡|ææƒ§|æŠ–éŸ³|èµŒåš|æ¨ä¸½è|æèµ›é«˜|å’Œäº²|ä½“æ£€|çˆ½æ–‡|çœ‹å®ˆæ‰€|æ¬§å† |æ€§åˆ«å¯¹ç«‹|éœ¸æ€»|åŒ–å¦†|äºŒå­©|NBA|äºšé©¬é€Š|ç™Œ|å†…å¥¸|ç‹®å­åº§|äºšç¾å°¼äºš|ç¦»èŒ|é˜ç‹|æˆ¿æ€çª|æ›¹ä¸°æ³½|ä¹ä»·|çº¢æ¥¼æ¢¦|èµµä»Šéº¦|é…’åº—|çª’æ¯|æµ·è´¼ç‹|å¿åŸ|é‚“æ–‡è¿ª|æè¿æ°|é£Ÿå ‚|å¥èº«|æˆ˜é”¤|é©¬èˆª|ç…çŠæ¦œ|åŠ¨æ¼«|è¿½æˆ‘çš„ç”·ç”Ÿ|å¦ƒ|è’™å¤|é‡‘å†›|è¿æ°”|è°ƒä¼‘|å¥³ç¥|ä½è°·|å®‹æ±Ÿ|è°­ä¹”|ç«è‘¬åœº|å¼€é™¤|å…¬ç›Š|ç‹å¿—æ–‡|è·‘æ­¥|çº¦ç¨¿|çµå ‚|é‚ªå¿µ|å…¨èšå¾·|å‡¯è¿ªæ‹‰å…‹|è¿å°±|è‡ªå‘|å¤–å–|å“ªå’|æ‰‹æª|å­å¼¹|ç»´ç”Ÿç´ |å‰§æƒ…|å¥³é…|ç”·ä¸»|ç»¿å¡|è¾…è­¦|ä¸Šå®˜|æ¸¸æˆ|å¸¦å¨ƒ|å±|èˆè¹ˆ|æ­è®ª|å­•æœŸ|å†›å®˜|äººæ°‘çš„åä¹‰|é’Ÿè–›é«˜|æ¯”ç‰¹å¸|ç¤¼ç‰©|ç½‘å§|æ•°ç å®è´|æ–­èˆç¦»|è„¾æ°”ä¸å¥½|ç´¢å°¼|æ¸…çœŸå¯º|ç„Šå·¥|éŸ©å‰§|æ²¡æ•™å…»|æ˜¾å¡|å”å±±çƒ§çƒ¤|åŠ³åŠ¡æ´¾é£|åŠ³åŠ¨ä»²è£|å¡”åˆ©ç­|å…‰æ£|é¦™æ¸¯|æ’å¤§|ä¸–ç•Œæ¯|æ›¹æ“|æœ´æ ‘|æ—¥è¯­|æ±Ÿæ­Œ|å°æ¹¾|æ¹–å—å«è§†|éŸ¦ä¸œå¥•|è—æ—|ç‹¬å±…|æ™®æ´±èŒ¶|è˜‘è‡|LOL|é»‘è¢çº å¯Ÿé˜Ÿ|é«˜æ™“æ¾|ä¸å¸®|é‡‘åº¸|æš‘å‡å·¥|é©¬äº‘çš„å´©å¡Œ|å°æ¹¾|æŠ‘éƒ|å¸Œç‰¹å‹’|æ—å†²|è£™å­|è¯ˆéª—|å…¬åŠ¡å‘˜|é•¿å¾—ä¸‘|ææ€–|ç—˜å°|Nike|è€å…‹|èŠ±æŸ³|éŸ³ä¹|æ‘©ç¾¯åº§|å†’é™©å²›|æ ¡æœ|å¥‡å¼‚åšå£«|è€å‹è®°|ä¸­è€ƒ|é˜²æ™’|é™é¦™|å…¨çº¢å©µ|èƒ–å­|æ€€å­•|å›¾ä¹¦é¦†|èƒŒå•è¯|é©¾ç…§|é•–å®¢|å°´å°¬|é’å‚¨|ä½™ç§€å|å®‰è¸|æ–°ç•ª|å¤´åƒ|ç»“å©š|æ¯ä¹³|æ–°æ¦‚å¿µè‹±è¯­|ç¾è’|å¸æ˜Ÿå¤§æ³•|åŒ—å†¥ç¥åŠŸ|è‚¯å¾·åŸº|è€é¾„åŒ–|é€€ä¼‘|ä¹å™¨|æœ´ç§€è£|å·²å©š|é…·åˆ‘|èº«é«˜|å¾·å–„|åƒåœ¾åˆ†ç±»|åŒäºº|æ‚²å“€|å¿—æ„¿å†›|å­å®«|å›½å†›|ä¸­åæ°‘å›½|å›½æ°‘å…š|ç»¼è‰º|çˆ¬å±±|æ”€å²©|å•ƒè€|åŒ—çº¦|é•¿æ®‹äº†|äººå…»ç‰|å›é¿|è—è¯­|ä»Šéº¦éƒ|å‡‰ç™½å¼€|å‘¨å†¬é›¨|å½­äºæ™|è€ƒå…¬|æ’’è´å®|æä¸–æ°‘|ä¼‘å­¦|å½©è™¹å…­å·|å‚»é€¼|çºªæ™“å²š|æŠ¤è‚¤|æ— åŠ›|pb|ç…§éª—|é˜²æ™’|å…å±€é£|ä¸å©šä¸»ä¹‰|å°è¯´|è½¦ä½|æ¶ˆé˜²|å’–å•¡|ç¡å‰æ•…äº‹|è¿åŠ¨å‘˜|æ™‹æ±Ÿ|å…«æ®µé”¦|åˆ·é…¸|é•‡é•¿|æ˜Ÿå·´å…‹|çˆ±æƒ…å…¬å¯“|ç”Ÿå®Œå­©å­|æ¢¦åå½•|çº¦ç¿°å¯æ±—|å®‰ä¹æ­»|æªæ”¯|ä¼Šæœ—|å³ç¿¼|å›½é˜²éƒ¨|å†œä¸šéƒ¨|èµ–å®|éƒ‘æˆåŠŸ|è„±å£ç§€|æ±‰å¥¸|å •èƒ|åˆºæ€|å†°å£¶|é¡¿æ¶…èŒ¨å…‹|å¢ç”˜æ–¯å…‹|å­”å®¶åº—|è«è¨€|ç«‹é™¶å®›|æ’æ——èœä¸š|æ˜¥æ™š|å°¼èµ«é²|åº·ç†™|ç²Ÿè£•|ç›é›…|é‡‘æ™ºç§€|å¤§ç“œ|å´©å|ç”Ÿå‘æ¶²|æ’æ³„|é»‘çœ¼åœˆ|iPhone|è‚¡ç¥¨|æ­¦å°†|ä¸Šå°‰|æˆæ›²|çŒç¯®é«˜æ‰‹|æˆ˜æ–—æœº|é“å£«|ä¿„ä¹Œ|æ¨å¹‚|å®¿èˆ|RNG|æ–°æ­Œ|ç ´äº‹ç²¾è‹±|äºè°¦|åçº¦|ç‹æ¼«å¦®|å«ç”Ÿå·¾|æœé²œ|ç¦»å©š|é…’æ¡Œ|è¿¦å¤ªåŸº|ç™½å«–|æ—é’éœ|å§šæ˜|æ¹–äºº|ç§‘æ¯”|ç¦æª|éƒ­é–|æ»¡æ—|èµ–åº§|é©¾æ ¡|æ¸©ç½‘|å®¶æš´|è‚ç¡¬åŒ–|é™ˆæ™“|è–›å®é’—|æ—é»›ç‰|é²æ»¨é€Š|ä¸¥å±¹å®½|è¤ªé»‘ç´ |ç‹è€…è£è€€|å››é©±å…„å¼Ÿ|äº§ç§‘|ç«å½±|å¹¼å¸ˆ|ä¹”ä¸¹|ä¹Œæ–¹|èµ«å°”æ¾|éŸ©è¯­|æ‚²è§‚|å¼ æ°|æ—ä¿Šæ°|æ¸£å¥³|å¤ªåŸ|ç¾æ„§|å°¹å¤©ä»‡|å–œå‰§ä¹‹ç‹|ä½•ä»¥ç¬™ç®«é»˜|ä½•ä»¥ç›|å¬åŠ›|èè‰|è€å¹´ç—´å‘†|å¤±ç¦|è´¾å¹³å‡¹|è´¾æµ…æµ…|å†¯å”|æ±¤å”¯|ç”·ç¯®|é˜¿å¯Œ|æˆ´ç¬ |é©¬æœªéƒ½|å¼ è‹¥æ˜€|éƒ­å¾·çº²|ç¼–å‰§|çº¢å«å…µ|ç”·å›¢|åˆ†å¨©|æ¨ç‰ç¯|åœ£æ–—å£«|ç‹è²|ç³–å°¿ç—…|les|MIUI|è…¿é•¿|å¥¥å°¼å°”|è‘£æ˜ç |å¦å…‹|DOTA|è·†æ‹³é“|ä¸“å‡æœ¬|è€ƒç ”|çºµç«|æŸ¯æ´|è®¢å©š|è‚¡å¸‚|ç»“çŸ³|æ¯ä¸‰è§‚|å£«å…µçªå‡»|å†¯å·©|å²³äº‘é¹|å¾è‰ºæ´‹|å½æ—|å¾·äº‘ç¤¾|èµµä¸½é¢–|æœ¬å…®|è¿‡ä¸–|é™ˆå¦å¸Œ|å­™æ¨|èµµéœ²æ€|é²è±«|å”ä»æ°|å®ˆæœ›å…ˆé”‹|DM|æ˜æ—¥æ–¹èˆŸ|å°ä¸‰|ç”·A|å‡ºè¿‡è½¨|æœæœˆç¬™|å¼ ä½œéœ–|è‹è”|é›ªä¸­|ä¸œæ–¹ä¸è´¥|æ¢…è¥¿|Cç½—|æ™®äº¬|å¸ƒè¾¾æ‹‰å®«|æ‰¶å¼Ÿé­”|åˆä¸‰|åŒ…è´å°”|åŒ…æ–‡å©§|èµµæœ¬å±±|åˆ˜é‚¦|åœ†æ˜å›­|å›´æ£‹|ç‹å†°å†°|å°„é›•|çŒ®è¡€|å¤è£…|æ±ªå°è²|å¼ é£|å…³ç¾½|åˆ˜å¤‡|ç½—è´¯ä¸­|ä½•åŒå­¦|å…³æ™“å½¤|æç‰åˆš|æš—é»‘ç ´åç¥|ç‹ä¼ å›|å†…é©¬å°”|æ¤å‘|æŠ½çƒŸ|å“²å­¦|èµµè–‡|è©¹å§†æ–¯|ç›—å¢“|æ¸…å²|èƒ¡é€‚|é±¼ç¿…|æè¾¾åº·|é˜¿å¯Œæ±—|å½­å®‡|æ–¹ä¾¿é¢|èƒ¡é”¡è¿›|ä»‡æ—¥|å•å°å†›|é»„å¤šå¤š|å¤§å”æ§|ç«¹é¼ |æ¨ç´«|æ¢¦å¹»è¥¿æ¸¸|';
         GM_setValue('menu_customBlockKeywords', newBlockKeywords.split('|'));
-        registerMenuCommand(); // ÖØĞÂ×¢²á½Å±¾²Ëµ¥
+        registerMenuCommand(); // é‡æ–°æ³¨å†Œè„šæœ¬èœå•
     }
 };
 
 
-// ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê
+// å±è”½æŒ‡å®šå…³é”®è¯
 function blockKeywords(type) {
     if (!menu_value('menu_blockKeywords')) return
     if (!menu_value('menu_customBlockKeywords') || menu_value('menu_customBlockKeywords').length < 1) return
@@ -768,7 +768,7 @@ function blockKeywords(type) {
 
 
     function blockKeywords_(className1, className2) {
-        // Ç°¼¸ÌõÒòÎªÊÇÖ±½Ó¼ÓÔØµÄ£¬¶ø²»ÊÇ¶¯Ì¬²åÈëÍøÒ³µÄ£¬ËùÒÔĞèÒªµ¥¶ÀÅĞ¶Ï
+        // å‰å‡ æ¡å› ä¸ºæ˜¯ç›´æ¥åŠ è½½çš„ï¼Œè€Œä¸æ˜¯åŠ¨æ€æ’å…¥ç½‘é¡µçš„ï¼Œæ‰€ä»¥éœ€è¦å•ç‹¬åˆ¤æ–­
         function blockKeywords_now() {
             if (location.pathname === '/hot') {
                 console.log('222222222222')
@@ -780,10 +780,10 @@ function blockKeywords(type) {
 
         blockKeywords_now();
         window.addEventListener('urlchange', function(){
-            setTimeout(blockKeywords_now, 1000); // ÍøÒ³ URL ±ä»¯ºóÔÙ´ÎÖ´ĞĞ
+            setTimeout(blockKeywords_now, 1000); // ç½‘é¡µ URL å˜åŒ–åå†æ¬¡æ‰§è¡Œ
         })
 
-        // Õâ¸öÊÇ¼àÌıÍøÒ³²åÈëÊÂ¼ş£¬ÓÃÀ´ÅĞ¶ÏºóĞøÍøÒ³¶¯Ì¬²åÈëµÄÔªËØ
+        // è¿™ä¸ªæ˜¯ç›‘å¬ç½‘é¡µæ’å…¥äº‹ä»¶ï¼Œç”¨æ¥åˆ¤æ–­åç»­ç½‘é¡µåŠ¨æ€æ’å…¥çš„å…ƒç´ 
         const callback = (mutationsList, observer) => {
             for (const mutation of mutationsList) {
                 for (const target of mutation.addedNodes) {
@@ -799,17 +799,17 @@ function blockKeywords(type) {
 
     function blockKeywords_search() {
         function blockKeywords_now() {
-            if (location.search.indexOf('type=content') === -1) return // Ä¿Ç°Ö»Ö§³ÖËÑË÷Ò³µÄ [×ÛºÏ]
+            if (location.search.indexOf('type=content') === -1) return // ç›®å‰åªæ”¯æŒæœç´¢é¡µçš„ [ç»¼åˆ]
             document.querySelectorAll('.HotLanding-contentItem, .Card.SearchResult-Card[data-za-detail-view-path-module="AnswerItem"], .Card.SearchResult-Card[data-za-detail-view-path-module="PostItem"]').forEach(function(item1){blockKeywords_1(item1, 'a[data-za-detail-view-id]');})
         }
 
         setTimeout(blockKeywords_now, 2000);
         window.addEventListener('urlchange', function(){
-            setTimeout(blockKeywords_now, 1000); // ÍøÒ³ URL ±ä»¯ºóÔÙ´ÎÖ´ĞĞ
+            setTimeout(blockKeywords_now, 1000); // ç½‘é¡µ URL å˜åŒ–åå†æ¬¡æ‰§è¡Œ
         })
 
         const callback = (mutationsList, observer) => {
-            if (location.search.indexOf('type=content') === -1) return // Ä¿Ç°Ö»Ö§³ÖËÑË÷Ò³µÄ [×ÛºÏ]
+            if (location.search.indexOf('type=content') === -1) return // ç›®å‰åªæ”¯æŒæœç´¢é¡µçš„ [ç»¼åˆ]
             for (const mutation of mutationsList) {
                 for (const target of mutation.addedNodes) {
                     if (target.nodeType != 1) return
@@ -824,10 +824,10 @@ function blockKeywords(type) {
 
     function blockKeywords_comment() {
         function filterComment(comment) {
-            let content = comment.querySelector('.RichText'); // Ñ°ÕÒÆÀÂÛÎÄ×ÖËùÔÚÔªËØ
-            let texts = [content.textContent.toLowerCase()]; // ÒòÎªÒªÕë¶ÔÆÀÂÛÖĞµÄ±íÇé£¬ËùÒÔĞèÒªÕû¸öÊı×é²¢È«²¿×ªÎªĞ¡Ğ´£¨ÓÃÀ´²»Çø·Ö´óĞ¡Ğ´£©
-            for (let i = 0; i < content.children.length; i++) { // ¸ÃÌõÕë¶ÔµÄÊÇÆÀÂÛÖĞµÄ±íÇé
-                let emoticonValue = content.children[i].getAttribute('data-zhihu-emoticon'); // È·¶¨ÊÇ±íÇé¾Í½«ÆäÌí¼Óµ½ÉÔºó±éÀúµÄÊı×éÖĞ
+            let content = comment.querySelector('.RichText'); // å¯»æ‰¾è¯„è®ºæ–‡å­—æ‰€åœ¨å…ƒç´ 
+            let texts = [content.textContent.toLowerCase()]; // å› ä¸ºè¦é’ˆå¯¹è¯„è®ºä¸­çš„è¡¨æƒ…ï¼Œæ‰€ä»¥éœ€è¦æ•´ä¸ªæ•°ç»„å¹¶å…¨éƒ¨è½¬ä¸ºå°å†™ï¼ˆç”¨æ¥ä¸åŒºåˆ†å¤§å°å†™ï¼‰
+            for (let i = 0; i < content.children.length; i++) { // è¯¥æ¡é’ˆå¯¹çš„æ˜¯è¯„è®ºä¸­çš„è¡¨æƒ…
+                let emoticonValue = content.children[i].getAttribute('data-zhihu-emoticon'); // ç¡®å®šæ˜¯è¡¨æƒ…å°±å°†å…¶æ·»åŠ åˆ°ç¨åéå†çš„æ•°ç»„ä¸­
                 if (emoticonValue) {
                     texts.push(emoticonValue)
                 }
@@ -835,10 +835,10 @@ function blockKeywords(type) {
 
             let keywords = menu_value('menu_customBlockKeywords');
             for (const text of texts) {
-                for (const keyword of keywords) { // ±éÀú¹Ø¼ü´ÊºÚÃûµ¥
-                    if (keyword != '' && text.indexOf(keyword.toLowerCase()) > -1) { // ÕÒµ½¾ÍÉ¾³ı¸ÃÆÀÂÛ
-                        console.log('ÒÑÆÁ±ÎÆÀÂÛ£º' + text);
-                        content.textContent = '[¸ÃÆÀÂÛÒÑÆÁ±Î]';
+                for (const keyword of keywords) { // éå†å…³é”®è¯é»‘åå•
+                    if (keyword != '' && text.indexOf(keyword.toLowerCase()) > -1) { // æ‰¾åˆ°å°±åˆ é™¤è¯¥è¯„è®º
+                        console.log('å·²å±è”½è¯„è®ºï¼š' + text);
+                        content.textContent = '[è¯¥è¯„è®ºå·²å±è”½]';
                         break;
                     }
                 }
@@ -860,12 +860,12 @@ function blockKeywords(type) {
     }
 
     function blockKeywords_1(item1, css) {
-        let item = item1.querySelector(css); // ±êÌâËùÔÚÔªËØ
+        let item = item1.querySelector(css); // æ ‡é¢˜æ‰€åœ¨å…ƒç´ 
         console.log(item)
         if (item) {
-            for (const keyword of menu_value('menu_customBlockKeywords')) { // ±éÀú¹Ø¼ü´ÊºÚÃûµ¥
+            for (const keyword of menu_value('menu_customBlockKeywords')) { // éå†å…³é”®è¯é»‘åå•
                 let text = item.content || item.textContent;
-                if (keyword != '' && text.toLowerCase().indexOf(keyword.toLowerCase()) > -1) { // ÕÒµ½¾ÍÉ¾³ı¸ÃĞÅÏ¢Á÷
+                if (keyword != '' && text.toLowerCase().indexOf(keyword.toLowerCase()) > -1) { // æ‰¾åˆ°å°±åˆ é™¤è¯¥ä¿¡æ¯æµ
                     console.log(text);
                     item1.hidden = true;
                     item1.style.display = 'none';
@@ -877,28 +877,28 @@ function blockKeywords(type) {
 }
 
 
-// ÆÁ±ÎÖ¸¶¨Àà±ğ£¨ÊÓÆµ/ÎÄÕÂµÈ£©
+// å±è”½æŒ‡å®šç±»åˆ«ï¼ˆè§†é¢‘/æ–‡ç« ç­‰ï¼‰
 function blockType(type) {
     let name;
-    // Ò»¿ªÊ¼¼ÓÔØµÄĞÅÏ¢Á÷ + Ìí¼Ó±êÇ©ÑùÊ½
-    if (type === 'search') { // ËÑË÷Ò³
+    // ä¸€å¼€å§‹åŠ è½½çš„ä¿¡æ¯æµ + æ·»åŠ æ ‡ç­¾æ ·å¼
+    if (type === 'search') { // æœç´¢é¡µ
         if (!menu_value('menu_blockTypeVideo') && !menu_value('menu_blockTypeArticle') && !menu_value('menu_blockTypeTopic') && !menu_value('menu_blockTypeSearch')) return
         if (menu_value('menu_blockTypeSearch') && location.pathname === '/search') setTimeout(function(){document.querySelector('.RelevantQuery').parentElement.parentElement.hidden = true;}, 2000)
         name = 'h2.ContentItem-title a:not(.zhihu_e_toQuestion), a.KfeCollection-PcCollegeCard-link, h2.SearchTopicHeader-Title a'
         addSetInterval_(name);
-    } else if (type === 'question') { // ÎÊÌâÒ³
+    } else if (type === 'question') { // é—®é¢˜é¡µ
         if (!menu_value('menu_blockTypeVideo')) return
         document.lastChild.appendChild(document.createElement('style')).textContent = `.VideoAnswerPlayer, .VideoAnswerPlayer-video, .VideoAnswerPlayer-iframe {display: none !important;}`;
         name = '.VideoAnswerPlayer'
         document.querySelectorAll(name).forEach(function(item){blockType_(item);})
-    } else { // Ê×Ò³
+    } else { // é¦–é¡µ
         if (!menu_value('menu_blockTypeVideo') && !menu_value('menu_blockTypeArticle')) return
         if (menu_value('menu_blockTypeVideo')) document.lastChild.appendChild(document.createElement('style')).textContent = `.Card .ZVideoItem-video, nav.TopstoryTabs > a[aria-controls="Topstory-zvideo"] {display: none !important;}`;
         name = 'h2.ContentItem-title a:not(.zhihu_e_toQuestion)'
         document.querySelectorAll(name).forEach(function(item){blockType_(item);})
     }
 
-    // ºóĞø¼ÓÔØµÄĞÅÏ¢Á÷
+    // åç»­åŠ è½½çš„ä¿¡æ¯æµ
     const observer = new MutationObserver(mutationsList => {
         for (const mutation of mutationsList) {
             for (const target of mutation.addedNodes) {
@@ -911,36 +911,36 @@ function blockType(type) {
 
     window.addEventListener('urlchange', function(){
         addSetInterval_(name);
-        // ÒÆ³ıÏà¹ØËÑË÷
+        // ç§»é™¤ç›¸å…³æœç´¢
         if (menu_value('menu_blockTypeSearch') && location.pathname === '/search' && location.search.indexOf('type=content') > -1) setTimeout(function(){document.querySelector('.RelevantQuery').parentElement.parentElement.hidden = true;}, 1500)
     })
 
     function blockType_(titleA) {
-        if (!titleA) return // ÅĞ¶ÏÊÇ·ñÎªÕæ
+        if (!titleA) return // åˆ¤æ–­æ˜¯å¦ä¸ºçœŸ
         //console.log(titleA.href)
-        if (location.pathname === '/search') { // ËÑË÷Ò³
-            if (location.search.indexOf('type=content') === -1) return //   ½öÏŞËÑË÷Ò³µÄ [×ÛºÏ]
-            if (titleA.href.indexOf('/zvideo/') > -1 || titleA.href.indexOf('video.zhihu.com') > -1) { //                  Èç¹ûÊÇÊÓÆµ
+        if (location.pathname === '/search') { // æœç´¢é¡µ
+            if (location.search.indexOf('type=content') === -1) return //   ä»…é™æœç´¢é¡µçš„ [ç»¼åˆ]
+            if (titleA.href.indexOf('/zvideo/') > -1 || titleA.href.indexOf('video.zhihu.com') > -1) { //                  å¦‚æœæ˜¯è§†é¢‘
                 if (menu_value('menu_blockTypeVideo')) findParentElement(titleA, 'Card').hidden = true;
-            } else if (titleA.href.indexOf('zhuanlan.zhihu.com') > -1) { // Èç¹ûÊÇÎÄÕÂ
+            } else if (titleA.href.indexOf('zhuanlan.zhihu.com') > -1) { // å¦‚æœæ˜¯æ–‡ç« 
                 if (menu_value('menu_blockTypeArticle')) findParentElement(titleA, 'Card SearchResult-Card').hidden = true;
-            } else if (titleA.href.indexOf('/topic/') > -1) { //            Èç¹ûÊÇ»°Ìâ
+            } else if (titleA.href.indexOf('/topic/') > -1) { //            å¦‚æœæ˜¯è¯é¢˜
                 if (menu_value('menu_blockTypeTopic')) findParentElement(titleA, 'Card SearchResult-Card').hidden = true;
-            } else if (titleA.href.indexOf('/market/') > -1) { //           Èç¹ûÊÇÔÓÖ¾ÎÄÕÂµÈÂÒÆß°ËÔãµÄ
+            } else if (titleA.href.indexOf('/market/') > -1) { //           å¦‚æœæ˜¯æ‚å¿—æ–‡ç« ç­‰ä¹±ä¸ƒå…«ç³Ÿçš„
                 if (menu_value('menu_blockTypeArticle')) findParentElement(titleA, 'Card SearchResult-Card').hidden = true;
             }
-        } else if (location.pathname.indexOf('/question/') > -1) { // ÎÊÌâÒ³
+        } else if (location.pathname.indexOf('/question/') > -1) { // é—®é¢˜é¡µ
             if (menu_value('menu_blockTypeVideo')) findParentElement(titleA, 'List-item').hidden = true;
-        } else { // Ê×Ò³
-            if (titleA.href.indexOf('/zvideo/') > -1 || titleA.href.indexOf('video.zhihu.com') > -1) { //                  Èç¹ûÊÇÊÓÆµ
+        } else { // é¦–é¡µ
+            if (titleA.href.indexOf('/zvideo/') > -1 || titleA.href.indexOf('video.zhihu.com') > -1) { //                  å¦‚æœæ˜¯è§†é¢‘
                 if (menu_value('menu_blockTypeVideo')) findParentElement(titleA, 'Card TopstoryItem TopstoryItem-isRecommend').hidden = true;
-            } else if (titleA.href.indexOf('/answer/') > -1) { //           Èç¹ûÊÇÎÊÌâ£¨ÊÓÆµ»Ø´ğ£©
+            } else if (titleA.href.indexOf('/answer/') > -1) { //           å¦‚æœæ˜¯é—®é¢˜ï¼ˆè§†é¢‘å›ç­”ï¼‰
                 if (findParentElement(titleA, 'ContentItem AnswerItem').querySelector('.VideoAnswerPlayer')) {
                     if (menu_value('menu_blockTypeVideo')) findParentElement(titleA, 'Card TopstoryItem TopstoryItem-isRecommend').hidden = true;
                 }
-            } else if (titleA.href.indexOf('/education/video-course/') > -1) { // Èç¹ûÊÇÒ•îlÕn³Ì
+            } else if (titleA.href.indexOf('/education/video-course/') > -1) { // å¦‚æœæ˜¯è¦–é »èª²ç¨‹
                 if (menu_value('menu_blockTypeVideo')) findParentElement(titleA, 'Card TopstoryItem TopstoryItem-isRecommend').hidden = true;
-            } else if (titleA.href.indexOf('zhuanlan.zhihu.com') > -1) { // Èç¹ûÊÇÎÄÕÂ
+            } else if (titleA.href.indexOf('zhuanlan.zhihu.com') > -1) { // å¦‚æœæ˜¯æ–‡ç« 
                 if (menu_value('menu_blockTypeArticle')) findParentElement(titleA, 'Card TopstoryItem TopstoryItem-isRecommend').hidden = true;
             }
         }
@@ -958,11 +958,11 @@ function blockType(type) {
 }
 
 
-// Ñ°ÕÒ¸¸ÔªËØ
+// å¯»æ‰¾çˆ¶å…ƒç´ 
 function findParentElement(item, className, type = false) {
     if (item.parentElement) {
         //console.log(item.parentElement)
-        if (type) { // true = ÍêÈ«Ò»ÖÂ£¬false = °üº¬¼´¿É
+        if (type) { // true = å®Œå…¨ä¸€è‡´ï¼Œfalse = åŒ…å«å³å¯
             if (item.parentElement.className && item.parentElement.className === className) {
                 //console.log(item.parentElement.className)
                 return item.parentElement;
@@ -983,7 +983,7 @@ function findParentElement(item, className, type = false) {
 }
 
 
-// ÒÆ³ı¸ßÁÁÁ´½Ó
+// ç§»é™¤é«˜äº®é“¾æ¥
 function removeHighlightLink() {
     const callback = (mutationsList, observer) => {
         for (const mutation of mutationsList) {
@@ -998,12 +998,12 @@ function removeHighlightLink() {
     const observer = new MutationObserver(callback);
     observer.observe(document, { childList: true, subtree: true });
 
-    // Õë¶ÔµÄÊÇ´ò¿ªÍøÒ³ºóÖ±½Ó¼ÓÔØµÄÇ°Ãæ¼¸¸ö»Ø´ğ£¨ÉÏÃæÄÄĞ©ÊÇÕë¶Ô¶¯Ì¬¼ÓÔØµÄ»Ø´ğ£©
+    // é’ˆå¯¹çš„æ˜¯æ‰“å¼€ç½‘é¡µåç›´æ¥åŠ è½½çš„å‰é¢å‡ ä¸ªå›ç­”ï¼ˆä¸Šé¢å“ªäº›æ˜¯é’ˆå¯¹åŠ¨æ€åŠ è½½çš„å›ç­”ï¼‰
     document.querySelectorAll('span > a[data-za-not-track-link][href^="https://www.zhihu.com/search?q="]').forEach(e => e.parentElement.replaceWith(e.textContent))
 }
 
 
-// ÆÁ±ÎÑÎÑ¡ÄÚÈİ
+// å±è”½ç›é€‰å†…å®¹
 function blockYanXuan() {
     if (!menu_value('menu_blockYanXuan')) return
     const blockYanXuan_question = (mutationsList, observer) => {
@@ -1032,15 +1032,15 @@ function blockYanXuan() {
         }
     };
 
-    if (location.pathname.indexOf('/answer/') > -1) { // »Ø´ğÒ³£¨¾ÍÊÇÖ»ÓĞÈı¸ö»Ø´ğµÄÒ³Ãæ£©
+    if (location.pathname.indexOf('/answer/') > -1) { // å›ç­”é¡µï¼ˆå°±æ˜¯åªæœ‰ä¸‰ä¸ªå›ç­”çš„é¡µé¢ï¼‰
         const observer = new MutationObserver(blockYanXuan_question_answer);
         observer.observe(document, { childList: true, subtree: true });
-    } else { // ÎÊÌâÒ³£¨¿ÉÒÔÏÔÊ¾ËùÓĞ»Ø´ğµÄÒ³Ãæ£©
+    } else { // é—®é¢˜é¡µï¼ˆå¯ä»¥æ˜¾ç¤ºæ‰€æœ‰å›ç­”çš„é¡µé¢ï¼‰
         const observer = new MutationObserver(blockYanXuan_question);
         observer.observe(document, { childList: true, subtree: true });
     }
 
-    // Õë¶ÔµÄÊÇ´ò¿ªÍøÒ³ºóÖ±½Ó¼ÓÔØµÄÇ°Ãæ¼¸¸ö»Ø´ğ£¨ÉÏÃæÄÄĞ©ÊÇÕë¶Ô¶¯Ì¬¼ÓÔØµÄ»Ø´ğ£©
+    // é’ˆå¯¹çš„æ˜¯æ‰“å¼€ç½‘é¡µåç›´æ¥åŠ è½½çš„å‰é¢å‡ ä¸ªå›ç­”ï¼ˆä¸Šé¢å“ªäº›æ˜¯é’ˆå¯¹åŠ¨æ€åŠ è½½çš„å›ç­”ï¼‰
     document.querySelectorAll('.List-item, .Card.AnswerCard').forEach(function(item){
         if (item.querySelector('.KfeCollection-AnswerTopCard-Container, .KfeCollection-PurchaseBtn')) {
             item.hidden = true;
@@ -1049,23 +1049,23 @@ function blockYanXuan() {
 }
 
 
-// Çø·ÖÎÊÌâÎÄÕÂ
+// åŒºåˆ†é—®é¢˜æ–‡ç« 
 function addTypeTips() {
     if (!menu_value('menu_typeTips')) return
     let style = `font-weight: bold;font-size: 13px;padding: 1px 4px 0;border-radius: 2px;display: inline-block;vertical-align: top;margin: ${(location.pathname === '/search') ? '2' : '4'}px 4px 0 0;`
-    document.body.appendChild(document.createElement('style')).textContent = `/* Çø·ÖÎÊÌâÎÄÕÂ */
-.AnswerItem .ContentItem-title a:not(.zhihu_e_toQuestion)::before {content:'ÎÊÌâ';color: #f68b83;background-color: #f68b8333;${style}}
-.TopstoryQuestionAskItem .ContentItem-title a:not(.zhihu_e_toQuestion)::before {content:'ÎÊÌâ';color: #ff5a4e;background-color: #ff5a4e33;${style}}
-.ZVideoItem .ContentItem-title a::before, .ZvideoItem .ContentItem-title a::before {content:'ÊÓÆµ';color: #00BCD4;background-color: #00BCD433;${style}}
-.ArticleItem .ContentItem-title a::before {content:'ÎÄÕÂ';color: #2196F3;background-color: #2196F333;${style}}`;
+    document.body.appendChild(document.createElement('style')).textContent = `/* åŒºåˆ†é—®é¢˜æ–‡ç«  */
+.AnswerItem .ContentItem-title a:not(.zhihu_e_toQuestion)::before {content:'é—®é¢˜';color: #f68b83;background-color: #f68b8333;${style}}
+.TopstoryQuestionAskItem .ContentItem-title a:not(.zhihu_e_toQuestion)::before {content:'é—®é¢˜';color: #ff5a4e;background-color: #ff5a4e33;${style}}
+.ZVideoItem .ContentItem-title a::before, .ZvideoItem .ContentItem-title a::before {content:'è§†é¢‘';color: #00BCD4;background-color: #00BCD433;${style}}
+.ArticleItem .ContentItem-title a::before {content:'æ–‡ç« ';color: #2196F3;background-color: #2196F333;${style}}`;
 }
 
 
-// Ö±´ïÎÊÌâ°´Å¥
+// ç›´è¾¾é—®é¢˜æŒ‰é’®
 function addToQuestion() {
     if (!menu_value('menu_toQuestion')) return
 
-    // Ò»¿ªÊ¼¼ÓÔØµÄĞÅÏ¢Á÷ + Ìí¼Ó°´Å¥ÑùÊ½
+    // ä¸€å¼€å§‹åŠ è½½çš„ä¿¡æ¯æµ + æ·»åŠ æŒ‰é’®æ ·å¼
     if (location.pathname === '/search') {
         document.lastChild.appendChild(document.createElement('style')).textContent = `a.zhihu_e_toQuestion {font-size: 13px !important;font-weight: normal !important;padding: 1px 6px 0 !important;border-radius: 2px !important;display: inline-block !important;vertical-align: top !important;height: 20.67px !important;line-height: 20.67px !important;margin-top: 2px !important;}`;
         addSetInterval_('h2.ContentItem-title a:not(.zhihu_e_tips)');
@@ -1074,7 +1074,7 @@ function addToQuestion() {
         document.querySelectorAll('h2.ContentItem-title a:not(.zhihu_e_tips)').forEach(function(item){addTypeTips_(item);})
     }
 
-    // ºóĞø¼ÓÔØµÄĞÅÏ¢Á÷
+    // åç»­åŠ è½½çš„ä¿¡æ¯æµ
     const observer = new MutationObserver(mutationsList => {
         for (const mutation of mutationsList) {
             for (const target of mutation.addedNodes) {
@@ -1090,13 +1090,13 @@ function addToQuestion() {
     })
 
     function addTypeTips_(titleA) {
-        if (!titleA) return // ÅĞ¶ÏÊÇ·ñÎªÕæ
-        if (titleA.parentElement.querySelector('a.zhihu_e_toQuestion')) return // ÅĞ¶ÏÊÇ·ñÒÑÌí¼Ó
-        if (titleA.textContent.indexOf('?') != -1) { // °ÑÎÊÌâÄ©Î²Ó¢ÎÄÎÊºÃ [?] µÄÌæ»»ÎªÖĞÎÄÎÊºÃ [£¿]£¬ÕâÑù°´Å¥Óë±êÌâÖ®¼äµÄ¼ä¾à¾Í¸Õ¸ÕºÃ~
-            titleA.innerHTML = titleA.innerHTML.replace('?', "£¿")
+        if (!titleA) return // åˆ¤æ–­æ˜¯å¦ä¸ºçœŸ
+        if (titleA.parentElement.querySelector('a.zhihu_e_toQuestion')) return // åˆ¤æ–­æ˜¯å¦å·²æ·»åŠ 
+        if (titleA.textContent.indexOf('?') != -1) { // æŠŠé—®é¢˜æœ«å°¾è‹±æ–‡é—®å¥½ [?] çš„æ›¿æ¢ä¸ºä¸­æ–‡é—®å¥½ [ï¼Ÿ]ï¼Œè¿™æ ·æŒ‰é’®ä¸æ ‡é¢˜ä¹‹é—´çš„é—´è·å°±åˆšåˆšå¥½~
+            titleA.innerHTML = titleA.innerHTML.replace('?', "ï¼Ÿ")
         }
-        if (/answer\/\d+/.test(titleA.href)) { //  Èç¹ûÊÇÖ¸Ïò»Ø´ğµÄÎÊÌâ£¨¶ø·ÇÖ¸Ïò´¿ÎÊÌâµÄÁ´½Ó£©
-            titleA.insertAdjacentHTML('afterend', `<a class="zhihu_e_toQuestion VoteButton" href="${titleA.parentElement.querySelector('meta[itemprop="url"]').content}" target="_blank">Ö±´ïÎÊÌâ</a>`);
+        if (/answer\/\d+/.test(titleA.href)) { //  å¦‚æœæ˜¯æŒ‡å‘å›ç­”çš„é—®é¢˜ï¼ˆè€ŒéæŒ‡å‘çº¯é—®é¢˜çš„é“¾æ¥ï¼‰
+            titleA.insertAdjacentHTML('afterend', `<a class="zhihu_e_toQuestion VoteButton" href="${titleA.parentElement.querySelector('meta[itemprop="url"]').content}" target="_blank">ç›´è¾¾é—®é¢˜</a>`);
         }
     }
 
@@ -1112,7 +1112,7 @@ function addToQuestion() {
 }
 
 
-// Õ¹¿ªÎÊÌâÃèÊö
+// å±•å¼€é—®é¢˜æè¿°
 function questionRichTextMore() {
     if (!menu_value('menu_questionRichTextMore')) return
     let button = document.querySelector('button.QuestionRichText-more');
@@ -1120,7 +1120,7 @@ function questionRichTextMore() {
 }
 
 
-// ÖªºõÃâµÇÂ¼
+// çŸ¥ä¹å…ç™»å½•
 function removeLogin() {
     const removeLoginModal = (mutationsList, observer) => {
         for (const mutation of mutationsList) {
@@ -1129,55 +1129,55 @@ function removeLogin() {
                 if (target.querySelector('.signFlowModal')) {
                     let button = target.querySelector('.Button.Modal-closeButton.Button--plain');
                     if (button) button.click();
-                } else if (getXpath('//button[text()="Á¢¼´µÇÂ¼/×¢²á"]',target)) {
+                } else if (getXpath('//button[text()="ç«‹å³ç™»å½•/æ³¨å†Œ"]',target)) {
                     target.remove();
                 }
             }
         }
     };
 
-    // Î´µÇÂ¼Ê±²Å»á¼àÌı²¢ÒÆ³ıµÇÂ¼µ¯´°
-    if(location.hostname === 'zhuanlan.zhihu.com') { // Èç¹ûÊÇÎÄÕÂÒ³
-        if (!document.querySelector('.ColumnPageHeader-profile>.AppHeader-menu')) { // Î´µÇÂ¼
+    // æœªç™»å½•æ—¶æ‰ä¼šç›‘å¬å¹¶ç§»é™¤ç™»å½•å¼¹çª—
+    if(location.hostname === 'zhuanlan.zhihu.com') { // å¦‚æœæ˜¯æ–‡ç« é¡µ
+        if (!document.querySelector('.ColumnPageHeader-profile>.AppHeader-menu')) { // æœªç™»å½•
             const observer = new MutationObserver(removeLoginModal);
             observer.observe(document, { childList: true, subtree: true });
-            if (getXpath('//button[text()="µÇÂ¼/×¢²á"]')) getXpath('//button[text()="µÇÂ¼/×¢²á"]').outerHTML = '<a class="Button AppHeader-login Button--blue" href="https://www.zhihu.com/signin" target="_blank">µÇÂ¼/×¢²á</a>'; // [µÇÂ¼] °´Å¥Ìø×ªÖÁµÇÂ¼Ò³Ãæ
+            if (getXpath('//button[text()="ç™»å½•/æ³¨å†Œ"]')) getXpath('//button[text()="ç™»å½•/æ³¨å†Œ"]').outerHTML = '<a class="Button AppHeader-login Button--blue" href="https://www.zhihu.com/signin" target="_blank">ç™»å½•/æ³¨å†Œ</a>'; // [ç™»å½•] æŒ‰é’®è·³è½¬è‡³ç™»å½•é¡µé¢
         } else {
-            cleanTitles(); // ¾»»¯±êÌâÏûÏ¢
+            cleanTitles(); // å‡€åŒ–æ ‡é¢˜æ¶ˆæ¯
         }
-    } else { // ²»ÊÇÎÄÕÂÒ³
-        if (!document.querySelector('.AppHeader-profile>.AppHeader-menu')) { // Î´µÇÂ¼
+    } else { // ä¸æ˜¯æ–‡ç« é¡µ
+        if (!document.querySelector('.AppHeader-profile>.AppHeader-menu')) { // æœªç™»å½•
             const observer = new MutationObserver(removeLoginModal);
             observer.observe(document, { childList: true, subtree: true });
-            document.lastElementChild.appendChild(document.createElement('style')).textContent = '.Question-mainColumnLogin, button.AppHeader-login {display: none !important;}'; // ÆÁ±ÎÎÊÌâÒ³ÖĞ¼äµÄµÇÂ¼ÌáÊ¾
-            if (getXpath('//button[text()="µÇÂ¼/×¢²á"]')) getXpath('//button[text()="µÇÂ¼/×¢²á"]').outerHTML = '<a class="Button AppHeader-login Button--blue" href="https://www.zhihu.com/signin" target="_blank">µÇÂ¼/×¢²á</a>'; // [µÇÂ¼] °´Å¥Ìø×ªÖÁµÇÂ¼Ò³Ãæ
+            document.lastElementChild.appendChild(document.createElement('style')).textContent = '.Question-mainColumnLogin, button.AppHeader-login {display: none !important;}'; // å±è”½é—®é¢˜é¡µä¸­é—´çš„ç™»å½•æç¤º
+            if (getXpath('//button[text()="ç™»å½•/æ³¨å†Œ"]')) getXpath('//button[text()="ç™»å½•/æ³¨å†Œ"]').outerHTML = '<a class="Button AppHeader-login Button--blue" href="https://www.zhihu.com/signin" target="_blank">ç™»å½•/æ³¨å†Œ</a>'; // [ç™»å½•] æŒ‰é’®è·³è½¬è‡³ç™»å½•é¡µé¢
         } else {
-            cleanTitles(); // ¾»»¯±êÌâÏûÏ¢
+            cleanTitles(); // å‡€åŒ–æ ‡é¢˜æ¶ˆæ¯
         }
     }
 }
 
 
-// ¾»»¯±êÌâÏûÏ¢
+// å‡€åŒ–æ ‡é¢˜æ¶ˆæ¯
 function cleanTitles() {
     if (!menu_value('menu_cleanTitles')) return
 
-    // ·½°¸Ò»
+    // æ–¹æ¡ˆä¸€
     const elTitle = document.head.querySelector('title');
     const original = elTitle.textContent;
     const observer = new MutationObserver(function() {
-        if (elTitle.textContent != original) { // ±ÜÃâÖØ¸´Ö´ĞĞ
+        if (elTitle.textContent != original) { // é¿å…é‡å¤æ‰§è¡Œ
             elTitle.textContent = original;
         }
     });
     observer.observe(elTitle, { childList: true });
 
-    // ·½°¸¶ş
+    // æ–¹æ¡ˆäºŒ
     // if (Reflect.getOwnPropertyDescriptor(document, 'title')) {
     //     const elTitle = document.head.querySelector('title');
     //     const original = elTitle.textContent;
     //     const observer = new MutationObserver(function() {
-    //         if (elTitle.textContent != original) { // ±ÜÃâÖØ¸´Ö´ĞĞ
+    //         if (elTitle.textContent != original) { // é¿å…é‡å¤æ‰§è¡Œ
     //             elTitle.textContent = original;
     //         }
     //     });
@@ -1192,7 +1192,7 @@ function cleanTitles() {
 }
 
 
-// ¾»»¯ËÑË÷ÈÈÃÅ
+// å‡€åŒ–æœç´¢çƒ­é—¨
 function cleanSearch() {
     if (!menu_value('menu_cleanSearch')) return
 
@@ -1206,13 +1206,13 @@ function cleanSearch() {
 }
 
 
-// ¿ì½İ¹Ø±ÕĞü¸¡ÆÀÂÛ£¨¼àÌıµã»÷ÊÂ¼ş£¬µã»÷ÍøÒ³Á½²à¿Õ°×´¦£©
+// å¿«æ·å…³é—­æ‚¬æµ®è¯„è®ºï¼ˆç›‘å¬ç‚¹å‡»äº‹ä»¶ï¼Œç‚¹å‡»ç½‘é¡µä¸¤ä¾§ç©ºç™½å¤„ï¼‰
 function closeFloatingComments() {
     const closeFloatingCommentsModal = (mutationsList, observer) => {
         for (const mutation of mutationsList) {
             for (const target of mutation.addedNodes) {
                 if (target.nodeType != 1) return
-                let button = document.querySelector('button[aria-label="¹Ø±Õ"]');
+                let button = document.querySelector('button[aria-label="å…³é—­"]');
                 if (button) {button.parentElement.parentElement.onclick = function(event){if (event.target.parentElement == this) {button.click();}}}
             }
         }
@@ -1222,7 +1222,7 @@ function closeFloatingComments() {
 }
 
 
-// ¼àÌı XMLHttpRequest ÊÂ¼ş
+// ç›‘å¬ XMLHttpRequest äº‹ä»¶
 /*function EventXMLHttpRequest() {
     var _send = window.XMLHttpRequest.prototype.send
     function sendReplacement(data) {
@@ -1233,7 +1233,7 @@ function closeFloatingComments() {
 }*/
 
 
-// ×Ô¶¨Òå urlchange ÊÂ¼ş£¨ÓÃÀ´¼àÌı URL ±ä»¯£©
+// è‡ªå®šä¹‰ urlchange äº‹ä»¶ï¼ˆç”¨æ¥ç›‘å¬ URL å˜åŒ–ï¼‰
 function addUrlChangeEvent() {
     history.pushState = ( f => function pushState(){
         var ret = f.apply(this, arguments);
@@ -1259,15 +1259,15 @@ function getXpath(xpath, contextNode, doc = document) {
     contextNode = contextNode || doc;
     try {
         const result = doc.evaluate(xpath, contextNode, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
-        // Ó¦¸Ã×ÜÊÇ·µ»ØÒ»¸öÔªËØ½Úµã
+        // åº”è¯¥æ€»æ˜¯è¿”å›ä¸€ä¸ªå…ƒç´ èŠ‚ç‚¹
         return result.singleNodeValue && result.singleNodeValue.nodeType === 1 && result.singleNodeValue;
     } catch (err) {
-        throw new Error(`ÎŞĞ§ Xpath: ${xpath}`);
+        throw new Error(`æ— æ•ˆ Xpath: ${xpath}`);
     }
 }
 
 
-// ÏÔÊ¾ÎÊÌâ×÷Õß
+// æ˜¾ç¤ºé—®é¢˜ä½œè€…
 function question_author() {
     if (document.querySelector('.BrandQuestionSymbol, .QuestionAuthor')) return
     let qJson = JSON.parse(document.querySelector('#js-initialData').textContent).initialState.entities.questions[/\d+/.exec(location.pathname)[0]].author,
@@ -1278,33 +1278,33 @@ function question_author() {
 }
 
 
-// [ÍêÕûÏÔÊ¾Ê±¼ä + ÖÃ¶¥ÏÔÊ¾Ê±¼ä] ¹¦ÄÜĞŞ¸Ä×Ô£ºhttps://greasyfork.org/scripts/402808£¨´Ó JQuery ¸ÄÎªÔ­Éú JavaScript£¬ÇÒ¾«¼ò¡¢ÓÅ»¯ÁË´úÂë£©
-// ÍêÕûÏÔÊ¾Ê±¼ä + ÖÃ¶¥ÏÔÊ¾Ê±¼ä
+// [å®Œæ•´æ˜¾ç¤ºæ—¶é—´ + ç½®é¡¶æ˜¾ç¤ºæ—¶é—´] åŠŸèƒ½ä¿®æ”¹è‡ªï¼šhttps://greasyfork.org/scripts/402808ï¼ˆä» JQuery æ”¹ä¸ºåŸç”Ÿ JavaScriptï¼Œä¸”ç²¾ç®€ã€ä¼˜åŒ–äº†ä»£ç ï¼‰
+// å®Œæ•´æ˜¾ç¤ºæ—¶é—´ + ç½®é¡¶æ˜¾ç¤ºæ—¶é—´
 function topTime_(css, classs) {
     document.querySelectorAll(css).forEach(function(_this) {
         let t = _this.querySelector('.ContentItem-time'); if (!t) return
         if (!(t.classList.contains('full')) && t.querySelector('span') && t.querySelector('span').textContent != null) {
-            // ÍêÕûÏÔÊ¾Ê±¼ä
+            // å®Œæ•´æ˜¾ç¤ºæ—¶é—´
             topTime_allTime(t)
-            // ·¢²¼Ê±¼äÖÃ¶¥
+            // å‘å¸ƒæ—¶é—´ç½®é¡¶
             topTime_publishTop(t, _this, classs)
         }
     });
 }
 
 
-// ÍêÕûÏÔÊ¾Ê±¼ä + ÖÃ¶¥ÏÔÊ¾Ê±¼ä - ÎÄÕÂ
+// å®Œæ•´æ˜¾ç¤ºæ—¶é—´ + ç½®é¡¶æ˜¾ç¤ºæ—¶é—´ - æ–‡ç« 
 function topTime_post() {
     let t = document.querySelector('.ContentItem-time:not(.xiu-time)'); if (!t) return
-    // ÍêÕûÏÔÊ¾Ê±¼ä
-    if (t.textContent.indexOf('±à¼­ÓÚ') > -1 && !(t.classList.contains('xiu-time'))) {
+    // å®Œæ•´æ˜¾ç¤ºæ—¶é—´
+    if (t.textContent.indexOf('ç¼–è¾‘äº') > -1 && !(t.classList.contains('xiu-time'))) {
         let tt = t.textContent;
         t.click();
-        t.textContent = (t.textContent + ' £¬' + tt)
+        t.textContent = (t.textContent + ' ï¼Œ' + tt)
         t.classList.add('xiu-time');
     }
 
-    //·¢²¼Ê±¼äÖÃ¶¥
+    //å‘å¸ƒæ—¶é—´ç½®é¡¶
     if (menu_value('menu_publishTop') && !(document.querySelector('.Post-Header > .ContentItem-time')) && !(document.querySelector('.ContentItem-meta > .ContentItem-time'))) {
         let temp_time = t.cloneNode(true);
         temp_time.style.padding = '0px';
@@ -1313,65 +1313,65 @@ function topTime_post() {
 }
 
 
-// ÍêÕûÏÔÊ¾Ê±¼ä
+// å®Œæ•´æ˜¾ç¤ºæ—¶é—´
 function topTime_allTime(t) {
-    if (t.textContent.indexOf('·¢²¼ÓÚ') > -1 && t.textContent.indexOf('±à¼­ÓÚ') == -1) {
+    if (t.textContent.indexOf('å‘å¸ƒäº') > -1 && t.textContent.indexOf('ç¼–è¾‘äº') == -1) {
         t.querySelector('span').textContent = (t.querySelector('span').dataset.tooltip);
         t.classList.add('full');
-    } else if (t.textContent.indexOf('·¢²¼ÓÚ') == -1 && t.textContent.indexOf('±à¼­ÓÚ') > -1) {
-        t.querySelector('span').textContent = (t.querySelector('span').dataset.tooltip) + ' £¬' + (t.querySelector('span').textContent);
+    } else if (t.textContent.indexOf('å‘å¸ƒäº') == -1 && t.textContent.indexOf('ç¼–è¾‘äº') > -1) {
+        t.querySelector('span').textContent = (t.querySelector('span').dataset.tooltip) + ' ï¼Œ' + (t.querySelector('span').textContent);
         t.classList.add('full');
     }
 }
 
 
-// ·¢²¼Ê±¼äÖÃ¶¥
+// å‘å¸ƒæ—¶é—´ç½®é¡¶
 function topTime_publishTop(t, _this, _class) {
     if (!menu_value('menu_publishTop')) return
     if (!t.parentNode.classList.contains(_class)) {
         let temp_time = t.cloneNode(true);
         temp_time.style.padding = '0px';
-        // ¶ÔÓÚ½Ï¶ÌµÄ»Ø´ğ£¬Òş²Ø»Ø´ğµ×²¿µÄÊ±¼ä
+        // å¯¹äºè¾ƒçŸ­çš„å›ç­”ï¼Œéšè—å›ç­”åº•éƒ¨çš„æ—¶é—´
         if (_this.offsetHeight < 400) t.style.display = 'none';
         _this.querySelector('.' + _class).insertAdjacentElement('beforeEnd', temp_time);
     }
 }
 
 
-// ÎÊÌâ´´½¨Ê±¼ä
+// é—®é¢˜åˆ›å»ºæ—¶é—´
 function question_time() {
     if (!(document.querySelector('.QuestionPage .QuestionHeader-side .QuestionTime-xiu'))) {
-        document.querySelector('.QuestionPage .QuestionHeader-side').insertAdjacentHTML('beforeEnd', '<div class="QuestionTime-xiu" style="color: #9098ac; margin-top: 5px; font-size: 13px; font-style: italic;"><p>´´½¨Ê±¼ä£º' + getUTC8(new Date(document.querySelector('.QuestionPage > meta[itemprop=dateCreated]').content)) + '</p><p>×îºó±à¼­£º' + getUTC8(new Date(document.querySelector('.QuestionPage > meta[itemprop=dateModified]').content)) + '</p></div>');
+        document.querySelector('.QuestionPage .QuestionHeader-side').insertAdjacentHTML('beforeEnd', '<div class="QuestionTime-xiu" style="color: #9098ac; margin-top: 5px; font-size: 13px; font-style: italic;"><p>åˆ›å»ºæ—¶é—´ï¼š' + getUTC8(new Date(document.querySelector('.QuestionPage > meta[itemprop=dateCreated]').content)) + '</p><p>æœ€åç¼–è¾‘ï¼š' + getUTC8(new Date(document.querySelector('.QuestionPage > meta[itemprop=dateModified]').content)) + '</p></div>');
     }
 }
 
 
-// UTC ±ê×¼Ê±×ª UTC+8 ±±¾©Ê±¼ä£¬ĞŞ¸Ä×Ô£ºhttps://greasyfork.org/zh-CN/scripts/402808£¨¾«¼ò£©
+// UTC æ ‡å‡†æ—¶è½¬ UTC+8 åŒ—äº¬æ—¶é—´ï¼Œä¿®æ”¹è‡ªï¼šhttps://greasyfork.org/zh-CN/scripts/402808ï¼ˆç²¾ç®€ï¼‰
 function getUTC8(t) {
     return (t.getFullYear() + '-' + (((t.getMonth() + 1) < 10) ? ('0' + (t.getMonth() + 1)) : (t.getMonth() + 1)) + '-' + ((t.getDate() < 10) ? ('0' + t.getDate()) : t.getDate()) + '\xa0\xa0' + ((t.getHours() < 10) ? ('0' + t.getHours()) : t.getHours()) + ':' + ((t.getMinutes() < 10) ? ('0' + t.getMinutes()) : t.getMinutes()) + ':' + ((t.getSeconds() < 10) ? ('0' + t.getSeconds()) : t.getSeconds()));
 }
 
 
-// Ä¬ÈÏÕ¾ÍâÖ±Á´£¬ĞŞ¸Ä×Ô£ºhttps://greasyfork.org/scripts/402808£¨´Ó JQuery ¸ÄÎªÔ­Éú JavaScript£¬ÇÒ¾«¼ò¡¢ÓÅ»¯ÁË´úÂë£©
+// é»˜è®¤ç«™å¤–ç›´é“¾ï¼Œä¿®æ”¹è‡ªï¼šhttps://greasyfork.org/scripts/402808ï¼ˆä» JQuery æ”¹ä¸ºåŸç”Ÿ JavaScriptï¼Œä¸”ç²¾ç®€ã€ä¼˜åŒ–äº†ä»£ç ï¼‰
 function directLink () {
     document.querySelectorAll('a.external[href*="link.zhihu.com/?target="], a.LinkCard[href*="link.zhihu.com/?target="]:not(.MCNLinkCard):not(.ZVideoLinkCard):not(.ADLinkCardContainer)').forEach(function (_this) {_this.href = decodeURIComponent(_this.href.substring(_this.href.indexOf('link.zhihu.com/?target=') + 23));});
 }
 
 
-// Ä¬ÈÏ¸ßÇåÔ­Í¼£¬ĞŞ¸Ä×Ô£ºhttps://greasyfork.org/scripts/402808£¨´Ó JQuery ¸ÄÎªÔ­Éú JavaScript£¬ÇÒ¾«¼ò¡¢ÓÅ»¯ÁË´úÂë£©
+// é»˜è®¤é«˜æ¸…åŸå›¾ï¼Œä¿®æ”¹è‡ªï¼šhttps://greasyfork.org/scripts/402808ï¼ˆä» JQuery æ”¹ä¸ºåŸç”Ÿ JavaScriptï¼Œä¸”ç²¾ç®€ã€ä¼˜åŒ–äº†ä»£ç ï¼‰
 function originalPic(){
     document.querySelectorAll('img[data-original]:not(.comment_sticker):not(.Avatar)').forEach(function(one){if (one.src != one.dataset.original) {one.src = one.dataset.original}});
 }
 
 
-// Ä¬ÈÏÕÛµşÑûÇë£¬ĞŞ¸Ä×Ô£ºhttps://greasyfork.org/scripts/402808£¨´Ó JQuery ¸ÄÎªÔ­Éú JavaScript£¬ÇÒ¾«¼ò¡¢ÓÅ»¯ÁË´úÂë£©
+// é»˜è®¤æŠ˜å é‚€è¯·ï¼Œä¿®æ”¹è‡ªï¼šhttps://greasyfork.org/scripts/402808ï¼ˆä» JQuery æ”¹ä¸ºåŸç”Ÿ JavaScriptï¼Œä¸”ç²¾ç®€ã€ä¼˜åŒ–äº†ä»£ç ï¼‰
 function questionInvitation(){
     let time = setInterval(function(){
         let q = document.querySelector('.QuestionInvitation-content'); if (!q) return
         clearInterval(time);
         q.style.display = 'none';
-        document.querySelector('.QuestionInvitation-title').innerHTML = document.querySelector('.QuestionInvitation-title').innerText + '<span style="cursor: pointer; font-size: 14px; color: #919aae;"> Õ¹¿ª/ÕÛµş</span>'
-        // µã»÷ÊÂ¼ş£¨Õ¹¿ª/ÕÛµş£©
+        document.querySelector('.QuestionInvitation-title').innerHTML = document.querySelector('.QuestionInvitation-title').innerText + '<span style="cursor: pointer; font-size: 14px; color: #919aae;"> å±•å¼€/æŠ˜å </span>'
+        // ç‚¹å‡»äº‹ä»¶ï¼ˆå±•å¼€/æŠ˜å ï¼‰
         document.querySelector('.Topbar').onclick = function(){
             let q = document.querySelector('.QuestionInvitation-content')
             if (q.style.display == 'none') {
@@ -1385,133 +1385,133 @@ function questionInvitation(){
 
 
 (function() {
-    if (window.onurlchange === undefined) {addUrlChangeEvent();} // Tampermonkey v4.11 °æ±¾Ìí¼ÓµÄ onurlchange ÊÂ¼ş grant£¬¿ÉÒÔ¼à¿Ø pjax µÈÍøÒ³µÄ URL ±ä»¯
-    removeLogin(); //                                                      ÒÆ³ıµÇÂ¼µ¯´°
-    setInterval(originalPic,100); //                                       Ä¬ÈÏ¸ßÇåÔ­Í¼
-    setInterval(directLink, 100); //    Ä¬ÈÏÕ¾ÍâÖ±Á´
-    window.addEventListener('urlchange', function(){ // Õë¶ÔµÄÊÇ´Óµ¥¸ö»Ø´ğÒ³Ìø×ªµ½ÍêÕû»Ø´ğÒ³Ê±
+    if (window.onurlchange === undefined) {addUrlChangeEvent();} // Tampermonkey v4.11 ç‰ˆæœ¬æ·»åŠ çš„ onurlchange äº‹ä»¶ grantï¼Œå¯ä»¥ç›‘æ§ pjax ç­‰ç½‘é¡µçš„ URL å˜åŒ–
+    removeLogin(); //                                                      ç§»é™¤ç™»å½•å¼¹çª—
+    setInterval(originalPic,100); //                                       é»˜è®¤é«˜æ¸…åŸå›¾
+    setInterval(directLink, 100); //    é»˜è®¤ç«™å¤–ç›´é“¾
+    window.addEventListener('urlchange', function(){ // é’ˆå¯¹çš„æ˜¯ä»å•ä¸ªå›ç­”é¡µè·³è½¬åˆ°å®Œæ•´å›ç­”é¡µæ—¶
         console.log(location.pathname)
-        if (location.pathname.indexOf('question') > -1 && location.pathname.indexOf('waiting') === -1 && location.pathname.indexOf('/answer/') === -1) { //       »Ø´ğÒ³ //
+        if (location.pathname.indexOf('question') > -1 && location.pathname.indexOf('waiting') === -1 && location.pathname.indexOf('/answer/') === -1) { //       å›ç­”é¡µ //
             setTimeout(function(){
-                collapsedNowAnswer('.QuestionPage'); //                        ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-                collapsedNowAnswer('.Question-main'); //                       ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-                questionRichTextMore(); //                                     Õ¹¿ªÎÊÌâÃèÊö
-                blockUsers('question'); //                                     ÆÁ±ÎÖ¸¶¨ÓÃ»§
-                blockYanXuan(); //                                             ÆÁ±ÎÑÎÑ¡ÄÚÈİ
+                collapsedNowAnswer('.QuestionPage'); //                        æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+                collapsedNowAnswer('.Question-main'); //                       æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+                questionRichTextMore(); //                                     å±•å¼€é—®é¢˜æè¿°
+                blockUsers('question'); //                                     å±è”½æŒ‡å®šç”¨æˆ·
+                blockYanXuan(); //                                             å±è”½ç›é€‰å†…å®¹
             }, 300);
         } else if (location.pathname == '/') {
             setTimeout(()=>{
-                blockUsers('index'); //                                        ÆÁ±ÎÖ¸¶¨ÓÃ»§
-                blockKeywords('index'); //                                     ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê
-                blockType(); //                                                ÆÁ±ÎÖ¸¶¨Àà±ğ£¨ÊÓÆµ/ÎÄÕÂµÈ£©
+                blockUsers('index'); //                                        å±è”½æŒ‡å®šç”¨æˆ·
+                blockKeywords('index'); //                                     å±è”½æŒ‡å®šå…³é”®è¯
+                blockType(); //                                                å±è”½æŒ‡å®šç±»åˆ«ï¼ˆè§†é¢‘/æ–‡ç« ç­‰ï¼‰
             }, 500);
         } else if (location.pathname == '/hot') {
-            setTimeout(()=>{blockKeywords('index');}, 500);//                  ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê
+            setTimeout(()=>{blockKeywords('index');}, 500);//                  å±è”½æŒ‡å®šå…³é”®è¯
         }
     })
 
-    if (GM_info.scriptHandler === 'Violentmonkey') { // Violentmonkey ±È Tampermonkey ¼ÓÔØ¸üÔç£¬»áµ¼ÖÂÒ»Ğ©ÔªËØ»¹Ã»¼ÓÔØ£¬Òò´ËĞèÒªÑÓ³ÙÒ»»á¶ù
+    if (GM_info.scriptHandler === 'Violentmonkey') { // Violentmonkey æ¯” Tampermonkey åŠ è½½æ›´æ—©ï¼Œä¼šå¯¼è‡´ä¸€äº›å…ƒç´ è¿˜æ²¡åŠ è½½ï¼Œå› æ­¤éœ€è¦å»¶è¿Ÿä¸€ä¼šå„¿
         setTimeout(start, 300);
     } else {
         start();
     }
 
     function start(){
-        removeHighlightLink(); //                                              ÒÆ³ı¸ßÁÁÁ´½Ó
+        removeHighlightLink(); //                                              ç§»é™¤é«˜äº®é“¾æ¥
         if (location.hostname != 'zhuanlan.zhihu.com') {
-            if (location.pathname.indexOf('/column/') === -1) cleanSearch(); //¾»»¯ËÑË÷ÈÈÃÅ
-            collapsedAnswer(); //                                              Ò»¼üÊÕÆğ»Ø´ğ
+            if (location.pathname.indexOf('/column/') === -1) cleanSearch(); //å‡€åŒ–æœç´¢çƒ­é—¨
+            collapsedAnswer(); //                                              ä¸€é”®æ”¶èµ·å›ç­”
         }
-        closeFloatingComments(); //                                            ¿ì½İ¹Ø±ÕĞü¸¡ÆÀÂÛ£¨¼àÌıµã»÷ÊÂ¼ş£¬µã»÷ÍøÒ³Á½²à¿Õ°×´¦£©
-        blockKeywords('comment'); //                                           ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê£¨ÆÀÂÛ£©
+        closeFloatingComments(); //                                            å¿«æ·å…³é—­æ‚¬æµ®è¯„è®ºï¼ˆç›‘å¬ç‚¹å‡»äº‹ä»¶ï¼Œç‚¹å‡»ç½‘é¡µä¸¤ä¾§ç©ºç™½å¤„ï¼‰
+        blockKeywords('comment'); //                                           å±è”½æŒ‡å®šå…³é”®è¯ï¼ˆè¯„è®ºï¼‰
 
 
-        if (location.pathname.indexOf('question') > -1 && location.href.indexOf('/log') == -1) { //       »Ø´ğÒ³ //
+        if (location.pathname.indexOf('question') > -1 && location.href.indexOf('/log') == -1) { //       å›ç­”é¡µ //
             if (location.pathname.indexOf('waiting') == -1) {
-                collapsedNowAnswer('.QuestionPage'); //                        ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-                collapsedNowAnswer('.Question-main'); //                       ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-                questionRichTextMore(); //                                     Õ¹¿ªÎÊÌâÃèÊö
-                blockUsers('question'); //                                     ÆÁ±ÎÖ¸¶¨ÓÃ»§
-                blockYanXuan(); //                                             ÆÁ±ÎÑÎÑ¡ÄÚÈİ
-                blockType('question'); //                                      ÆÁ±ÎÖ¸¶¨Àà±ğ£¨ÊÓÆµ/ÎÄÕÂµÈ£©
-                defaultCollapsedAnswer(); //                                   Ä¬ÈÏÊÕÆğ»Ø´ğ
+                collapsedNowAnswer('.QuestionPage'); //                        æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+                collapsedNowAnswer('.Question-main'); //                       æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+                questionRichTextMore(); //                                     å±•å¼€é—®é¢˜æè¿°
+                blockUsers('question'); //                                     å±è”½æŒ‡å®šç”¨æˆ·
+                blockYanXuan(); //                                             å±è”½ç›é€‰å†…å®¹
+                blockType('question'); //                                      å±è”½æŒ‡å®šç±»åˆ«ï¼ˆè§†é¢‘/æ–‡ç« ç­‰ï¼‰
+                defaultCollapsedAnswer(); //                                   é»˜è®¤æ”¶èµ·å›ç­”
             }
-            setInterval(function(){topTime_('.ContentItem.AnswerItem', 'ContentItem-meta')}, 300); // ÖÃ¶¥ÏÔÊ¾Ê±¼ä
-            setTimeout(function(){question_time(); question_author()}, 100); //ÎÊÌâ´´½¨Ê±¼ä + ÏÔÊ¾ÎÊÌâ×÷Õß
-            questionInvitation(); //                                           Ä¬ÈÏÕÛµşÑûÇë
+            setInterval(function(){topTime_('.ContentItem.AnswerItem', 'ContentItem-meta')}, 300); // ç½®é¡¶æ˜¾ç¤ºæ—¶é—´
+            setTimeout(function(){question_time(); question_author()}, 100); //é—®é¢˜åˆ›å»ºæ—¶é—´ + æ˜¾ç¤ºé—®é¢˜ä½œè€…
+            questionInvitation(); //                                           é»˜è®¤æŠ˜å é‚€è¯·
 
-        } else if (location.pathname === '/search') { //          ËÑË÷½á¹ûÒ³ //
-            collapsedNowAnswer('main div'); //                                 ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-            collapsedNowAnswer('.Search-container'); //                        ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-            setInterval(function(){topTime_('.ContentItem.AnswerItem, .ContentItem.ArticleItem', 'SearchItem-meta')}, 300); // ÖÃ¶¥ÏÔÊ¾Ê±¼ä
-            addTypeTips(); //                                                  Çø·ÖÎÊÌâÎÄÕÂ
-            addToQuestion(); //                                                Ö±´ïÎÊÌâ°´Å¥
-            blockUsers('search'); //                                           ÆÁ±ÎÖ¸¶¨ÓÃ»§
-            blockKeywords('search'); //                                        ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê
-            blockType('search'); //                                            ÆÁ±ÎÖ¸¶¨Àà±ğ£¨ÊÓÆµ/ÎÄÕÂµÈ£©
+        } else if (location.pathname === '/search') { //          æœç´¢ç»“æœé¡µ //
+            collapsedNowAnswer('main div'); //                                 æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+            collapsedNowAnswer('.Search-container'); //                        æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+            setInterval(function(){topTime_('.ContentItem.AnswerItem, .ContentItem.ArticleItem', 'SearchItem-meta')}, 300); // ç½®é¡¶æ˜¾ç¤ºæ—¶é—´
+            addTypeTips(); //                                                  åŒºåˆ†é—®é¢˜æ–‡ç« 
+            addToQuestion(); //                                                ç›´è¾¾é—®é¢˜æŒ‰é’®
+            blockUsers('search'); //                                           å±è”½æŒ‡å®šç”¨æˆ·
+            blockKeywords('search'); //                                        å±è”½æŒ‡å®šå…³é”®è¯
+            blockType('search'); //                                            å±è”½æŒ‡å®šç±»åˆ«ï¼ˆè§†é¢‘/æ–‡ç« ç­‰ï¼‰
 
 
-        } else if (location.pathname.indexOf('/topic/') > -1) { //   »°ÌâÒ³ //
-            if (location.pathname.indexOf('/hot') > -1 || location.href.indexOf('/top-answers') > -1) { // ½öÏŞ [ÌÖÂÛ] [¾«»ª]
-                collapsedNowAnswer('main.App-main'); //                        ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-                collapsedNowAnswer('.ContentLayout'); //                       ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-                setInterval(function(){topTime_('.ContentItem.AnswerItem, .ContentItem.ArticleItem', 'ContentItem-meta')}, 300); // ÖÃ¶¥ÏÔÊ¾Ê±¼ä
-                addTypeTips(); //                                              Çø·ÖÎÊÌâÎÄÕÂ
-                addToQuestion(); //                                            Ö±´ïÎÊÌâ°´Å¥
-                blockUsers('topic'); //                                        ÆÁ±ÎÖ¸¶¨ÓÃ»§
-                blockKeywords('topic'); //                                     ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê
+        } else if (location.pathname.indexOf('/topic/') > -1) { //   è¯é¢˜é¡µ //
+            if (location.pathname.indexOf('/hot') > -1 || location.href.indexOf('/top-answers') > -1) { // ä»…é™ [è®¨è®º] [ç²¾å]
+                collapsedNowAnswer('main.App-main'); //                        æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+                collapsedNowAnswer('.ContentLayout'); //                       æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+                setInterval(function(){topTime_('.ContentItem.AnswerItem, .ContentItem.ArticleItem', 'ContentItem-meta')}, 300); // ç½®é¡¶æ˜¾ç¤ºæ—¶é—´
+                addTypeTips(); //                                              åŒºåˆ†é—®é¢˜æ–‡ç« 
+                addToQuestion(); //                                            ç›´è¾¾é—®é¢˜æŒ‰é’®
+                blockUsers('topic'); //                                        å±è”½æŒ‡å®šç”¨æˆ·
+                blockKeywords('topic'); //                                     å±è”½æŒ‡å®šå…³é”®è¯
             }
 
-        } else if (location.hostname === 'zhuanlan.zhihu.com'){ //    ÎÄÕÂ //
-            backToTop('article.Post-Main.Post-NormalMain'); //                 ¿ì½İ·µ»Ø¶¥²¿
-            backToTop('div.Post-Sub.Post-NormalSub'); //                       ¿ì½İ·µ»Ø¶¥²¿
-            setTimeout(topTime_post, 300); //                                  ÖÃ¶¥ÏÔÊ¾Ê±¼ä
-            blockUsers(); //                                                   ÆÁ±ÎÖ¸¶¨ÓÃ»§
+        } else if (location.hostname === 'zhuanlan.zhihu.com'){ //    æ–‡ç«  //
+            backToTop('article.Post-Main.Post-NormalMain'); //                 å¿«æ·è¿”å›é¡¶éƒ¨
+            backToTop('div.Post-Sub.Post-NormalSub'); //                       å¿«æ·è¿”å›é¡¶éƒ¨
+            setTimeout(topTime_post, 300); //                                  ç½®é¡¶æ˜¾ç¤ºæ—¶é—´
+            blockUsers(); //                                                   å±è”½æŒ‡å®šç”¨æˆ·
 
 
-        } else if (location.pathname.indexOf('/column/') > -1) { //    ×¨À¸ //
+        } else if (location.pathname.indexOf('/column/') > -1) { //    ä¸“æ  //
             setTimeout(function(){
-                collapsedAnswer(); //                                           Ò»¼üÊÕÆğ»Ø´ğ
-                collapsedNowAnswer('main div'); //                              ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-                setInterval(function(){topTime_('.ContentItem.AnswerItem, .ContentItem.ArticleItem', 'ContentItem-meta')}, 300); // ÖÃ¶¥ÏÔÊ¾Ê±¼ä
-                blockUsers(); //                                                ÆÁ±ÎÖ¸¶¨ÓÃ»§
+                collapsedAnswer(); //                                           ä¸€é”®æ”¶èµ·å›ç­”
+                collapsedNowAnswer('main div'); //                              æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+                setInterval(function(){topTime_('.ContentItem.AnswerItem, .ContentItem.ArticleItem', 'ContentItem-meta')}, 300); // ç½®é¡¶æ˜¾ç¤ºæ—¶é—´
+                blockUsers(); //                                                å±è”½æŒ‡å®šç”¨æˆ·
             }, 300);
 
 
-        } else if (location.pathname.indexOf('/people/') > -1 || location.href.indexOf('org') > -1) { // ÓÃ»§Ö÷Ò³ //
-            if (location.pathname.split('/').length === 3) addTypeTips();addToQuestion(); // Çø·ÖÎÊÌâÎÄÕÂ¡¢Ö±´ïÎÊÌâ°´Å¥
-            collapsedNowAnswer('main div'); //                                 ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-            collapsedNowAnswer('.Profile-main'); //                            ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-            setInterval(function(){topTime_('.ContentItem.AnswerItem, .ContentItem.ArticleItem', 'ContentItem-meta')}, 300); // ÖÃ¶¥ÏÔÊ¾Ê±¼ä
-            blockUsers('people'); //                                           ÆÁ±ÎÖ¸¶¨ÓÃ»§
-            blockKeywords('people'); //                                        ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê
+        } else if (location.pathname.indexOf('/people/') > -1 || location.href.indexOf('org') > -1) { // ç”¨æˆ·ä¸»é¡µ //
+            if (location.pathname.split('/').length === 3) addTypeTips();addToQuestion(); // åŒºåˆ†é—®é¢˜æ–‡ç« ã€ç›´è¾¾é—®é¢˜æŒ‰é’®
+            collapsedNowAnswer('main div'); //                                 æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+            collapsedNowAnswer('.Profile-main'); //                            æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+            setInterval(function(){topTime_('.ContentItem.AnswerItem, .ContentItem.ArticleItem', 'ContentItem-meta')}, 300); // ç½®é¡¶æ˜¾ç¤ºæ—¶é—´
+            blockUsers('people'); //                                           å±è”½æŒ‡å®šç”¨æˆ·
+            blockKeywords('people'); //                                        å±è”½æŒ‡å®šå…³é”®è¯
 
 
-        } else if (location.pathname.indexOf('/collection/') > -1) { // ÊÕ²Ø¼Ğ //
-            addTypeTips(); //                                                  Çø·ÖÎÊÌâÎÄÕÂ
-            addToQuestion(); //                                                Ö±´ïÎÊÌâ°´Å¥
-            collapsedNowAnswer('main'); //                                     ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-            collapsedNowAnswer('.CollectionsDetailPage'); //                   ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-            setInterval(function(){topTime_('.ContentItem.AnswerItem, .ContentItem.ArticleItem', 'ContentItem-meta')}, 300); // ÖÃ¶¥ÏÔÊ¾Ê±¼ä
-            blockKeywords('collection'); //                                    ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê
+        } else if (location.pathname.indexOf('/collection/') > -1) { // æ”¶è—å¤¹ //
+            addTypeTips(); //                                                  åŒºåˆ†é—®é¢˜æ–‡ç« 
+            addToQuestion(); //                                                ç›´è¾¾é—®é¢˜æŒ‰é’®
+            collapsedNowAnswer('main'); //                                     æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+            collapsedNowAnswer('.CollectionsDetailPage'); //                   æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+            setInterval(function(){topTime_('.ContentItem.AnswerItem, .ContentItem.ArticleItem', 'ContentItem-meta')}, 300); // ç½®é¡¶æ˜¾ç¤ºæ—¶é—´
+            blockKeywords('collection'); //                                    å±è”½æŒ‡å®šå…³é”®è¯
 
 
-        } else { //                                                     Ê×Ò³ //
-            // ½â¾öÆÁ±ÎÀà±ğºó£¬ÒòÎªÊ×Ò³ĞÅÏ¢Á÷Ì«ÉÙ¶øÃ»ÓĞ¹ö¶¯Ìõµ¼ÖÂÎŞ·¨¼ÓÔØ¸ü¶àÄÚÈİµÄÎÊÌâ
+        } else { //                                                     é¦–é¡µ //
+            // è§£å†³å±è”½ç±»åˆ«åï¼Œå› ä¸ºé¦–é¡µä¿¡æ¯æµå¤ªå°‘è€Œæ²¡æœ‰æ»šåŠ¨æ¡å¯¼è‡´æ— æ³•åŠ è½½æ›´å¤šå†…å®¹çš„é—®é¢˜
             document.lastElementChild.appendChild(document.createElement('style')).textContent = '.Topstory-container {min-height: 1500px;}';
             if (menu_value('menu_blockTypeVideo')) document.lastChild.appendChild(document.createElement('style')).textContent = `.Card .ZVideoItem-video, nav.TopstoryTabs > a[aria-controls="Topstory-zvideo"] {display: none !important;}`;
 
-            collapsedNowAnswer('main div'); //                                 ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-            collapsedNowAnswer('.Topstory-container'); //                      ÊÕÆğµ±Ç°»Ø´ğ + ¿ì½İ·µ»Ø¶¥²¿
-            setInterval(function(){topTime_('.TopstoryItem', 'ContentItem-meta')}, 300); // ÖÃ¶¥ÏÔÊ¾Ê±¼ä
-            addTypeTips(); //                                                  Çø·ÖÎÊÌâÎÄÕÂ
-            addToQuestion(); //                                                Ö±´ïÎÊÌâ°´Å¥
+            collapsedNowAnswer('main div'); //                                 æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+            collapsedNowAnswer('.Topstory-container'); //                      æ”¶èµ·å½“å‰å›ç­” + å¿«æ·è¿”å›é¡¶éƒ¨
+            setInterval(function(){topTime_('.TopstoryItem', 'ContentItem-meta')}, 300); // ç½®é¡¶æ˜¾ç¤ºæ—¶é—´
+            addTypeTips(); //                                                  åŒºåˆ†é—®é¢˜æ–‡ç« 
+            addToQuestion(); //                                                ç›´è¾¾é—®é¢˜æŒ‰é’®
             if (location.pathname == '/') {
-                blockUsers('index'); //                                        ÆÁ±ÎÖ¸¶¨ÓÃ»§
-                blockKeywords('index'); //                                     ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê
-                blockType(); //                                                ÆÁ±ÎÖ¸¶¨Àà±ğ£¨ÊÓÆµ/ÎÄÕÂµÈ£©
+                blockUsers('index'); //                                        å±è”½æŒ‡å®šç”¨æˆ·
+                blockKeywords('index'); //                                     å±è”½æŒ‡å®šå…³é”®è¯
+                blockType(); //                                                å±è”½æŒ‡å®šç±»åˆ«ï¼ˆè§†é¢‘/æ–‡ç« ç­‰ï¼‰
             } else if (location.pathname == '/hot') {
-                blockKeywords('index'); //                                     ÆÁ±ÎÖ¸¶¨¹Ø¼ü´Ê
+                blockKeywords('index'); //                                     å±è”½æŒ‡å®šå…³é”®è¯
             } else {
                 blockUsers();
             }
