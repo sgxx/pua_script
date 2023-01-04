@@ -153,7 +153,6 @@ function getCollapsedAnswerObserver() {
                         if (addedNode.nodeType != Node.ELEMENT_NODE) continue
                         if (addedNode.className != 'RichContent-inner') continue
                         if (addedNode.offsetHeight < 400) break
-                        //console.log('111',addedNode, addedNode.classList, addedNode.classList.contains('RichContent-inner'), addedNode.offsetHeight, addedNode.textContent.length)
                         const button = mutation.target.querySelector('.ContentItem-actions.Sticky [data-zop-retract-question]');
                         if (button) {
                             mutation.target.setAttribute('script-collapsed', '');
@@ -164,7 +163,6 @@ function getCollapsedAnswerObserver() {
                 // 长的回答
                 } else if (mutation.target.tagName === 'DIV' && !mutation.target.style.cssText && !mutation.target.className) {
                     if (mutation.target.parentElement.hasAttribute('script-collapsed')) return
-                    //console.log('222',mutation.target, mutation.target.querySelector('.ContentItem-actions.Sticky [data-zop-retract-question]'))
                     const button = mutation.target.querySelector('.ContentItem-actions.Sticky [data-zop-retract-question]');
                     if (button) {
                         mutation.target.parentElement.setAttribute('script-collapsed', '');
@@ -209,9 +207,7 @@ function defaultCollapsedAnswer() {
 // 一键收起回答（全部）
 function collapsedAnswer() {
     if (!menu_value('menu_collapsedAnswer')) return
-    //console.log('1111', document.querySelector('.CornerAnimayedFlex'))
     if (document.querySelector('.CornerAnimayedFlex') && !document.getElementById('collapsed-button')) {
-        //console.log('2222')
         document.head.appendChild(document.createElement('style')).textContent = '.CornerButton{margin-bottom:8px !important;}.CornerButtons{bottom:45px !important;}';
         document.querySelector('.CornerAnimayedFlex').insertAdjacentHTML('afterBegin', '<button id="collapsed-button" data-tooltip="收起全部回答" data-tooltip-position="left" data-tooltip-will-hide-on-click="false" aria-label="收起全部回答" type="button" class="Button CornerButton Button--plain"><svg class="ContentItem-arrowIcon is-active" aria-label="收起全部回答" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z"></path></svg></button>');
         document.getElementById('collapsed-button').onclick = function () {
@@ -263,11 +259,9 @@ function collapsedNowAnswer(selectors) {
             if (rightButton) { // 悬浮在底部的 [收起回答]（此时正在浏览回答内容 [中间区域]）
                 // 固定的 [收起评论]（先看看是否展开评论）
                 let commentCollapseButton = rightButton.querySelector('button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
-                //console.log('111')
                 if (commentCollapseButton && commentCollapseButton.textContent.indexOf('收起评论') > -1) commentCollapseButton.click();
                 // 再去收起回答
                 rightButton = rightButton.querySelector('.ContentItem-rightButton[data-zop-retract-question]')
-                //console.log('222')
                 if (rightButton) rightButton.click();
 
             } else { // 固定在回答底部的 [收起回答]（此时正在浏览回答内容 [尾部区域]）
@@ -281,13 +275,11 @@ function collapsedNowAnswer(selectors) {
                         // 固定的 [收起评论]（先看看是否展开评论，即存在 [收起评论] 按钮）
                         let commentCollapseButton = el.parentNode.querySelector('button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
                         // 如果展开了评论，就收起评论
-                        //console.log('333')
                         //if (commentCollapseButton && commentCollapseButton.textContent.indexOf('收起评论') > -1) commentCollapseButton.click();
                         if (commentCollapseButton && commentCollapseButton.textContent.indexOf('收起评论') > -1) {
                             commentCollapseButton.click();
                             if (!isElementInViewport(commentCollapseButton)) scrollTo(0,el.offsetTop+50)
                         }
-                        //console.log('444')
                         el.click() // 再去收起回答
                         answerCollapseButton_ = true; // 如果找到并点击收起了，就没必要执行下面的代码了（可视区域中没有 [收起回答] 时）
                         break
@@ -300,13 +292,11 @@ function collapsedNowAnswer(selectors) {
                             // 固定的 [收起评论]（先看看是否展开评论，即存在 [收起评论] 按钮）
                             let commentCollapseButton = el.querySelector('button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
                             // 如果展开了评论，就收起评论
-                            //console.log('555',commentCollapseButton)
                             if (commentCollapseButton && commentCollapseButton.textContent.indexOf('收起评论') > -1) {
                                 commentCollapseButton.click();
                                 if (!isElementInViewport(commentCollapseButton)) scrollTo(0,el.offsetTop+50)
                             }
                             let answerCollapseButton__ = el.querySelector('.ContentItem-rightButton[data-zop-retract-question]');
-                            //console.log('666')
                             if (answerCollapseButton__) answerCollapseButton__.click() // 再去收起回答
                             break
                         }
@@ -319,7 +309,6 @@ function collapsedNowAnswer(selectors) {
             // 悬浮的 [收起评论]（此时正在浏览评论内容 [中间区域]）
             let commentCollapseButton = getXpath('//button[text()="收起评论"]',document.querySelector('.Comments-container'))
             if (commentCollapseButton) {
-                //console.log('777', commentCollapseButton)
                 commentCollapseButton.click();
             } else { // 固定的 [收起评论]（此时正在浏览评论内容 [头部区域]）
                 let commentCollapseButton_1 = document.querySelectorAll('.ContentItem-actions > button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type, .ContentItem-action > button.Button.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
@@ -327,7 +316,6 @@ function collapsedNowAnswer(selectors) {
                     for (let el of commentCollapseButton_1) {
                         if (el.textContent.indexOf('收起评论') > -1) {
                             if (isElementInViewport(el)) {
-                                //console.log('888')
                                 el.click()
                                 commentCollapseButton_ = true // 如果找到并点击了，就没必要执行下面的代码了（可视区域中没有 [收起评论] 时）
                                 break
@@ -343,7 +331,6 @@ function collapsedNowAnswer(selectors) {
                                 let parentElement = findParentElement(el, 'List-item') || findParentElement(el, 'Card '),
                                     commentCollapseButton = parentElement.querySelector('.ContentItem-actions > button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
                                 if (commentCollapseButton.textContent.indexOf('收起评论') > -1) {
-                                    //console.log('999')
                                     commentCollapseButton.click()
                                     if (!isElementInViewport(commentCollapseButton)) {console.log(parentElement,parentElement.offsetTop,parentElement.offsetHeight);scrollTo(0,parentElement.offsetTop+parentElement.offsetHeight-50)}
                                     commentCollapseButton__ = true // 如果找到并点击了，就没必要执行下面的代码了（可视区域中没有 评论元素 时）
@@ -359,9 +346,7 @@ function collapsedNowAnswer(selectors) {
                                 if (isElementInViewport(el)) {
                                     let parentElement = findParentElement(el, 'List-item') || findParentElement(el, 'Card '),
                                     commentCollapseButton = parentElement.querySelector('.ContentItem-actions > button.Button.ContentItem-action.Button--plain.Button--withIcon.Button--withLabel:first-of-type')
-                                    //console.log(commentCollapseButton)
                                     if (commentCollapseButton.textContent.indexOf('收起评论') > -1) {
-                                        //console.log('101010')
                                         commentCollapseButton.click()
                                         if (!isElementInViewport(commentCollapseButton)) {console.log(parentElement,parentElement.offsetTop,parentElement.offsetHeight);scrollTo(0,parentElement.offsetTop+parentElement.offsetHeight-50)}
                                         break
@@ -413,7 +398,6 @@ function isElementInViewport_(el) {
 function customBlockUsers() {
     let nowBlockUsers = '';
     menu_value('menu_customBlockUsers').forEach(function(item){nowBlockUsers += '|' + item})
-    //console.log(nowBlockUsers.replace('|',''))
     let newBlockUsers = prompt('编辑 [自定义屏蔽用户]\n（不同用户名之间使用 "|" 分隔，例如：用户A|用户B|用户C ）', nowBlockUsers.replace('|',''));
     if (newBlockUsers === '') {
         GM_setValue('menu_customBlockUsers', []);
@@ -458,7 +442,6 @@ function blockUsers(type) {
                 if (item) {
                     for (const keyword of menu_value('menu_customBlockUsers')) { // 遍历用户名黑名单
                         if (keyword != '' && item.dataset.zop.indexOf('authorName":"' + keyword + '",') > -1) { // 找到就删除该信息流
-                            console.log(item.dataset.zop);
                             item1.hidden = true;
                             break;
                         }
@@ -482,7 +465,6 @@ function blockUsers(type) {
                         if (item) {
                             for (const keyword of menu_value('menu_customBlockUsers')) { // 遍历用户名黑名单
                                 if (keyword != '' && item.dataset.zop.indexOf('authorName":"' + keyword + '",') > -1) { // 找到就删除该信息流
-                                    console.log(item.dataset.zop);
                                     target.hidden = true;
                                     break;
                                 }
@@ -507,7 +489,6 @@ function blockUsers(type) {
                         if (item1) {
                             menu_value('menu_customBlockUsers').forEach(function(item2){ // 遍历用户黑名单
                                 if (item1.dataset.zop.indexOf('authorName":"' + item2 + '",') > -1) { // 找到就删除该回答
-                                    console.log(item1.dataset.zop)
                                     target.hidden = true;
                                 }
                             })
@@ -526,7 +507,6 @@ function blockUsers(type) {
                         if (item1) {
                             menu_value('menu_customBlockUsers').forEach(function(item2){ // 遍历用户黑名单
                                 if (item1.dataset.zop.indexOf('authorName":"' + item2 + '",') > -1) { // 找到就删除该回答
-                                    console.log(item1.dataset.zop)
                                     item.hidden = true;
                                 }
                             })
@@ -550,7 +530,6 @@ function blockUsers(type) {
             if (item1) {
                 menu_value('menu_customBlockUsers').forEach(function(item2){ // 遍历用户黑名单
                     if (item1.dataset.zop.indexOf('authorName":"' + item2 + '",') > -1) { // 找到就删除该回答
-                        console.log(item1.dataset.zop)
                         item.hidden = true;
                     }
                 })
@@ -566,7 +545,6 @@ function blockUsers(type) {
                 if (item) {
                     for (const keyword of menu_value('menu_customBlockUsers')) { // 遍历用户名黑名单
                         if (keyword != '' && item.textContent === keyword) { // 找到就删除该信息流
-                            console.log(item.textContent);
                             item1.hidden = true;
                             break;
                         }
@@ -589,7 +567,6 @@ function blockUsers(type) {
                     if (item) {
                         for (const keyword of menu_value('menu_customBlockUsers')) { // 遍历用户名黑名单
                             if (keyword != '' && item.textContent === keyword) { // 找到就删除该信息流
-                                console.log(item.textContent);
                                 target.hidden = true;
                                 break;
                             }
@@ -609,9 +586,7 @@ function blockUsers(type) {
                     if (target.nodeType != 1) return
                     let item = target.querySelector('img.Avatar[width="24"]')
                     if (item) {
-                        //console.log(item)
                         menu_value('menu_customBlockUsers').forEach(function(item1){ // 遍历用户黑名单
-                            //console.log(item.alt,item1)
                             if (item.alt === item1) { // 找到就删除该搜索结果
                                 item.parentElement.parentElement.style.display = "none";
                             }
@@ -642,7 +617,6 @@ function blockUsers(type) {
             for (const mutation of mutationsList) {
                 for (const target of mutation.addedNodes) {
                     if (target.nodeType != 1) return
-                    //console.log(target, target.className)
                     if (target.className && (target.className.indexOf('Popover-content Popover-content--top HoverCard-popoverTarget') > -1 || target.className.indexOf('Popover-content Popover-content--bottom HoverCard-popoverTarget') > -1) || target.querySelector('.Popover-content.Popover-content--top.HoverCard-popoverTarget') || target.querySelector('.Popover-content.Popover-content--bottom.HoverCard-popoverTarget')) {
                         let item = target.querySelector('.MemberButtonGroup.ProfileButtonGroup.HoverCard-buttons'),
                             item1 = target.querySelector('a.UserLink-link'),
@@ -734,7 +708,7 @@ function customBlockKeywords() {
         GM_setValue('menu_customBlockKeywords', []);
         registerMenuCommand(); // 重新注册脚本菜单
     } else if (newBlockKeywords != null) {
-        let newBlockKeywords = '光圈|亲子鉴定|默克尔|死亡|回民|减肥|俄罗斯|退休金|貂蝉|溥仪|闺蜜|乌鸦|基金|奥运|战争|绿茶|穿越|表情包|白敬亭|HPV|艾尔登法环|讨薪|盐选会员|徒步|表盘|股灾|英雄联盟|郑爽|口袋怪物|武松|扫黑风暴|婴儿|电竞|殡葬|小品|快乐大本营|吴谢宇|星座|自杀|pua|不想上班|猫粮|李鸿章|打仗|搞笑|东航|空乘|羽生结弦|震撼|恶心|海瑞|原神|边牧|盲人|约会|笑傲江湖|西港|狗粮|陈世美|绝望|八卦|跨性别者|被骗|生育率|失恋|缅甸|电影|漫画|爱豆|情话|刷单|黄渤|产后|黑社会|座山雕|冤枉|绘本|白羊座|周星驰|黄家驹|杨丽娟|张艺兴|葡萄酒|INTP|诡秘之主|荒岛|散户|服刑|用工荒|公知|高育良|师生恋|蔡徐坤|唐国强|三十而已|张维为|天秤|比特币|贴吧|配音|风骚|鹿晗|医美|欺负|猫|刘华强|画师|军婚|时代少年团|鬼故事|拉黑|魔兽|键政|陈道明|毛骨悚然|生个孩子|钟南山|乌军|姐弟恋|米哈游|吕后|巨人|何超莲|INFP|儒家|反派|宠物|钢琴|欺凌|猥琐|相亲|内卷|流水线工人|腿毛|唐僧|美食|去世|家有儿女|大专|女性购房|全职妈妈|举重|王嘉尔|骂|辛巴|斯基|LPL|原生家庭|死后|金瓶梅|寝室|混日子|剧本杀|早恋|美军|知否|刘鑫|争宠|教培|顿巴斯|热巴|A股|AirPods|祁同伟|冤案|查重|刘畊宏|北电|博尔特|马嘉祺|流浪地球|黑暗|屠宰|MBTI|网贷|伏地魔|交响乐|渣男|追星|大明王朝|张爱玲|催婚|剥削|带货|冰墩|睡前消息|作死|章泽天|暧昧|老实人|蒋欣|茶叶|入侵|朱一旦|哀伤|乐高|林妙可|电梯|死心|侵华|伴娘|斗罗大陆|小三|广告|陈丹青|裁员|禁毒|许嵩|外貌|魅族|996|林丹|三胎|币圈|宝妈|小米|释永信|伊利|空调|白鹿原|房贷|抗战|侵略|cos|戒赌|饭圈|左宗棠|娱乐圈|华为|杀手|吃播|沙雕|黄磊|魔法|水瓶座|小故事|核弹|杀人|护士|绘圈|月子|按摩|杨笠|学生会|熊出没|焦虑|uzi|在意|张艺谋|同性恋|女仆|二胎|生育|死侍|篮球|追了很多女生|佛|房东|军训|电视剧|歌曲|细思极恐|筋膜枪|足球|甜文|烂尾楼|方方|同居|乌克兰|水浒|乒乓|足浴|网红|红米|偷拍|艳遇|理财|严刑拷打|张怡宁|择偶|女权|幽门螺旋|男朋友|鹿鼎记|舰长|声乐|心机婊|槟榔|单亲|王力宏|动画|易烊千玺|巴基斯坦|生孩子|生日|打架|哈士奇|刘亦菲|粉丝|明朝|产假|柴静|卫生间|笑死人|喜羊羊|国产剧|复仇|丁真|仇富|格斗|1450|资本家|讨厌|生小孩|虐|李佳琦|亮剑|司机|八小时工作|男足|骇人听闻|日漫|丁俊晖|泰国|还珠格格|演员|团长|地狱|张韶涵|糜烂|狼|替身|老赖|傻子|射手座|虚拟币|张子强|足疗|手机|港片|房价|财阀|离世|小奶狗|碎尸|EDG|吸奶|乌合|姚安娜|崔永元|黄蓉|易经|斗破苍穹|cp|甄嬛|黄药师|谷爱凌|香烟|皇帝|显示器|失业|沪指|仙剑|卧底|耳机|军旅|上帝|龙珠|圣母|吴京|炒股|买房|颜值|私房|主播|家务|魔戒|戒色|双子座|出轨|疫情|快手|负债|挽回|辍学|批评|梁山|动物保护|杜兰特|抗美援朝|人贩子|冰雪奇缘|陈奕迅|鬼|薇娅|走光|黑人|马丽|芒果|寒窗|说唱|朱元璋|丧尸|电子烟|累|武林外传|传销|养生|彩礼|明日方舟|房产税|缅北|润|欧阳娜娜|羊奶|国脚|缘分|倪萍|天蝎座|孙悟空|羽毛球|刘浩存|明星|追女生|资本论|武器|无耻|孟美岐|八小时双休|慢跑|国足|金牛|王思聪|超能力|中兴|养老|吴亦凡|黑头|月嫂|段子|残疾|大明劫|歌手|杨超越|修仙|李云龙|俄军|海王|病娇|杀猪盘|陈世峰|吸毒|贝克汉姆|产房|瑜伽裤|网文|躺平|肖战|笔记本|间谍|周杰伦|穷|烂尾|疫苗|开战|郑云龙|加班|婚姻|贾静雯|超人|金灿荣|亲爱的|合租|肝癌|甜宠|封校|剩女|自闭|邓伦|夜店|INTJ|哈利|出生|整容|宋冬野|张国荣|宠文|恐惧|抖音|赌博|杨丽萍|李赛高|和亲|体检|爽文|看守所|欧冠|性别对立|霸总|化妆|二孩|NBA|亚马逊|癌|内奸|狮子座|亚美尼亚|离职|阎王|房思琪|曹丰泽|九价|红楼梦|赵今麦|酒店|窒息|海贼王|县城|邓文迪|李连杰|食堂|健身|战锤|马航|琅琊榜|动漫|追我的男生|妃|蒙古|金军|运气|调休|女神|低谷|宋江|谭乔|火葬场|开除|公益|王志文|跑步|约稿|灵堂|邪念|全聚德|凯迪拉克|迁就|自卑|外卖|哪吒|手枪|子弹|维生素|剧情|女配|男主|绿卡|辅警|上官|游戏|带娃|屁|舞蹈|搭讪|孕期|军官|人民的名义|钟薛高|比特币|礼物|网吧|数码宝贝|断舍离|脾气不好|索尼|清真寺|焊工|韩剧|没教养|显卡|唐山烧烤|劳务派遣|劳动仲裁|塔利班|光棍|香港|恒大|世界杯|曹操|朴树|日语|江歌|台湾|湖南卫视|韦东奕|藏族|独居|普洱茶|蘑菇|LOL|黑袍纠察队|高晓松|丐帮|金庸|暑假工|马云的崩塌|台湾|抑郁|希特勒|林冲|裙子|诈骗|公务员|长得丑|恐怖|痘印|Nike|耐克|花柳|音乐|摩羯座|冒险岛|校服|奇异博士|老友记|中考|防晒|静香|全红婵|胖子|怀孕|图书馆|背单词|驾照|镖客|尴尬|青储|余秀华|安踏|新番|头像|结婚|母乳|新概念英语|灾荒|吸星大法|北冥神功|肯德基|老龄化|退休|乐器|朴秀荣|已婚|酷刑|身高|德善|垃圾分类|同人|悲哀|志愿军|子宫|国军|中华民国|国民党|综艺|爬山|攀岩|啃老|北约|长残了|人养玉|回避|藏语|今麦郎|凉白开|周冬雨|彭于晏|考公|撒贝宁|李世民|休学|彩虹六号|傻逼|纪晓岚|护肤|无力|pb|照骗|防晒|厅局风|不婚主义|小说|车位|消防|咖啡|睡前故事|运动员|晋江|八段锦|刷酸|镇长|星巴克|爱情公寓|生完孩子|梦华录|约翰可汗|安乐死|枪支|伊朗|右翼|国防部|农业部|赖宁|郑成功|脱口秀|汉奸|堕胎|刺杀|冰壶|顿涅茨克|卢甘斯克|孔家店|莫言|立陶宛|插旗菜业|春晚|尼赫鲁|康熙|粟裕|玛雅|金智秀|大瓜|崩坏|生发液|排泄|黑眼圈|iPhone|股票|武将|上尉|戏曲|灌篮高手|战斗机|道士|俄乌|杨幂|宿舍|RNG|新歌|破事精英|于谦|华约|王漫妮|卫生巾|朝鲜|离婚|酒桌|迦太基|白嫖|林青霞|姚明|湖人|科比|禁枪|郭靖|满族|赖座|驾校|温网|家暴|肝硬化|陈晓|薛宝钗|林黛玉|鲁滨逊|严屹宽|褪黑素|王者荣耀|四驱兄弟|产科|火影|幼师|乔丹|乌方|赫尔松|韩语|悲观|张杰|林俊杰|渣女|太原|羞愧|尹天仇|喜剧之王|何以笙箫默|何以琛|听力|萝莉|老年痴呆|失禁|贾平凹|贾浅浅|冯唐|汤唯|男篮|阿富|戴笠|马未都|张若昀|郭德纲|编剧|红卫兵|男团|分娩|杨玉环|圣斗士|王菲|糖尿病|les|MIUI|腿长|奥尼尔|董明珠|坦克|DOTA|跆拳道|专升本|考研|纵火|柯洁|订婚|股市|结石|毁三观|士兵突击|冯巩|岳云鹏|徐艺洋|彝族|德云社|赵丽颖|本兮|过世|陈妍希|孙杨|赵露思|鲁豫|唐仁杰|守望先锋|DM|明日方舟|小三|男A|出过轨|杜月笙|张作霖|苏联|雪中|东方不败|梅西|C罗|普京|布达拉宫|扶弟魔|初三|包贝尔|包文婧|赵本山|刘邦|圆明园|围棋|王冰冰|射雕|献血|古装|汪小菲|张飞|关羽|刘备|罗贯中|何同学|关晓彤|李玉刚|暗黑破坏神|王传君|内马尔|植发|抽烟|哲学|赵薇|詹姆斯|盗墓|清史|胡适|鱼翅|李达康|阿富汗|彭宇|方便面|胡锡进|仇日|吕小军|黄多多|大叔控|竹鼠|杨紫|梦幻西游|北欧|霍思燕|杜江|向太|陈岚|乾隆|三国演义|少林|王一博|奥特曼|';
+        let newBlockKeywords = '光圈|亲子鉴定|默克尔|死亡|回民|减肥|俄罗斯|退休金|貂蝉|溥仪|闺蜜|乌鸦|基金|奥运|战争|绿茶|穿越|表情包|白敬亭|HPV|艾尔登法环|讨薪|盐选会员|徒步|表盘|股灾|英雄联盟|郑爽|口袋怪物|武松|扫黑风暴|婴儿|电竞|殡葬|小品|快乐大本营|吴谢宇|星座|自杀|pua|不想上班|猫粮|李鸿章|打仗|搞笑|东航|空乘|羽生结弦|震撼|恶心|海瑞|原神|边牧|盲人|约会|笑傲江湖|西港|狗粮|陈世美|绝望|八卦|跨性别者|被骗|生育率|失恋|缅甸|电影|漫画|爱豆|情话|刷单|黄渤|产后|黑社会|座山雕|冤枉|绘本|白羊座|周星驰|黄家驹|杨丽娟|张艺兴|葡萄酒|INTP|诡秘之主|荒岛|散户|服刑|用工荒|公知|高育良|师生恋|蔡徐坤|唐国强|三十而已|张维为|天秤|比特币|贴吧|配音|风骚|鹿晗|医美|欺负|猫|刘华强|画师|军婚|时代少年团|鬼故事|拉黑|魔兽|键政|陈道明|毛骨悚然|生个孩子|钟南山|乌军|姐弟恋|米哈游|吕后|巨人|何超莲|INFP|儒家|反派|宠物|钢琴|欺凌|猥琐|相亲|内卷|流水线工人|腿毛|唐僧|美食|去世|家有儿女|大专|女性购房|全职妈妈|举重|王嘉尔|骂|辛巴|斯基|LPL|原生家庭|死后|金瓶梅|寝室|混日子|剧本杀|早恋|美军|知否|刘鑫|争宠|教培|顿巴斯|热巴|A股|AirPods|祁同伟|冤案|查重|刘畊宏|北电|博尔特|马嘉祺|流浪地球|黑暗|屠宰|MBTI|网贷|伏地魔|交响乐|渣男|追星|大明王朝|张爱玲|催婚|剥削|带货|冰墩|睡前消息|作死|章泽天|暧昧|老实人|蒋欣|茶叶|入侵|朱一旦|哀伤|乐高|林妙可|电梯|死心|侵华|伴娘|斗罗大陆|小三|广告|陈丹青|裁员|禁毒|许嵩|外貌|魅族|996|林丹|三胎|币圈|宝妈|小米|释永信|伊利|空调|白鹿原|房贷|抗战|侵略|cos|戒赌|饭圈|左宗棠|娱乐圈|华为|杀手|吃播|沙雕|黄磊|魔法|水瓶座|小故事|核弹|杀人|护士|绘圈|月子|按摩|杨笠|学生会|熊出没|焦虑|uzi|在意|张艺谋|同性恋|女仆|二胎|生育|死侍|篮球|追了很多女生|佛|房东|军训|电视剧|歌曲|细思极恐|筋膜枪|足球|甜文|烂尾楼|方方|同居|乌克兰|水浒|乒乓|足浴|网红|红米|偷拍|艳遇|理财|严刑拷打|张怡宁|择偶|女权|幽门螺旋|男朋友|鹿鼎记|舰长|声乐|心机婊|槟榔|单亲|王力宏|动画|易烊千玺|巴基斯坦|生孩子|生日|打架|哈士奇|刘亦菲|粉丝|明朝|产假|柴静|卫生间|笑死人|喜羊羊|国产剧|复仇|丁真|仇富|格斗|1450|资本家|讨厌|生小孩|虐|李佳琦|亮剑|司机|八小时工作|男足|骇人听闻|日漫|丁俊晖|泰国|还珠格格|演员|团长|地狱|张韶涵|糜烂|狼|替身|老赖|傻子|射手座|虚拟币|张子强|足疗|手机|港片|房价|财阀|离世|小奶狗|碎尸|EDG|吸奶|乌合|姚安娜|崔永元|黄蓉|易经|斗破苍穹|cp|甄嬛|黄药师|谷爱凌|香烟|皇帝|显示器|失业|沪指|仙剑|卧底|耳机|军旅|上帝|龙珠|圣母|吴京|炒股|买房|颜值|私房|主播|家务|魔戒|戒色|双子座|出轨|疫情|快手|负债|挽回|辍学|批评|梁山|动物保护|杜兰特|抗美援朝|人贩子|冰雪奇缘|陈奕迅|鬼|薇娅|走光|黑人|马丽|芒果|寒窗|说唱|朱元璋|丧尸|电子烟|累|武林外传|传销|养生|彩礼|明日方舟|房产税|缅北|润|欧阳娜娜|羊奶|国脚|缘分|倪萍|天蝎座|孙悟空|羽毛球|刘浩存|明星|追女生|资本论|武器|无耻|孟美岐|八小时双休|慢跑|国足|金牛|王思聪|超能力|中兴|养老|吴亦凡|黑头|月嫂|段子|残疾|大明劫|歌手|杨超越|修仙|李云龙|俄军|海王|病娇|杀猪盘|陈世峰|吸毒|贝克汉姆|产房|瑜伽裤|网文|躺平|肖战|笔记本|间谍|周杰伦|穷|烂尾|疫苗|开战|郑云龙|加班|婚姻|贾静雯|超人|金灿荣|亲爱的|合租|肝癌|甜宠|封校|剩女|自闭|邓伦|夜店|INTJ|哈利|出生|整容|宋冬野|张国荣|宠文|恐惧|抖音|赌博|杨丽萍|李赛高|和亲|体检|爽文|看守所|欧冠|性别对立|霸总|化妆|二孩|NBA|亚马逊|癌|内奸|狮子座|亚美尼亚|离职|阎王|房思琪|曹丰泽|九价|红楼梦|赵今麦|酒店|窒息|海贼王|县城|邓文迪|李连杰|食堂|健身|战锤|马航|琅琊榜|动漫|追我的男生|妃|蒙古|金军|运气|调休|女神|低谷|宋江|谭乔|火葬场|开除|公益|王志文|跑步|约稿|灵堂|邪念|全聚德|凯迪拉克|迁就|自卑|外卖|哪吒|手枪|子弹|维生素|剧情|女配|男主|绿卡|辅警|上官|游戏|带娃|屁|舞蹈|搭讪|孕期|军官|人民的名义|钟薛高|比特币|礼物|网吧|数码宝贝|断舍离|脾气不好|索尼|清真寺|焊工|韩剧|没教养|显卡|唐山烧烤|劳务派遣|劳动仲裁|塔利班|光棍|香港|恒大|世界杯|曹操|朴树|日语|江歌|台湾|湖南卫视|韦东奕|藏族|独居|普洱茶|蘑菇|LOL|黑袍纠察队|高晓松|丐帮|金庸|暑假工|马云的崩塌|台湾|抑郁|希特勒|林冲|裙子|诈骗|公务员|长得丑|恐怖|痘印|Nike|耐克|花柳|音乐|摩羯座|冒险岛|校服|奇异博士|老友记|中考|防晒|静香|全红婵|胖子|怀孕|图书馆|背单词|驾照|镖客|尴尬|青储|余秀华|安踏|新番|头像|结婚|母乳|新概念英语|灾荒|吸星大法|北冥神功|肯德基|老龄化|退休|乐器|朴秀荣|已婚|酷刑|身高|德善|垃圾分类|同人|悲哀|志愿军|子宫|国军|中华民国|国民党|综艺|爬山|攀岩|啃老|北约|长残了|人养玉|回避|藏语|今麦郎|凉白开|周冬雨|彭于晏|考公|撒贝宁|李世民|休学|彩虹六号|傻逼|纪晓岚|护肤|无力|pb|照骗|防晒|厅局风|不婚主义|小说|车位|消防|咖啡|睡前故事|运动员|晋江|八段锦|刷酸|镇长|星巴克|爱情公寓|生完孩子|梦华录|约翰可汗|安乐死|枪支|伊朗|右翼|国防部|农业部|赖宁|郑成功|脱口秀|汉奸|堕胎|刺杀|冰壶|顿涅茨克|卢甘斯克|孔家店|莫言|立陶宛|插旗菜业|春晚|尼赫鲁|康熙|粟裕|玛雅|金智秀|大瓜|崩坏|生发液|排泄|黑眼圈|iPhone|股票|武将|上尉|戏曲|灌篮高手|战斗机|道士|俄乌|杨幂|宿舍|RNG|新歌|破事精英|于谦|华约|王漫妮|卫生巾|朝鲜|离婚|酒桌|迦太基|白嫖|林青霞|姚明|湖人|科比|禁枪|郭靖|满族|赖座|驾校|温网|家暴|肝硬化|陈晓|薛宝钗|林黛玉|鲁滨逊|严屹宽|褪黑素|王者荣耀|四驱兄弟|产科|火影|幼师|乔丹|乌方|赫尔松|韩语|悲观|张杰|林俊杰|渣女|太原|羞愧|尹天仇|喜剧之王|何以笙箫默|何以琛|听力|萝莉|老年痴呆|失禁|贾平凹|贾浅浅|冯唐|汤唯|男篮|阿富|戴笠|马未都|张若昀|郭德纲|编剧|红卫兵|男团|分娩|杨玉环|圣斗士|王菲|糖尿病|les|MIUI|腿长|奥尼尔|董明珠|坦克|DOTA|跆拳道|专升本|考研|纵火|柯洁|订婚|股市|结石|毁三观|士兵突击|冯巩|岳云鹏|徐艺洋|彝族|德云社|赵丽颖|本兮|过世|陈妍希|孙杨|赵露思|鲁豫|唐仁杰|守望先锋|DM|明日方舟|小三|男A|出过轨|杜月笙|张作霖|苏联|雪中|东方不败|梅西|C罗|普京|布达拉宫|扶弟魔|初三|包贝尔|包文婧|赵本山|刘邦|圆明园|围棋|王冰冰|射雕|献血|古装|汪小菲|张飞|关羽|刘备|罗贯中|何同学|关晓彤|李玉刚|暗黑破坏神|王传君|内马尔|植发|抽烟|哲学|赵薇|詹姆斯|盗墓|清史|胡适|鱼翅|李达康|阿富汗|彭宇|方便面|胡锡进|仇日|吕小军|黄多多|大叔控|竹鼠|杨紫|梦幻西游|北欧|霍思燕|杜江|向太|陈岚|乾隆|三国演义|少林|王一博|奥特曼|崇祯|任盈盈|梅西|马拉多纳|';
         GM_setValue('menu_customBlockKeywords', newBlockKeywords.split('|'));
         registerMenuCommand(); // 重新注册脚本菜单
     }
@@ -771,7 +745,6 @@ function blockKeywords(type) {
         // 前几条因为是直接加载的，而不是动态插入网页的，所以需要单独判断
         function blockKeywords_now() {
             if (location.pathname === '/hot') {
-                console.log('222222222222')
                 document.querySelectorAll('.HotItem').forEach(function(item1){blockKeywords_1(item1, 'h2.HotItem-title');})
             } else {
                 document.querySelectorAll(className1).forEach(function(item1){blockKeywords_1(item1, 'h2.ContentItem-title meta[itemprop="name"], meta[itemprop="headline"]');})
@@ -837,7 +810,6 @@ function blockKeywords(type) {
             for (const text of texts) {
                 for (const keyword of keywords) { // 遍历关键词黑名单
                     if (keyword != '' && text.indexOf(keyword.toLowerCase()) > -1) { // 找到就删除该评论
-                        console.log('已屏蔽评论：' + text);
                         content.textContent = '[该评论已屏蔽]';
                         break;
                     }
@@ -861,12 +833,10 @@ function blockKeywords(type) {
 
     function blockKeywords_1(item1, css) {
         let item = item1.querySelector(css); // 标题所在元素
-        console.log(item)
         if (item) {
             for (const keyword of menu_value('menu_customBlockKeywords')) { // 遍历关键词黑名单
                 let text = item.content || item.textContent;
                 if (keyword != '' && text.toLowerCase().indexOf(keyword.toLowerCase()) > -1) { // 找到就删除该信息流
-                    console.log(text);
                     item1.hidden = true;
                     item1.style.display = 'none';
                     break;
@@ -917,7 +887,6 @@ function blockType(type) {
 
     function blockType_(titleA) {
         if (!titleA) return // 判断是否为真
-        //console.log(titleA.href)
         if (location.pathname === '/search') { // 搜索页
             if (location.search.indexOf('type=content') === -1) return //   仅限搜索页的 [综合]
             if (titleA.href.indexOf('/zvideo/') > -1 || titleA.href.indexOf('video.zhihu.com') > -1) { //                  如果是视频
@@ -961,10 +930,8 @@ function blockType(type) {
 // 寻找父元素
 function findParentElement(item, className, type = false) {
     if (item.parentElement) {
-        //console.log(item.parentElement)
         if (type) { // true = 完全一致，false = 包含即可
             if (item.parentElement.className && item.parentElement.className === className) {
-                //console.log(item.parentElement.className)
                 return item.parentElement;
             } else {
                 let temp = findParentElement(item.parentElement, className, true)
@@ -1390,7 +1357,6 @@ function questionInvitation(){
     setInterval(originalPic,100); //                                       默认高清原图
     setInterval(directLink, 100); //    默认站外直链
     window.addEventListener('urlchange', function(){ // 针对的是从单个回答页跳转到完整回答页时
-        console.log(location.pathname)
         if (location.pathname.indexOf('question') > -1 && location.pathname.indexOf('waiting') === -1 && location.pathname.indexOf('/answer/') === -1) { //       回答页 //
             setTimeout(function(){
                 collapsedNowAnswer('.QuestionPage'); //                        收起当前回答 + 快捷返回顶部
